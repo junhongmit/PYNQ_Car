@@ -1,3 +1,5 @@
 1548036172225	Delete resource 'bsp_iop_arduino_mb'
 1548037251592	Delete resource 'base_hw_platform_0'
 1548037396242	Delete resource 'standalone_bsp_0'
+1548055779485	Delete resource 'grove_ledbar_bsp'
+1548055893904	Delete resource 'arduino_4wdmoto_bsp'
