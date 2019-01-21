@@ -1,0 +1,21 @@
+10:03:27 **** Auto Build of configuration Debug for project arduino_analog ****
+make all 
+Building file: ../src/arduino_analog.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_analog.o" -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_analog.d" -MT"src/arduino_analog.o" -o "src/arduino_analog.o" "../src/arduino_analog.c"
+Finished building: ../src/arduino_analog.c
+ 
+Building target: arduino_analog.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L"/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/bsp_iop_arduino_mb/iop_arduino_mb/lib" -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "arduino_analog.elf"  ./src/arduino_analog.o   
+Finished building target: arduino_analog.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_analog.elf  |tee "arduino_analog.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34448	    652	   3564	  38664	   9708	arduino_analog.elf
+Finished building: arduino_analog.elf.size
+ 
+
+10:03:27 Build Finished (took 582ms)
+
