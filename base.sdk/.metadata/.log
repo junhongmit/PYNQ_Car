@@ -992,3 +992,6 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY com.xilinx.sdk.utils 1 0 2019-01-21 10:24:34.563
 !MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-01-21 10:40:18.216
+!MESSAGE Executed Webtalk command
