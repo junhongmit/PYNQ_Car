@@ -1,6 +1,6 @@
-10:24:33 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+11:39:44 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:24:33 Build Finished (took 382ms)
+11:39:44 Build Finished (took 334ms)
 

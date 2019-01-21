@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/.metadata/.plugins/org.eclipse.cdt.ui/grove_ledbar.build.log
+eclipse.preferences.version=1

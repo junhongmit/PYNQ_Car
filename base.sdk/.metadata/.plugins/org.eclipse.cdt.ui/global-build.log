@@ -1218,3 +1218,1197 @@ Finished building: arduino_grove_ledbar.elf.size
 10:24:33 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
 make all 
 make: Nothing to be done for 'all'.
+11:15:32 **** Auto Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+../src/arduino_grove_ledbar.c: In function 'main':
+../src/arduino_grove_ledbar.c:341:9: warning: 'cmd' is used uninitialized in this function [-Wuninitialized]
+         switch(cmd){
+         ^~~~~~
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: arduino_grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_grove_ledbar.elf  |tee "arduino_grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19260	    520	   3596	  23376	   5b50	arduino_grove_ledbar.elf
+Finished building: arduino_grove_ledbar.elf.size
+ 
+11:16:10 **** Auto Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: arduino_grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_grove_ledbar.elf  |tee "arduino_grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19300	    520	   3596	  23416	   5b78	arduino_grove_ledbar.elf
+Finished building: arduino_grove_ledbar.elf.size
+ 
+11:28:53 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:29:26 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:30:24 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:31:41 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:34:05 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:39:44 **** Incremental Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:45:13 **** Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+Finished building libraries
+
+**** Build of configuration Debug for project grove_ledbar ****
+
+Nothing to build for project grove_ledbar
+
+****  of configuration Debug for project grove_ledbar ****
+
+Nothing to build for project grove_ledbar
+11:46:07 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -I../../grove_ledbar_bsp/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+../src/arduino_grove_ledbar.c:56:29: fatal error: circular_buffer.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/arduino_grove_ledbar.o' failed
+ #include <circular_buffer.h>
+                             ^
+compilation terminated.
+make: *** [src/arduino_grove_ledbar.o] Error 1
+11:47:09 **** Clean-only build of configuration Debug for project grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  grove_ledbar.elf.size  grove_ledbar.elf
+ 
+11:47:10 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/arduino_grove_ledbar.o: In function `ledbar_init':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_set_direction'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_set_direction'
+./src/arduino_grove_ledbar.o: In function `send_data':
+makefile:36: recipe for target 'grove_ledbar.elf' failed
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+./src/arduino_grove_ledbar.o: In function `latch_data':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `delay_ms'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+./src/arduino_grove_ledbar.o: In function `main':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:332: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:333: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:344: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:345: undefined reference to `gpio_open'
+collect2: error: ld returned 1 exit status
+make: *** [grove_ledbar.elf] Error 1
+11:48:27 **** Clean-only build of configuration Debug for project grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  grove_ledbar.elf.size  grove_ledbar.elf
+ 
+11:48:27 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+../src/arduino_grove_ledbar.c:56:29: fatal error: circular_buffer.h: No such file or directory
+ #include <circular_buffer.h>
+                             ^
+compilation terminated.
+make: *** [src/arduino_grove_ledbar.o] Error 1
+src/subdir.mk:21: recipe for target 'src/arduino_grove_ledbar.o' failed
+11:50:01 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/arduino_grove_ledbar.o: In function `ledbar_init':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_set_direction'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_set_direction'
+./src/arduino_grove_ledbar.o: In function `send_data':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+./src/arduino_grove_ledbar.o: In function `latch_data':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `delay_ms'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:160: undefined reference to `gpio_write'
+./src/arduino_grove_ledbar.o: In function `main':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:332: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:333: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:344: undefined reference to `gpio_open'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/grove_ledbar/Debug/../src/arduino_grove_ledbar.c:345: undefined reference to `gpio_open'
+collect2: error: ld returned 1 exit status
+make: *** [grove_ledbar.elf] Error 1
+makefile:36: recipe for target 'grove_ledbar.elf' failed
+11:50:02 **** Auto Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+xbram_g.c:50:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:51:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:53:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:64:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:96:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+Makefile:19: recipe for target 'libs' failed
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+Makefile:29: recipe for target 'iop_arduino_mb/libsrc/bram_v4_2/src/make.libs' failed
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+xbram_sinit.c:96:27: note: each undeclared identifier is reported only once for each function it appears in
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: *** [libs] Error 1
+Compiling gpio
+make: *** [iop_arduino_mb/libsrc/bram_v4_2/src/make.libs] Error 2
+xgpio_g.c:55:2: warning: excess elements in array initializer
+  {
+  ^
+xgpio_g.c:55:2: note: (near initialization for 'XGpio_ConfigTable')
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+make: Target 'all' not remade because of errors.
+11:51:23 **** Auto Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+xbram_g.c:50:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:51:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:53:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:64:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:96:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+Makefile:19: recipe for target 'libs' failed
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c:96:27: note: each undeclared identifier is reported only once for each function it appears in
+Makefile:29: recipe for target 'iop_arduino_mb/libsrc/bram_v4_2/src/make.libs' failed
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: *** [libs] Error 1
+Compiling gpio
+make: *** [iop_arduino_mb/libsrc/bram_v4_2/src/make.libs] Error 2
+xgpio_g.c:55:2: warning: excess elements in array initializer
+  {
+  ^
+xgpio_g.c:55:2: note: (near initialization for 'XGpio_ConfigTable')
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+make: Target 'all' not remade because of errors.
+11:51:46 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:52:08 **** Clean-only build of configuration Debug for project grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  grove_ledbar.elf.size  grove_ledbar.elf
+ 
+11:52:08 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:52:09 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:52:12 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:52:44 **** Auto Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+xbram_g.c:50:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:51:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:53:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:64:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:96:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+Makefile:19: recipe for target 'libs' failed
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c:96:27: note: each undeclared identifier is reported only once for each function it appears in
+Makefile:29: recipe for target 'iop_arduino_mb/libsrc/bram_v4_2/src/make.libs' failed
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: *** [libs] Error 1
+make: *** [iop_arduino_mb/libsrc/bram_v4_2/src/make.libs] Error 2
+Compiling gpio
+xgpio_g.c:55:2: warning: excess elements in array initializer
+  {
+  ^
+xgpio_g.c:55:2: note: (near initialization for 'XGpio_ConfigTable')
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+make: Target 'all' not remade because of errors.
+11:52:53 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:54:02 **** Auto Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intrgpio_v4_1/src
+make -C iop_arduino_mb/libsrc/intrgpio_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/mailbox_bram_v0_1/src
+make -C iop_arduino_mb/libsrc/mailbox_bram_v0_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling pynqmb library
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+xbram_g.c:50:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:51:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:53:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:64:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:96:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+Makefile:19: recipe for target 'libs' failed
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c:96:27: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [libs] Error 1
+make: *** [iop_arduino_mb/libsrc/bram_v4_2/src/make.libs] Error 2
+Makefile:29: recipe for target 'iop_arduino_mb/libsrc/bram_v4_2/src/make.libs' failed
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/intrgpio_v4_1/src
+make -C iop_arduino_mb/libsrc/intrgpio_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intrgpio
+Running Make libs in iop_arduino_mb/libsrc/mailbox_bram_v0_1/src
+make -C iop_arduino_mb/libsrc/mailbox_bram_v0_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling mailbox_bram
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+make: Target 'all' not remade because of errors.
+11:54:14 **** Clean-only build of configuration Debug for project grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  grove_ledbar.elf.size  grove_ledbar.elf
+ 
+11:54:15 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:55:04 **** Auto Build of project grove_ledbar_bsp ****
+make -k all 
+Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/intrgpio_v4_1/src
+make -C iop_arduino_mb/libsrc/intrgpio_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/mailbox_bram_v0_1/src
+make -C iop_arduino_mb/libsrc/mailbox_bram_v0_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
+make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
+make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in iop_arduino_mb/libsrc/io_switch_v1_0/src
+make -C iop_arduino_mb/libsrc/io_switch_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling io_switch...
+Running Make libs in iop_arduino_mb/libsrc/iic_v3_4/src
+make -C iop_arduino_mb/libsrc/iic_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iic
+Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
+make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling pynqmb library
+Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
+make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in iop_arduino_mb/libsrc/spi_v4_3/src
+make -C iop_arduino_mb/libsrc/spi_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling spi
+Running Make libs in iop_arduino_mb/libsrc/uartlite_v3_2/src
+make -C iop_arduino_mb/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in iop_arduino_mb/libsrc/bram_v4_2/src
+make -C iop_arduino_mb/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+xbram_g.c:50:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:51:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:53:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:64:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_IOP_ARDUINO_LMB_LMB_BRAM_IF_CNTLR_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:96:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c:96:27: note: each undeclared identifier is reported only once for each function it appears in
+Makefile:19: recipe for target 'libs' failed
+make[1]: *** [libs] Error 1
+Makefile:29: recipe for target 'iop_arduino_mb/libsrc/bram_v4_2/src/make.libs' failed
+Running Make libs in iop_arduino_mb/libsrc/gpio_v4_3/src
+make -C iop_arduino_mb/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make: *** [iop_arduino_mb/libsrc/bram_v4_2/src/make.libs] Error 2
+Compiling gpio
+Running Make libs in iop_arduino_mb/libsrc/iicps_v3_5/src
+make -C iop_arduino_mb/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling iicps
+Running Make libs in iop_arduino_mb/libsrc/sdps_v3_3/src
+make -C iop_arduino_mb/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in iop_arduino_mb/libsrc/sysmon_v7_4/src
+make -C iop_arduino_mb/libsrc/sysmon_v7_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Running Make libs in iop_arduino_mb/libsrc/emacps_v3_6/src
+make -C iop_arduino_mb/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in iop_arduino_mb/libsrc/intc_v3_7/src
+make -C iop_arduino_mb/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in iop_arduino_mb/libsrc/intrgpio_v4_1/src
+make -C iop_arduino_mb/libsrc/intrgpio_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intrgpio
+Running Make libs in iop_arduino_mb/libsrc/mailbox_bram_v0_1/src
+make -C iop_arduino_mb/libsrc/mailbox_bram_v0_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling mailbox_bram
+Running Make libs in iop_arduino_mb/libsrc/usbps_v2_4/src
+make -C iop_arduino_mb/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in iop_arduino_mb/libsrc/tmrctr_v4_4/src
+make -C iop_arduino_mb/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in iop_arduino_mb/libsrc/uartps_v3_5/src
+make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+make: Target 'all' not remade because of errors.
+11:55:14 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../grove_ledbar_bsp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../grove_ledbar_bsp/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:56:56 **** Clean-only build of configuration Debug for project grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  grove_ledbar.elf.size  grove_ledbar.elf
+ 
+11:56:56 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+11:56:57 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
+11:57:07 **** Auto Build of configuration Debug for project grove_ledbar ****
+make all 
+Building file: ../src/arduino_grove_ledbar.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+Finished building: ../src/arduino_grove_ledbar.c
+ 
+Building target: grove_ledbar.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: grove_ledbar.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size grove_ledbar.elf  |tee "grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11512	    488	   3448	  15448	   3c58	grove_ledbar.elf
+Finished building: grove_ledbar.elf.size
+ 
+14:04:42 **** Incremental Build of configuration Debug for project grove_ledbar ****
+make all 
+make: Nothing to be done for 'all'.
