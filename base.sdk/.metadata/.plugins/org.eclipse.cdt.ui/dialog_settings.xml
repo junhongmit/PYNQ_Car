@@ -4,6 +4,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="0" key="askReindex.detail"/>
+		<item value="true" key="askReindex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

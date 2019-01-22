@@ -1,0 +1,465 @@
+10:49:54 **** Incremental Build of configuration Debug for project arduino_getsture_cpp ****
+make all 
+Building file: ../src/SparkFun_APDS9960.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -I../../bsp_iop_arduino_mb_cpp/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.cc"
+../src/SparkFun_APDS9960.cc: In function 'bool init()':
+../src/SparkFun_APDS9960.cc:64:42: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ID, id) ) {
+                                          ^
+../src/SparkFun_APDS9960.cc:72:26: error: 'setMode' was not declared in this scope
+     if( !setMode(ALL, OFF) ) {
+                          ^
+../src/SparkFun_APDS9960.cc:77:57: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_ATIME, DEFAULT_ATIME) ) {
+                                                         ^
+../src/SparkFun_APDS9960.cc:80:57: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_WTIME, DEFAULT_WTIME) ) {
+                                                         ^
+../src/SparkFun_APDS9960.cc:83:64: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PPULSE, DEFAULT_PROX_PPULSE) ) {
+                                                                ^
+../src/SparkFun_APDS9960.cc:86:67: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_POFFSET_UR, DEFAULT_POFFSET_UR) ) {
+                                                                   ^
+../src/SparkFun_APDS9960.cc:89:67: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_POFFSET_DL, DEFAULT_POFFSET_DL) ) {
+                                                                   ^
+../src/SparkFun_APDS9960.cc:92:61: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG1, DEFAULT_CONFIG1) ) {
+                                                             ^
+../src/SparkFun_APDS9960.cc:95:36: error: 'setLEDDrive' was not declared in this scope
+     if( !setLEDDrive(DEFAULT_LDRIVE) ) {
+                                    ^
+../src/SparkFun_APDS9960.cc:98:40: error: 'setProximityGain' was not declared in this scope
+     if( !setProximityGain(DEFAULT_PGAIN) ) {
+                                        ^
+../src/SparkFun_APDS9960.cc:101:43: error: 'setAmbientLightGain' was not declared in this scope
+     if( !setAmbientLightGain(DEFAULT_AGAIN) ) {
+                                           ^
+../src/SparkFun_APDS9960.cc:104:42: error: 'setProxIntLowThresh' was not declared in this scope
+     if( !setProxIntLowThresh(DEFAULT_PILT) ) {
+                                          ^
+../src/SparkFun_APDS9960.cc:107:43: error: 'setProxIntHighThresh' was not declared in this scope
+     if( !setProxIntHighThresh(DEFAULT_PIHT) ) {
+                                           ^
+../src/SparkFun_APDS9960.cc:110:46: error: 'setLightIntLowThreshold' was not declared in this scope
+     if( !setLightIntLowThreshold(DEFAULT_AILT) ) {
+                                              ^
+../src/SparkFun_APDS9960.cc:113:47: error: 'setLightIntHighThreshold' was not declared in this scope
+     if( !setLightIntHighThreshold(DEFAULT_AIHT) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:116:55: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PERS, DEFAULT_PERS) ) {
+                                                       ^
+../src/SparkFun_APDS9960.cc:119:61: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG2, DEFAULT_CONFIG2) ) {
+                                                             ^
+../src/SparkFun_APDS9960.cc:122:61: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG3, DEFAULT_CONFIG3) ) {
+                                                             ^
+../src/SparkFun_APDS9960.cc:127:46: error: 'setGestureEnterThresh' was not declared in this scope
+     if( !setGestureEnterThresh(DEFAULT_GPENTH) ) {
+                                              ^
+../src/SparkFun_APDS9960.cc:130:44: error: 'setGestureExitThresh' was not declared in this scope
+     if( !setGestureExitThresh(DEFAULT_GEXTH) ) {
+                                            ^
+../src/SparkFun_APDS9960.cc:133:59: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF1, DEFAULT_GCONF1) ) {
+                                                           ^
+../src/SparkFun_APDS9960.cc:136:38: error: 'setGestureGain' was not declared in this scope
+     if( !setGestureGain(DEFAULT_GGAIN) ) {
+                                      ^
+../src/SparkFun_APDS9960.cc:139:44: error: 'setGestureLEDDrive' was not declared in this scope
+     if( !setGestureLEDDrive(DEFAULT_GLDRIVE) ) {
+                                            ^
+../src/SparkFun_APDS9960.cc:142:43: error: 'setGestureWaitTime' was not declared in this scope
+     if( !setGestureWaitTime(DEFAULT_GWTIME) ) {
+                                           ^
+../src/SparkFun_APDS9960.cc:145:63: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GOFFSET_U, DEFAULT_GOFFSET) ) {
+                                                               ^
+../src/SparkFun_APDS9960.cc:148:63: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GOFFSET_D, DEFAULT_GOFFSET) ) {
+                                                               ^
+../src/SparkFun_APDS9960.cc:151:63: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GOFFSET_L, DEFAULT_GOFFSET) ) {
+                                                               ^
+../src/SparkFun_APDS9960.cc:154:63: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GOFFSET_R, DEFAULT_GOFFSET) ) {
+                                                               ^
+../src/SparkFun_APDS9960.cc:157:59: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GPULSE, DEFAULT_GPULSE) ) {
+                                                           ^
+../src/SparkFun_APDS9960.cc:160:59: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF3, DEFAULT_GCONF3) ) {
+                                                           ^
+../src/SparkFun_APDS9960.cc:163:42: error: 'setGestureIntEnable' was not declared in this scope
+     if( !setGestureIntEnable(DEFAULT_GIEN) ) {
+                                          ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getMode()':
+../src/SparkFun_APDS9960.cc:212:56: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ENABLE, enable_value) ) {
+                                                        ^
+../src/SparkFun_APDS9960.cc: In function 'bool setMode(uint8_t, uint8_t)':
+../src/SparkFun_APDS9960.cc:253:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_ENABLE, reg_val) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool enableLightSensor(bool)':
+../src/SparkFun_APDS9960.cc:270:43: error: 'setAmbientLightGain' was not declared in this scope
+     if( !setAmbientLightGain(DEFAULT_AGAIN) ) {
+                                           ^
+../src/SparkFun_APDS9960.cc:274:40: error: 'setAmbientLightIntEnable' was not declared in this scope
+         if( !setAmbientLightIntEnable(1) ) {
+                                        ^
+../src/SparkFun_APDS9960.cc:278:40: error: 'setAmbientLightIntEnable' was not declared in this scope
+         if( !setAmbientLightIntEnable(0) ) {
+                                        ^
+../src/SparkFun_APDS9960.cc:282:22: error: 'enablePower' was not declared in this scope
+     if( !enablePower() ){
+                      ^
+../src/SparkFun_APDS9960.cc: In function 'bool disableLightSensor()':
+../src/SparkFun_APDS9960.cc:300:36: error: 'setAmbientLightIntEnable' was not declared in this scope
+     if( !setAmbientLightIntEnable(0) ) {
+                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool enableProximitySensor(bool)':
+../src/SparkFun_APDS9960.cc:319:40: error: 'setProximityGain' was not declared in this scope
+     if( !setProximityGain(DEFAULT_PGAIN) ) {
+                                        ^
+../src/SparkFun_APDS9960.cc:322:36: error: 'setLEDDrive' was not declared in this scope
+     if( !setLEDDrive(DEFAULT_LDRIVE) ) {
+                                    ^
+../src/SparkFun_APDS9960.cc:326:37: error: 'setProximityIntEnable' was not declared in this scope
+         if( !setProximityIntEnable(1) ) {
+                                     ^
+../src/SparkFun_APDS9960.cc:330:37: error: 'setProximityIntEnable' was not declared in this scope
+         if( !setProximityIntEnable(0) ) {
+                                     ^
+../src/SparkFun_APDS9960.cc:334:22: error: 'enablePower' was not declared in this scope
+     if( !enablePower() ){
+                      ^
+../src/SparkFun_APDS9960.cc: In function 'bool enableGestureSensor(bool)':
+../src/SparkFun_APDS9960.cc:360:28: error: 'resetGestureParameters' was not declared in this scope
+     resetGestureParameters();
+                            ^
+../src/SparkFun_APDS9960.cc:361:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_WTIME, 0xFF) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:364:67: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PPULSE, DEFAULT_GESTURE_PPULSE) ) {
+                                                                   ^
+../src/SparkFun_APDS9960.cc:367:35: error: 'setLEDBoost' was not declared in this scope
+     if( !setLEDBoost(LED_BOOST_300) ) {
+                                   ^
+../src/SparkFun_APDS9960.cc:371:35: error: 'setGestureIntEnable' was not declared in this scope
+         if( !setGestureIntEnable(1) ) {
+                                   ^
+../src/SparkFun_APDS9960.cc:375:35: error: 'setGestureIntEnable' was not declared in this scope
+         if( !setGestureIntEnable(0) ) {
+                                   ^
+../src/SparkFun_APDS9960.cc:379:26: error: 'setGestureMode' was not declared in this scope
+     if( !setGestureMode(1) ) {
+                          ^
+../src/SparkFun_APDS9960.cc:382:22: error: 'enablePower' was not declared in this scope
+     if( !enablePower() ){
+                      ^
+../src/SparkFun_APDS9960.cc: In function 'bool disableGestureSensor()':
+../src/SparkFun_APDS9960.cc:405:28: error: 'resetGestureParameters' was not declared in this scope
+     resetGestureParameters();
+                            ^
+../src/SparkFun_APDS9960.cc:406:31: error: 'setGestureIntEnable' was not declared in this scope
+src/subdir.mk:24: recipe for target 'src/SparkFun_APDS9960.o' failed
+     if( !setGestureIntEnable(0) ) {
+                               ^
+../src/SparkFun_APDS9960.cc:409:26: error: 'setGestureMode' was not declared in this scope
+     if( !setGestureMode(0) ) {
+                          ^
+../src/SparkFun_APDS9960.cc: In function 'bool isGestureAvailable()':
+../src/SparkFun_APDS9960.cc:429:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GSTATUS, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'int readGesture()':
+../src/SparkFun_APDS9960.cc:470:56: error: 'wireReadDataByte' was not declared in this scope
+         if( !wireReadDataByte(APDS9960_GSTATUS, gstatus) ) {
+                                                        ^
+../src/SparkFun_APDS9960.cc:478:61: error: 'wireReadDataByte' was not declared in this scope
+             if( !wireReadDataByte(APDS9960_GFLVL, fifo_level) ) {
+                                                             ^
+../src/SparkFun_APDS9960.cc:491:66: error: 'wireReadDataBlock' was not declared in this scope
+                                                 (fifo_level * 4) );
+                                                                  ^
+../src/SparkFun_APDS9960.cc:529:44: error: 'processGestureData' was not declared in this scope
+                     if( processGestureData() ) {
+                                            ^
+../src/SparkFun_APDS9960.cc:530:43: error: 'decodeGesture' was not declared in this scope
+                         if( decodeGesture() ) {
+                                           ^
+../src/SparkFun_APDS9960.cc:547:27: error: 'decodeGesture' was not declared in this scope
+             decodeGesture();
+                           ^
+../src/SparkFun_APDS9960.cc:553:36: error: 'resetGestureParameters' was not declared in this scope
+             resetGestureParameters();
+                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool readAmbientLight(uint16_t&)':
+../src/SparkFun_APDS9960.cc:603:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CDATAL, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc:609:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CDATAH, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool readRedLight(uint16_t&)':
+../src/SparkFun_APDS9960.cc:629:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_RDATAL, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc:635:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_RDATAH, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool readGreenLight(uint16_t&)':
+../src/SparkFun_APDS9960.cc:655:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GDATAL, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc:661:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GDATAH, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool readBlueLight(uint16_t&)':
+../src/SparkFun_APDS9960.cc:681:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_BDATAL, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc:687:52: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_BDATAH, val_byte) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool readProximity(uint8_t&)':
+../src/SparkFun_APDS9960.cc:710:46: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PDATA, val) ) {
+                                              ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProxIntLowThresh()':
+../src/SparkFun_APDS9960.cc:1014:45: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PILT, val) ) {
+                                             ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProxIntLowThresh(uint8_t)':
+../src/SparkFun_APDS9960.cc:1029:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PILT, threshold) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProxIntHighThresh()':
+../src/SparkFun_APDS9960.cc:1046:45: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PIHT, val) ) {
+                                             ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProxIntHighThresh(uint8_t)':
+../src/SparkFun_APDS9960.cc:1061:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PIHT, threshold) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getLEDDrive()':
+../src/SparkFun_APDS9960.cc:1084:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setLEDDrive(uint8_t)':
+../src/SparkFun_APDS9960.cc:1111:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1122:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONTROL, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProximityGain()':
+../src/SparkFun_APDS9960.cc:1145:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProximityGain(uint8_t)':
+../src/SparkFun_APDS9960.cc:1172:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1183:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONTROL, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getAmbientLightGain()':
+../src/SparkFun_APDS9960.cc:1206:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setAmbientLightGain(uint8_t)':
+../src/SparkFun_APDS9960.cc:1233:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONTROL, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1243:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONTROL, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getLEDBoost()':
+../src/SparkFun_APDS9960.cc:1266:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG2, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setLEDBoost(uint8_t)':
+../src/SparkFun_APDS9960.cc:1293:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG2, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1304:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG2, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProxGainCompEnable()':
+../src/SparkFun_APDS9960.cc:1321:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG3, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProxGainCompEnable(uint8_t)':
+../src/SparkFun_APDS9960.cc:1342:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG3, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1353:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG3, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProxPhotoMask()':
+../src/SparkFun_APDS9960.cc:1377:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG3, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProxPhotoMask(uint8_t)':
+../src/SparkFun_APDS9960.cc:1405:48: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_CONFIG3, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc:1415:49: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_CONFIG3, val) ) {
+                                                 ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureEnterThresh()':
+../src/SparkFun_APDS9960.cc:1432:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GPENTH, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureEnterThresh(uint8_t)':
+../src/SparkFun_APDS9960.cc:1447:54: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GPENTH, threshold) ) {
+                                                      ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureExitThresh()':
+../src/SparkFun_APDS9960.cc:1464:46: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GEXTH, val) ) {
+                                              ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureExitThresh(uint8_t)':
+../src/SparkFun_APDS9960.cc:1479:53: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GEXTH, threshold) ) {
+                                                     ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureGain()':
+../src/SparkFun_APDS9960.cc:1502:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureGain(uint8_t)':
+../src/SparkFun_APDS9960.cc:1529:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1540:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF2, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureLEDDrive()':
+../src/SparkFun_APDS9960.cc:1563:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureLEDDrive(uint8_t)':
+../src/SparkFun_APDS9960.cc:1590:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1601:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF2, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureWaitTime()':
+../src/SparkFun_APDS9960.cc:1628:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureWaitTime(uint8_t)':
+../src/SparkFun_APDS9960.cc:1659:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF2, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1669:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF2, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool getLightIntLowThreshold(uint16_t&)':
+../src/SparkFun_APDS9960.cc:1688:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_AILTL, val_byte) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc:1694:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_AILTH, val_byte) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc: In function 'bool setLightIntLowThreshold(uint16_t)':
+../src/SparkFun_APDS9960.cc:1718:51: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_AILTL, val_low) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc:1723:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_AILTH, val_high) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool getLightIntHighThreshold(uint16_t&)':
+../src/SparkFun_APDS9960.cc:1742:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_AIHTL, val_byte) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc:1748:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_AIHTH, val_byte) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc: In function 'bool setLightIntHighThreshold(uint16_t)':
+../src/SparkFun_APDS9960.cc:1772:51: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_AIHTL, val_low) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc:1777:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_AIHTH, val_high) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool getProximityIntLowThreshold(uint8_t&)':
+../src/SparkFun_APDS9960.cc:1795:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PILT, threshold) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProximityIntLowThreshold(uint8_t)':
+../src/SparkFun_APDS9960.cc:1812:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PILT, threshold) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'bool getProximityIntHighThreshold(uint8_t&)':
+../src/SparkFun_APDS9960.cc:1830:51: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PIHT, threshold) ) {
+                                                   ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProximityIntHighThreshold(uint8_t)':
+../src/SparkFun_APDS9960.cc:1847:52: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_PIHT, threshold) ) {
+                                                    ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getAmbientLightIntEnable()':
+../src/SparkFun_APDS9960.cc:1864:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ENABLE, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setAmbientLightIntEnable(uint8_t)':
+../src/SparkFun_APDS9960.cc:1885:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ENABLE, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1896:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_ENABLE, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getProximityIntEnable()':
+../src/SparkFun_APDS9960.cc:1913:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ENABLE, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setProximityIntEnable(uint8_t)':
+../src/SparkFun_APDS9960.cc:1934:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_ENABLE, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1945:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_ENABLE, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureIntEnable()':
+../src/SparkFun_APDS9960.cc:1962:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF4, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureIntEnable(uint8_t)':
+../src/SparkFun_APDS9960.cc:1983:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF4, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:1994:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF4, val) ) {
+                                                ^
+../src/SparkFun_APDS9960.cc: In function 'bool clearAmbientLightInt()':
+../src/SparkFun_APDS9960.cc:2009:54: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_AICLEAR, throwaway) ) {
+                                                      ^
+../src/SparkFun_APDS9960.cc: In function 'bool clearProximityInt()':
+../src/SparkFun_APDS9960.cc:2024:54: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_PICLEAR, throwaway) ) {
+                                                      ^
+../src/SparkFun_APDS9960.cc: In function 'uint8_t getGestureMode()':
+../src/SparkFun_APDS9960.cc:2041:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF4, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc: In function 'bool setGestureMode(uint8_t)':
+../src/SparkFun_APDS9960.cc:2062:47: error: 'wireReadDataByte' was not declared in this scope
+     if( !wireReadDataByte(APDS9960_GCONF4, val) ) {
+                                               ^
+../src/SparkFun_APDS9960.cc:2072:48: error: 'wireWriteDataByte' was not declared in this scope
+     if( !wireWriteDataByte(APDS9960_GCONF4, val) ) {
+                                                ^
+make: *** [src/SparkFun_APDS9960.o] Error 1
+
+10:49:55 Build Finished (took 539ms)
+

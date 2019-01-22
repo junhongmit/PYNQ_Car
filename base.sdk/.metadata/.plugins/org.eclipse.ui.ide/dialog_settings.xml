@@ -9,6 +9,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_grove_imu"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/hw_base"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/bsp_iop_arduino_mb"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_grove_ledbar"/>
