@@ -1,4 +1,4 @@
-10:03:17 **** Auto Build of project bsp_iop_arduino_mb ****
+15:20:26 **** Auto Build of project bsp_iop_arduino_mb ****
 make -k all 
 Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
 make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -102,5 +102,5 @@ make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling uartps
 Finished building libraries
 
-10:03:26 Build Finished (took 9s.568ms)
+15:20:37 Build Finished (took 10s.426ms)
 

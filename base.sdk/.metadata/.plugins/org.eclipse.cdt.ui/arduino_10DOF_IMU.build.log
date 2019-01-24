@@ -1,0 +1,14 @@
+18:51:26 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c:17:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+
+18:51:27 Build Finished (took 436ms)
+

@@ -1,6 +1,25 @@
-10:49:53 **** Incremental Build of configuration Debug for project arduino_4wdmoto ****
+19:38:12 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'distance':
+../src/4WD_MOTO.c:144:15: warning: implicit declaration of function 'get_count' [-Wimplicit-function-declaration]
+  distance_a = get_count(MOTOR_A);
+               ^~~~~~~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building target: arduino_4wdmoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_4wdmoto.elf"  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_4wdmoto.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_4wdmoto.elf  |tee "arduino_4wdmoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10956	    512	   3428	  14896	   3a30	arduino_4wdmoto.elf
+Finished building: arduino_4wdmoto.elf.size
+ 
 
-10:49:53 Build Finished (took 327ms)
+19:38:13 Build Finished (took 485ms)
 

@@ -1,6 +1,6 @@
-10:49:56 **** Incremental Build of configuration Debug for project grove_ledbar ****
+18:15:04 **** Incremental Build of configuration Debug for project grove_ledbar ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:49:56 Build Finished (took 330ms)
+18:15:04 Build Finished (took 486ms)
 

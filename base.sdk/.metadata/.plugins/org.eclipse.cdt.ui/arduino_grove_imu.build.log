@@ -1,6 +1,6 @@
-10:49:50 **** Incremental Build of configuration Debug for project arduino_grove_imu ****
+18:15:00 **** Incremental Build of configuration Debug for project arduino_grove_imu ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:49:50 Build Finished (took 539ms)
+18:15:00 Build Finished (took 391ms)
 

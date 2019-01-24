@@ -61,21 +61,21 @@ int main()
 	device = i2c_open_device(0);
 
 	xil_printf("Gesture Test\r\n");
-	if ( init() ) {
+	if ( APDS9960_init() ) {
 		xil_printf("APDS-9960 initialization complete");
 	} else {
 		xil_printf("Something went wrong during APDS-9960 init!");
 	}
 
-	if ( enableGestureSensor(true) ) {
+	if ( APDS9960_enableGestureSensor(true) ) {
 		xil_printf("Gesture sensor is now running");
 	} else {
 		xil_printf("Something went wrong during gesture sensor init!");
 	}
 
 	while (1) {
-		if ( isGestureAvailable() ) {
-			switch ( readGesture() ) {
+		if ( APDS9960_isGestureAvailable() ) {
+			switch ( APDS9960_readGesture() ) {
 			case DIR_UP:
 				xil_printf("UP");
 				break;

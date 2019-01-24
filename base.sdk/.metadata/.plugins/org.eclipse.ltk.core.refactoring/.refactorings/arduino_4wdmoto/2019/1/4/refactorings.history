@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;arduino_4wdmoto/src/arduino_automoto.c&apos; to &apos;arduino_4wdmoto.c&apos;" description="Rename resource &apos;arduino_automoto.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_automoto.c" name="arduino_4wdmoto.c" stamp="1548055933097" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;arduino_4wdmoto/src/arduino_automoto.c&apos; to &apos;arduino_4wdmoto.c&apos;" description="Rename resource &apos;arduino_automoto.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_automoto.c" name="arduino_4wdmoto.c" stamp="1548055933097" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;arduino_4wdmoto/src/arduino_4wdmoto&apos; to &apos;arduino_4wdmoto.c&apos;" description="Rename resource &apos;arduino_4wdmoto&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_4wdmoto" name="arduino_4wdmoto.c" stamp="1548156263192" updateReferences="true"/>
 </session>

@@ -84,6 +84,7 @@ void timer_delay(timer dev_id, unsigned int cycles);
 void timer_close(timer dev_id);
 void timer_pwm_generate(timer dev_id, unsigned int period, unsigned int pulse);
 void timer_pwm_stop(timer dev_id);
+unsigned int timer_get_count(timer dev_id);
 unsigned int timer_get_num_devices(void);
 
 /* 

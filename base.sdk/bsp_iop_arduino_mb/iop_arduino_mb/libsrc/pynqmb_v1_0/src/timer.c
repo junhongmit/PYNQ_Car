@@ -81,7 +81,7 @@ timer timer_open_device(unsigned int device) {
     }
     XTmrCtr_SetOptions(&xtimer[dev_id], 1,
         XTC_AUTO_RELOAD_OPTION | XTC_CSR_LOAD_MASK | XTC_CSR_DOWN_COUNT_MASK);
-
+    XTmrCtr_SetResetValue(&xtimer[dev_id], 0, 0);
     return (timer)dev_id;
 }
 
@@ -150,6 +150,12 @@ void timer_pwm_stop(timer dev_id){
     XTmrCtr_WriteReg(base_address, 1, TCSR0, 0);
 }
 
+unsigned int timer_get_count(timer dev_id){
+    u32 count = 0;
+    count = XTmrCtr_GetCaptureValue(&xtimer[dev_id], 0);
+    XTmrCtr_Reset(&xtimer[dev_id], 0);
+    return count;
+}
 
 unsigned int timer_get_num_devices(void){
     return XPAR_XTMRCTR_NUM_INSTANCES;

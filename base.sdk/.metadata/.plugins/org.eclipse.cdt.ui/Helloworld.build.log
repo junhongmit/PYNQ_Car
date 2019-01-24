@@ -1,0 +1,26 @@
+16:19:15 **** Auto Build of configuration Debug for project Helloworld ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/helloworld.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Helloworld.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Helloworld.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Helloworld.elf  |tee "Helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3908	    516	   3112	   7536	   1d70	Helloworld.elf
+Finished building: Helloworld.elf.size
+ 
+
+16:19:16 Build Finished (took 542ms)
+
