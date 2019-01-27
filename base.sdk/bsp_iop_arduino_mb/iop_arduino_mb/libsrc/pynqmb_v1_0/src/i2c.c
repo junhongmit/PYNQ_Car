@@ -84,9 +84,9 @@ i2c i2c_open_device(unsigned int device){
 }
 
 
-void i2c_read(i2c dev_id, unsigned int slave_address,
+unsigned i2c_read(i2c dev_id, unsigned int slave_address,
               unsigned char* buffer, unsigned int length){
-    XIic_Recv(xi2c[dev_id].BaseAddress, 
+    return XIic_Recv(xi2c[dev_id].BaseAddress,
               slave_address, buffer, length, XIIC_STOP);
 }
 
@@ -110,9 +110,9 @@ i2c i2c_open(unsigned int sda, unsigned int scl){
 #endif
 
 
-void i2c_write(i2c dev_id, unsigned int slave_address,
+unsigned i2c_write(i2c dev_id, unsigned int slave_address,
                unsigned char* buffer, unsigned int length){
-    XIic_Send(xi2c[dev_id].BaseAddress, 
+    return XIic_Send(xi2c[dev_id].BaseAddress,
               slave_address, buffer, length, XIIC_STOP);
 }
 

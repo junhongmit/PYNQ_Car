@@ -2,8 +2,8 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # 
-# Start of session at: Thu Jan 24 09:04:14 2019
-# Process ID: 22831
+# Start of session at: Sun Jan 27 13:36:15 2019
+# Process ID: 76572
 # Current directory: /home/junhonglin/Xilinx/PYNQ_Car/base.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
 # Log file: /home/junhonglin/Xilinx/PYNQ_Car/base.sdk/webtalk/webtalk.log

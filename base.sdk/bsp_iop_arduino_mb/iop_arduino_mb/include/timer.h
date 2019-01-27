@@ -45,6 +45,7 @@
  * ----- --- ------- -----------------------------------------------
  * 1.00  yrq 01/09/18 release
  * 1.01  yrq 01/30/18 add protection macro
+ * 1.02  zc  01/24/19 add timer_counter
  *
  * </pre>
  *
@@ -79,12 +80,14 @@
 typedef int timer;
 
 timer timer_open_device(unsigned int device);
+void timer_open_capture(timer dev_id);
 timer timer_open(unsigned int pin);
 void timer_delay(timer dev_id, unsigned int cycles);
 void timer_close(timer dev_id);
 void timer_pwm_generate(timer dev_id, unsigned int period, unsigned int pulse);
 void timer_pwm_stop(timer dev_id);
-unsigned int timer_get_count(timer dev_id);
+void timer_reset_pulsewidth(timer dev_id, unsigned int which);
+unsigned int timer_get_pulsewidth(timer dev_id, unsigned int which);
 unsigned int timer_get_num_devices(void);
 
 /* 
@@ -92,6 +95,7 @@ unsigned int timer_get_num_devices(void);
  */
 void delay_us(unsigned int us);
 void delay_ms(unsigned int ms);
+
 
 #endif
 #endif  // _TIMER_H_

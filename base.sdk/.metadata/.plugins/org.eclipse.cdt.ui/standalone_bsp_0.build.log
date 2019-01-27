@@ -1,4 +1,4 @@
-10:22:44 **** Build of project standalone_bsp_0 ****
+13:38:46 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in iop_arduino_mb/libsrc/qspips_v3_4/src
 make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -10,6 +10,8 @@ Running Make include in iop_arduino_mb/libsrc/iic_v3_4/src
 make -C iop_arduino_mb/libsrc/iic_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Running Make include in iop_arduino_mb/libsrc/standalone_v6_5/src
 make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Running Make include in iop_arduino_mb/libsrc/gpiops_v3_3/src
 make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Running Make include in iop_arduino_mb/libsrc/spi_v4_3/src
@@ -39,7 +41,6 @@ make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPI
 Running Make libs in iop_arduino_mb/libsrc/qspips_v3_4/src
 make -C iop_arduino_mb/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling qspips
-mb-ar: creating ../../../lib/libxil.a
 Running Make libs in iop_arduino_mb/libsrc/cpu_v2_6/src
 make -C iop_arduino_mb/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling cpu
@@ -52,6 +53,9 @@ Compiling iic
 Running Make libs in iop_arduino_mb/libsrc/standalone_v6_5/src
 make -C iop_arduino_mb/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling standalone
+Running Make libs in iop_arduino_mb/libsrc/pynqmb_v1_0/src
+make -C iop_arduino_mb/libsrc/pynqmb_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling pynqmb library
 Running Make libs in iop_arduino_mb/libsrc/gpiops_v3_3/src
 make -C iop_arduino_mb/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling gpiops
@@ -93,5 +97,5 @@ make -C iop_arduino_mb/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling uartps
 Finished building libraries
 
-10:22:55 Build Finished (took 11s.564ms)
+13:38:59 Build Finished (took 12s.907ms)
 

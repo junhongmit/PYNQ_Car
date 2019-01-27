@@ -30,8 +30,8 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.norelax.697224521" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.compiler.inferred.norelax" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.garbage.1322730789" name="Enable garbage collector (-ffunction-sections -fdata-sections)" superClass="xilinx.gnu.mb.compiler.inferred.garbage" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.usele.411719793" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.compiler.inferred.usele" value="true" valueType="boolean"/>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1741172038" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
-								<option id="xilinx.gnu.compiler.dircategory.includes.1787330799" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1741172038" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.1787330799" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../bsp_iop_arduino_mb/iop_arduino_mb/include"/>
 								</option>
 								<inputType id="xilinx.gnu.compiler.input.1097524621" name="C source files" superClass="xilinx.gnu.compiler.input"/>
@@ -53,12 +53,12 @@
 								<option id="xilinx.gnu.mb.linker.inferred.norelax.111642632" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.linker.inferred.norelax" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.garbage.746531956" name="Enable garbage collector (-Wl,--gc-sections)" superClass="xilinx.gnu.mb.linker.inferred.garbage" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.usele.536285901" name="Produce little endian artifacts (-mlittle-endian)" superClass="xilinx.gnu.mb.linker.inferred.usele" value="true" valueType="boolean"/>
-								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.926805540" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths"/>
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.926805540" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.782340910" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
 								</option>
 								<option id="xilinx.gnu.c.linker.option.lscript.1084049372" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
-								<option id="xilinx.gnu.c.link.option.paths.340639863" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+								<option id="xilinx.gnu.c.link.option.paths.340639863" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="../../bsp_iop_arduino_mb/iop_arduino_mb/lib"/>
 								</option>
 								<inputType id="xilinx.gnu.linker.input.1595207213" superClass="xilinx.gnu.linker.input">

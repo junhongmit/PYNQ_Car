@@ -62,7 +62,33 @@
  *****************************************************************************/
 
 
-#include "4WD_MOTO.h"
+#include "xio_switch.h"
+#include "gpio.h"
+#include "timer.h"
+#include "xtmrctr.h"
+
+#define DEFAULT_PERIOD 625998
+#define DEFAULT_DUTY 312998
+
+//#define PWM_A_PIN 6
+//#define PWM_B_PIN 9
+//#define PWM_C_PIN 10
+//#define PWM_D_PIN 11
+//
+//#define DIR_A_PIN 7
+//#define DIR_B_PIN 8
+//#define DIR_C_PIN 12
+//#define DIR_D_PIN 13
+//
+//#define FG_A_PIN 4
+//#define FG_B_PIN 5
+//#define FG_C_PIN 18
+//#define FG_D_PIN 19
+unsigned int PWM_A_PIN=6, PWM_B_PIN=9, PWM_C_PIN=10, PWM_D_PIN=11;
+unsigned int DIR_A_PIN=7, DIR_B_PIN=8, DIR_C_PIN=12, DIR_D_PIN=13;
+unsigned int FG_A_PIN=4, FG_B_PIN=5, FG_C_PIN=18, FG_D_PIN=19;
+
+#define RATIO (45*45*6)
 
 typedef enum motor {
 MOTOR_A = 1, //right front
@@ -70,6 +96,11 @@ MOTOR_B = 2, //right rear
 MOTOR_C = 3, //left front
 MOTOR_D = 4, //left rear
 }motor_e;
+
+typedef enum status {
+STATUS_A = 0,
+STATUS_B = 1,
+}status_e;
 
 //car is intialize to go straight forward with speed 50
 
@@ -81,11 +112,8 @@ static timer timer_a;
 static timer timer_b;
 static timer timer_c;
 static timer timer_d;
-
-static gpio counter_a;
-static gpio counter_b;
-static gpio counter_c;
-static gpio counter_d;
+static timer timer_e;
+static timer timer_f;
 
 static gpio gpio_a;
 static gpio gpio_b;
@@ -93,62 +121,58 @@ static gpio gpio_c;
 static gpio gpio_d;
 
 
+float distance();
+void stop_all();
 unsigned int init_ardumoto(){
-	//initialize the timer module 2,3,4,5
-    timer_a = timer_open_device(2);
+	//initialize the timer module 0,1,2,3,4,5
+
+    timer_a = timer_open_device(0);
     timer_b = timer_open_device(3);
 	timer_c = timer_open_device(4);
 	timer_d = timer_open_device(5);
+	timer_e = timer_open_device(1);
+	timer_f = timer_open_device(2);
+	timer_open_capture(timer_e);
+	timer_open_capture(timer_f);
 	//link the pwm to output
-    set_pin(PWM_A_PIN, PWM2);
+    set_pin(PWM_A_PIN, PWM0);
     set_pin(PWM_B_PIN, PWM3);
 	set_pin(PWM_C_PIN, PWM4);
 	set_pin(PWM_D_PIN, PWM5);
 	//link the FG of automoto to input
-    set_pin(FG_A_PIN, TIMER_IC2);
-    set_pin(FG_B_PIN, TIMER_IC3);
-	set_pin(FG_C_PIN, TIMER_IC4);
-	set_pin(FG_D_PIN, TIMER_IC5);
+    set_pin(FG_A_PIN, TIMER_IC1);
+    set_pin(FG_B_PIN, TIMER_IC6);
+	set_pin(FG_C_PIN, TIMER_IC2);
+	set_pin(FG_D_PIN, TIMER_IC7);
 
     gpio_a = gpio_open(DIR_A_PIN);
     gpio_b = gpio_open(DIR_B_PIN);
 	gpio_c = gpio_open(DIR_C_PIN);
 	gpio_d = gpio_open(DIR_D_PIN);
 
-    counter_a = gpio_open(FG_A_PIN);
-    counter_b = gpio_open(FG_B_PIN);
-	counter_c = gpio_open(FG_C_PIN);
-	counter_d = gpio_open(FG_D_PIN);
-
     gpio_set_direction(gpio_a, GPIO_OUT);
     gpio_set_direction(gpio_b, GPIO_OUT);
 	gpio_set_direction(gpio_c, GPIO_OUT);
 	gpio_set_direction(gpio_d, GPIO_OUT);
-
-    gpio_set_direction(counter_a, GPIO_IN);
-    gpio_set_direction(counter_b, GPIO_IN);
-    gpio_set_direction(counter_c, GPIO_IN);
-    gpio_set_direction(counter_d, GPIO_IN);
 
     stop_all();
 
     return 0;
 }
 
-float distance(){
+float get_velocity(){
 	//reduction ratio is 45:1
 	//one round output 45*6 pulse
 	//diameter of tyre is 65mm
-	u32 distance_a, distance_b, distance_c, distance_d;
-	float distance;
-	distance_a = get_count(MOTOR_A);
-	distance_b = get_count(MOTOR_B);
-	distance_c = get_count(MOTOR_C);
-	distance_d = get_count(MOTOR_D);
-	distance = (distance_a/(45*45*6) + distance_b/(45*45*6) + \
-			distance_c/(45*45*6) + distance_d/(45*45*6)) * 6.5;
-	xil_printf("Car has moved %f cm.", distance);
-	return distance;
+	u32 v_a, v_b, v_c, v_d;
+	float v;
+	v_a = timer_get_pulsewidth(timer_e,0);
+	v_b = timer_get_pulsewidth(timer_e,1);
+	v_c = timer_get_pulsewidth(timer_f,0);
+	v_d = timer_get_pulsewidth(timer_f,1);
+	v = (v_a/RATIO + v_b/RATIO + v_c/RATIO + v_d/RATIO) * (6.5*3.14/4);
+	//xil_printf("Car has moved %f cm.", distance);
+	return v;
 }
 
 void configure_polar(unsigned int motor, unsigned int polarity){
@@ -163,7 +187,7 @@ void configure_polar(unsigned int motor, unsigned int polarity){
     }
 }
 
-void set_direction(unsigned int motor, unsigned int direction){
+static void set_direction(unsigned int motor, unsigned int direction){
     if (motor == MOTOR_A){
         dir_a = direction;
     }
@@ -193,19 +217,19 @@ void set_speed(unsigned int motor, unsigned int speed){
 void run(unsigned int motor){
     if (motor == MOTOR_A) {
         gpio_write(gpio_a, dir_a);
-        timer_pwm_generate(timer_a, DEFAULT_PERIOD, 
+        timer_pwm_generate(timer_a, DEFAULT_PERIOD,
                            speed_a*DEFAULT_PERIOD/100);
     }else if(motor == MOTOR_B) {
         gpio_write(gpio_b, dir_b);
-        timer_pwm_generate(timer_b, DEFAULT_PERIOD, 
+        timer_pwm_generate(timer_b, DEFAULT_PERIOD,
                            speed_b*DEFAULT_PERIOD/100);
     }else if(motor == MOTOR_C) {
         gpio_write(gpio_c, dir_c);
-        timer_pwm_generate(timer_c, DEFAULT_PERIOD, 
+        timer_pwm_generate(timer_c, DEFAULT_PERIOD,
                            speed_c*DEFAULT_PERIOD/100);
     }else if(motor == MOTOR_D) {
         gpio_write(gpio_d, dir_d);
-        timer_pwm_generate(timer_d, DEFAULT_PERIOD, 
+        timer_pwm_generate(timer_d, DEFAULT_PERIOD,
                            speed_d*DEFAULT_PERIOD/100);
     }
 }
@@ -260,12 +284,16 @@ void move_backward(unsigned int speed){
 	run_all();
 }
 
-void move_left(int status){
+void move_left(int status, unsigned int speed){
 	if (status == STATUS_A){
 		set_direction(1,1);
 		set_direction(2,1);
 		set_direction(3,0);
 		set_direction(4,0);
+		set_speed(1,speed);
+		set_speed(2,speed);
+		set_speed(3,speed);
+		set_speed(4,speed);
 		run(1);
 		run(2);
 		stop(3);
@@ -276,16 +304,24 @@ void move_left(int status){
 		set_direction(2,1);
 		set_direction(3,1);
 		set_direction(4,1);
+		set_speed(1,speed);
+		set_speed(2,speed);
+		set_speed(3,speed);
+		set_speed(4,speed);
 		run_all();
 	}
 }
 
-void move_right(int status){
+void move_right(int status, unsigned int speed){
 	if (status == STATUS_A){
 		set_direction(1,1);
 		set_direction(2,1);
 		set_direction(3,0);
 		set_direction(4,0);
+		set_speed(1,speed);
+		set_speed(2,speed);
+		set_speed(3,speed);
+		set_speed(4,speed);
 		stop(1);
 		stop(2);
 		run(3);
@@ -296,10 +332,10 @@ void move_right(int status){
 		set_direction(2,0);
 		set_direction(3,0);
 		set_direction(4,0);
+		set_speed(1,speed);
+		set_speed(2,speed);
+		set_speed(3,speed);
+		set_speed(4,speed);
 		run_all();
 	}
 }
-
-
-
-

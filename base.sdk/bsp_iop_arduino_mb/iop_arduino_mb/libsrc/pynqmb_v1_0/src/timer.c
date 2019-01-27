@@ -45,6 +45,7 @@
  * ----- --- ------- -----------------------------------------------
  * 1.00  yrq 01/09/18 release
  * 1.01  yrq 01/30/18 add protection macro
+ * 1.02  zc  01/24/19 add timer_counter
  *
  * </pre>
  *
@@ -80,10 +81,16 @@ timer timer_open_device(unsigned int device) {
         return -1;
     }
     XTmrCtr_SetOptions(&xtimer[dev_id], 1,
-        XTC_AUTO_RELOAD_OPTION | XTC_CSR_LOAD_MASK | XTC_CSR_DOWN_COUNT_MASK);
-    XTmrCtr_SetResetValue(&xtimer[dev_id], 0, 0);
+    		XTC_AUTO_RELOAD_OPTION);
+    XTmrCtr_WriteReg(xtimer[dev_id].BaseAddress, 0, TCR0, 0);
+    XTmrCtr_WriteReg(xtimer[dev_id].BaseAddress, 1, TCR0, 0);
     return (timer)dev_id;
 }
+
+void timer_open_capture(timer dev_id){
+    XTmrCtr_SetOptions(&xtimer[dev_id], 1, XTC_CAPTURE_MODE_OPTION);
+}
+
 
 
 #ifdef XPAR_IO_SWITCH_NUM_INSTANCES
@@ -150,10 +157,15 @@ void timer_pwm_stop(timer dev_id){
     XTmrCtr_WriteReg(base_address, 1, TCSR0, 0);
 }
 
-unsigned int timer_get_count(timer dev_id){
-    u32 count = 0;
-    count = XTmrCtr_GetCaptureValue(&xtimer[dev_id], 0);
-    XTmrCtr_Reset(&xtimer[dev_id], 0);
+void timer_reset_pulsewidth(timer dev_id, unsigned int which){
+    unsigned int base_address = xtimer[dev_id].BaseAddress;
+    XTmrCtr_WriteReg(base_address,which, TCR0, 0);
+}
+
+unsigned int timer_get_pulsewidth(timer dev_id, unsigned int which){
+    unsigned int count = 0;
+    unsigned int base_address = xtimer[dev_id].BaseAddress;
+    count = XTmrCtr_ReadReg(base_address, which,TCR0);
     return count;
 }
 

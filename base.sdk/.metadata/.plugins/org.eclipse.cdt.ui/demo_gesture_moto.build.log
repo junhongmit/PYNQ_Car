@@ -1,5 +1,19 @@
-11:04:09 **** Auto Build of configuration Debug for project demo_gesture_moto ****
+13:44:00 **** Auto Build of configuration Debug for project demo_gesture_moto ****
 make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'distance':
+../src/4WD_MOTO.c:144:15: warning: implicit declaration of function 'get_count' [-Wimplicit-function-declaration]
+  distance_a = get_count(MOTOR_A);
+               ^~~~~~~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
 Building file: ../src/demo_gesture_moto.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/demo_gesture_moto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/demo_gesture_moto.d" -MT"src/demo_gesture_moto.o" -o "src/demo_gesture_moto.o" "../src/demo_gesture_moto.c"
@@ -9,17 +23,22 @@ In file included from ../src/demo_gesture_moto.c:51:0:
              ^~~~~~~~~~~~~
 Finished building: ../src/demo_gesture_moto.c
  
+Building file: ../src/timer.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/timer.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
 Building target: demo_gesture_moto.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_gesture_moto.elf"  ./src/4WD_MOTO.o ./src/SparkFun_APDS9960.o ./src/demo_gesture_moto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_gesture_moto.elf"  ./src/4WD_MOTO.o ./src/SparkFun_APDS9960.o ./src/demo_gesture_moto.o ./src/timer.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: demo_gesture_moto.elf
  
 Invoking: MicroBlaze Print Size
 mb-size demo_gesture_moto.elf  |tee "demo_gesture_moto.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  27404	    660	   3688	  31752	   7c08	demo_gesture_moto.elf
+  27720	    660	   3692	  32072	   7d48	demo_gesture_moto.elf
 Finished building: demo_gesture_moto.elf.size
  
 
-11:04:09 Build Finished (took 792ms)
+13:44:02 Build Finished (took 1s.579ms)
 

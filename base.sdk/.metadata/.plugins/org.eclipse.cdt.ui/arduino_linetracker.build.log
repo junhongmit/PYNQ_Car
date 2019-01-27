@@ -1,0 +1,36 @@
+17:59:23 **** Auto Build of configuration Debug for project arduino_linetracker ****
+make all 
+Building file: ../src/SEN0147.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SEN0147.o" -I../../standalone_bsp_0/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SEN0147.d" -MT"src/SEN0147.o" -o "src/SEN0147.o" "../src/SEN0147.c"
+../src/SEN0147.c: In function 'main':
+../src/SEN0147.c:123:8: warning: unused variable 'analog' [-Wunused-variable]
+  float analog = 0;
+        ^~~~~~
+../src/SEN0147.c:122:6: warning: unused variable 'adc' [-Wunused-variable]
+  u32 adc = 0;
+      ^~~
+../src/SEN0147.c: In function 'set_LTpins':
+../src/SEN0147.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/SEN0147.c
+ 
+Building target: arduino_linetracker.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_linetracker.elf"  ./src/SEN0147.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_linetracker.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_linetracker.elf arduino_linetracker.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_linetracker.elf  |tee "arduino_linetracker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11752	    420	   3204	  15376	   3c10	arduino_linetracker.elf
+Finished building: arduino_linetracker.elf.size
+ 
+
+17:59:24 Build Finished (took 915ms)
+

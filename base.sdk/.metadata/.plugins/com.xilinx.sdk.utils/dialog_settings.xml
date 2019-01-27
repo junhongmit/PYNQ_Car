@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/demo_gesture_moto/Debug" key="tcf_debug_app_selection"/>
-	<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/demo_gesture_moto/Debug" key="last_stored_selection"/>
+	<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_4wdmoto/Debug" key="tcf_debug_app_selection"/>
+	<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_4wdmoto/Debug" key="last_stored_selection"/>
 </section>
