@@ -1,6 +1,37 @@
-18:15:01 **** Incremental Build of configuration Debug for project arduino_getsture ****
+15:16:15 **** Auto Build of configuration Debug for project arduino_getsture ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_getsture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_getsture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_getsture.d" -MT"src/arduino_getsture.o" -o "src/arduino_getsture.o" "../src/arduino_getsture.c"
+../src/arduino_getsture.c: In function 'main':
+../src/arduino_getsture.c:63:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Gesture Test\r\n");
+  ^~~~~~~~~~
+Finished building: ../src/arduino_getsture.c
+ 
+Building target: arduino_getsture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_getsture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_getsture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+makefile:55: recipe for target 'post-build' failed
+ 
+Invoking: MicroBlaze Print Size
+mb-objcopy: 'arduino_gesture.elf': No such file
+make[1]: [post-build] Error 1 (ignored)
+mb-size arduino_getsture.elf  |tee "arduino_getsture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19356	    540	   3384	  23280	   5af0	arduino_getsture.elf
+Finished building: arduino_getsture.elf.size
+ 
 
-18:15:02 Build Finished (took 381ms)
+15:16:17 Build Finished (took 1s.130ms)
 

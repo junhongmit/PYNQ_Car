@@ -14683,3 +14683,3035 @@ mb-size arduino_linetracker.elf  |tee "arduino_linetracker.elf.size"
   11752	    420	   3204	  15376	   3c10	arduino_linetracker.elf
 Finished building: arduino_linetracker.elf.size
  
+15:15:35 **** Clean-only build of configuration Debug for project arduino_getsture ****
+make clean 
+rm -rf  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o  ./src/SparkFun_APDS9960.d ./src/arduino_getsture.d  arduino_getsture.elf.size  arduino_getsture.elf
+ 
+15:15:36 **** Auto Build of configuration Debug for project arduino_getsture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_getsture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_getsture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_getsture.d" -MT"src/arduino_getsture.o" -o "src/arduino_getsture.o" "../src/arduino_getsture.c"
+../src/arduino_getsture.c: In function 'main':
+../src/arduino_getsture.c:63:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Gesture Test\r\n");
+  ^~~~~~~~~~
+Finished building: ../src/arduino_getsture.c
+ 
+Building target: arduino_getsture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_getsture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_getsture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_4wdmoto.elf arduino_4wdmoto.bin
+mb-objcopy: 'arduino_4wdmoto.elf': No such file
+makefile:55: recipe for target 'post-build' failed
+make[1]: [post-build] Error 1 (ignored)
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_getsture.elf  |tee "arduino_getsture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19356	    540	   3384	  23280	   5af0	arduino_getsture.elf
+Finished building: arduino_getsture.elf.size
+ 
+15:16:14 **** Clean-only build of configuration Debug for project arduino_getsture ****
+make clean 
+rm -rf  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o  ./src/SparkFun_APDS9960.d ./src/arduino_getsture.d  arduino_getsture.elf.size  arduino_getsture.elf
+ 
+15:16:15 **** Auto Build of configuration Debug for project arduino_getsture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_getsture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_getsture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_getsture.d" -MT"src/arduino_getsture.o" -o "src/arduino_getsture.o" "../src/arduino_getsture.c"
+../src/arduino_getsture.c: In function 'main':
+../src/arduino_getsture.c:63:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Gesture Test\r\n");
+  ^~~~~~~~~~
+Finished building: ../src/arduino_getsture.c
+ 
+Building target: arduino_getsture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_getsture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_getsture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+makefile:55: recipe for target 'post-build' failed
+ 
+Invoking: MicroBlaze Print Size
+mb-objcopy: 'arduino_gesture.elf': No such file
+make[1]: [post-build] Error 1 (ignored)
+mb-size arduino_getsture.elf  |tee "arduino_getsture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19356	    540	   3384	  23280	   5af0	arduino_getsture.elf
+Finished building: arduino_getsture.elf.size
+ 
+15:16:25 **** Clean-only build of configuration Debug for project arduino_gesture ****
+make clean 
+rm -rf  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o  ./src/SparkFun_APDS9960.d ./src/arduino_getsture.d  arduino_getsture.elf.size  arduino_getsture.elf
+ 
+15:16:25 **** Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_getsture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_getsture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_getsture.d" -MT"src/arduino_getsture.o" -o "src/arduino_getsture.o" "../src/arduino_getsture.c"
+../src/arduino_getsture.c: In function 'main':
+../src/arduino_getsture.c:63:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Gesture Test\r\n");
+  ^~~~~~~~~~
+Finished building: ../src/arduino_getsture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19356	    540	   3384	  23280	   5af0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+15:16:51 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_getsture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_getsture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_getsture.d" -MT"src/arduino_getsture.o" -o "src/arduino_getsture.o" "../src/arduino_getsture.c"
+../src/arduino_getsture.c: In function 'main':
+../src/arduino_getsture.c:70:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+Finished building: ../src/arduino_getsture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19060	    540	   3384	  22984	   59c8	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+15:17:03 **** Clean-only build of configuration Debug for project arduino_gesture ****
+make clean 
+rm -rf  ./src/SparkFun_APDS9960.o ./src/arduino_getsture.o  ./src/SparkFun_APDS9960.d ./src/arduino_getsture.d  arduino_gesture.elf.size  arduino_gesture.elf
+ 
+15:17:04 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:70:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19060	    540	   3384	  22984	   59c8	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+15:22:24 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+src/subdir.mk:24: recipe for target 'src/arduino_gesture.o' failed
+../src/arduino_gesture.c:80:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+../src/arduino_gesture.c:103:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/arduino_gesture.c:65:6: warning: variable 'cmd' set but not used [-Wunused-but-set-variable]
+  int cmd;
+      ^~~
+make: *** [src/arduino_gesture.o] Error 1
+15:24:11 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:85:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+../src/arduino_gesture.c:108:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/arduino_gesture.c:108:1: error: expected declaration or statement at end of input
+src/subdir.mk:24: recipe for target 'src/arduino_gesture.o' failed
+make: *** [src/arduino_gesture.o] Error 1
+15:28:56 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:95:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+../src/arduino_gesture.c:118:1: error: expected declaration or statement at end of input
+src/subdir.mk:24: recipe for target 'src/arduino_gesture.o' failed
+ }
+ ^
+../src/arduino_gesture.c:118:1: error: expected declaration or statement at end of input
+make: *** [src/arduino_gesture.o] Error 1
+15:29:23 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:99:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+../src/arduino_gesture.c:122:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/arduino_gesture.o] Error 1
+src/subdir.mk:24: recipe for target 'src/arduino_gesture.o' failed
+15:29:34 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+15:29:55 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+15:52:59 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+Finished building: ../src/4WD_MOTO.c
+ 
+Building target: arduino_4wdmoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_4wdmoto.elf"  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_4wdmoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_4wdmoto.elf arduino_4wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_4wdmoto.elf  |tee "arduino_4wdmoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20716	    560	   3420	  24696	   6078	arduino_4wdmoto.elf
+Finished building: arduino_4wdmoto.elf.size
+ 
+16:34:22 **** Clean-only build of configuration Debug for project arduino_gesture ****
+make clean 
+rm -rf  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o  ./src/SparkFun_APDS9960.d ./src/arduino_gesture.d  arduino_gesture.elf.size  arduino_gesture.elf
+ 
+16:34:23 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:102:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+    xil_printf("UP");
+    ^~~~~~~~~~
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12964	    520	   3372	  16856	   41d8	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+16:35:41 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:111:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+../src/arduino_gesture.c:100:6: warning: unused variable 'cmd' [-Wunused-variable]
+  int cmd;
+      ^~~
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19060	    540	   3384	  22984	   59c8	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+16:35:54 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:110:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19060	    540	   3384	  22984	   59c8	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+16:53:19 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:110:4: error: expected ';' before 'switch'
+    switch ( gest ) {
+Invoking: MicroBlaze gcc compiler
+    ^~~~~~
+../src/arduino_gesture.c:100:6: warning: variable 'gest' set but not used [-Wunused-but-set-variable]
+  int gest;
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+src/subdir.mk:24: recipe for target 'src/arduino_gesture.o' failed
+      ^~~~
+make: *** [src/arduino_gesture.o] Error 1
+16:53:46 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+../src/arduino_gesture.c: In function 'main':
+../src/arduino_gesture.c:112:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+     xil_printf("UP");
+     ^~~~~~~~~~
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19072	    540	   3380	  22992	   59d0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+17:29:55 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+17:30:31 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c:14:18: fatal error: Wire.h: No such file or directory
+ #include <Wire.h>
+                  ^
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+make: *** [src/QMC5883.o] Error 1
+17:36:32 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+17:38:05 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:38:15 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:38:26 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+17:39:10 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+17:39:22 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/arduino_gesture.o: In function `main':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_gesture/Debug/../src/arduino_gesture.c:66: undefined reference to `device'
+makefile:36: recipe for target 'arduino_gesture.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [arduino_gesture.elf] Error 1
+17:39:38 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+17:41:37 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:42:31 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+17:45:26 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:46:31 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:48:23 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+17:52:19 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+17:52:36 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:20:22: fatal error: WProgram.h: No such file or directory
+ #include "WProgram.h"
+                      ^
+compilation terminated.
+make: *** [src/QMC5883.o] Error 1
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+17:52:42 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:121:1: error: unknown type name 'class'
+ class DFRobot_QMC5883
+ ^~~~~
+../src/QMC5883.h:122:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/QMC5883.c:20:1: error: unknown type name 'bool'
+ bool QMC5883_begin()
+ ^~~~
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:23:2: error: unknown type name 'uint8_t'
+  uint8_t temp = 0;
+  ^~~~~~~
+../src/QMC5883.c:27:3: error: 'isHMC_' undeclared (first use in this function)
+   isHMC_ = i2c_write(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+   ^~~~~~
+../src/QMC5883.c:27:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:27:56: warning: passing argument 3 of 'i2c_write' from incompatible pointer type [-Wincompatible-pointer-types]
+   isHMC_ = i2c_write(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                                        ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:68:10: note: expected 'unsigned char *' but argument is of type 'int *'
+ unsigned i2c_write(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~~
+../src/QMC5883.c:31:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:33:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:37:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:40:11: error: 'false' undeclared (first use in this function)
+    return false;
+           ^~~~~
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:44:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:45:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:46:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:47:3: error: 'mgPerDigit' undeclared (first use in this function)
+   mgPerDigit = 0.92f;
+   ^~~~~~~~~~
+../src/QMC5883.c:48:10: error: 'true' undeclared (first use in this function)
+   return true;
+          ^~~~
+../src/QMC5883.c:52:4: error: 'isQMC_' undeclared (first use in this function)
+    isQMC_ = i2c_write(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+    ^~~~~~
+../src/QMC5883.c:52:56: warning: passing argument 3 of 'i2c_write' from incompatible pointer type [-Wincompatible-pointer-types]
+    isQMC_ = i2c_write(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                                        ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:68:10: note: expected 'unsigned char *' but argument is of type 'int *'
+ unsigned i2c_write(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~~
+../src/QMC5883.c:61:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:81:1: error: unknown type name 'Vector'
+ Vector QMC5883_readRaw(void)
+ ^~~~~~
+../src/QMC5883.c:81:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+../src/QMC5883.c:87:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:89:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+    ^
+../src/QMC5883.c:89:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:92:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:100:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:101:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:102:15: error: 'false' undeclared (first use in this function)
+    firstRun = false;
+               ^~~~~
+../src/QMC5883.c:104:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_calibrate':
+../src/QMC5883.c:126:5: error: 'v' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+     ^
+../src/QMC5883.c:126:15: error: 'minX' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:127:15: error: 'maxX' undeclared (first use in this function)
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:128:15: error: 'minY' undeclared (first use in this function)
+  if(v.YAxis < minY ) minY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:129:15: error: 'maxY' undeclared (first use in this function)
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:130:15: error: 'minZ' undeclared (first use in this function)
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c:131:15: error: 'maxZ' undeclared (first use in this function)
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c: In function 'QMC5883_initMinMax':
+../src/QMC5883.c:135:2: error: 'minX' undeclared (first use in this function)
+  minX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:135:9: error: 'v' undeclared (first use in this function)
+  minX = v.XAxis;
+         ^
+../src/QMC5883.c:136:2: error: 'maxX' undeclared (first use in this function)
+  maxX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:137:2: error: 'minY' undeclared (first use in this function)
+  minY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:138:2: error: 'maxY' undeclared (first use in this function)
+  maxY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:139:2: error: 'minZ' undeclared (first use in this function)
+  minZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c:140:2: error: 'maxZ' undeclared (first use in this function)
+  maxZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:142:1: error: unknown type name 'Vector'
+ Vector QMC5883_readNormalize(void)
+ ^~~~~~
+../src/QMC5883.c:142:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:148:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:150:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+    ^
+../src/QMC5883.c:150:63: error: 'mgPerDigit' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                                                               ^~~~~~~~~~
+../src/QMC5883.c:160:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:162:15: error: 'false' undeclared (first use in this function)
+    firstRun = false;
+               ^~~~~
+../src/QMC5883.c:165:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:165:24: error: 'minX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                        ^~~~
+../src/QMC5883.c:165:29: error: 'maxX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                             ^~~~
+../src/QMC5883.c:166:24: error: 'minY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                        ^~~~
+../src/QMC5883.c:166:29: error: 'maxY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                             ^~~~
+../src/QMC5883.c:167:24: error: 'minZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                        ^~~~
+../src/QMC5883.c:167:29: error: 'maxZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                             ^~~~
+../src/QMC5883.c:169:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:196:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:199:4: error: 'mgPerDigit' undeclared (first use in this function)
+    mgPerDigit = 0.073f;
+    ^~~~~~~~~~
+../src/QMC5883.c:235:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:254:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:255:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c:256:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setMeasurementMode':
+../src/QMC5883.c:264:2: error: unknown type name 'uint8_t'
+  uint8_t value;
+  ^~~~~~~
+../src/QMC5883.c:265:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:271:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getMeasurementMode':
+../src/QMC5883.c:282:2: error: unknown type name 'uint8_t'
+  uint8_t value=0;
+  ^~~~~~~
+../src/QMC5883.c:283:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:285:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setDataRate':
+../src/QMC5883.c:294:2: error: unknown type name 'uint8_t'
+  uint8_t value;
+  ^~~~~~~
+../src/QMC5883.c:295:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:301:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getDataRate':
+../src/QMC5883.c:312:2: error: unknown type name 'uint8_t'
+  uint8_t value=0;
+  ^~~~~~~
+../src/QMC5883.c:313:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:317:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setSamples':
+../src/QMC5883.c:327:2: error: unknown type name 'uint8_t'
+  uint8_t value;
+  ^~~~~~~
+../src/QMC5883.c:328:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:333:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getSamples':
+../src/QMC5883.c:343:2: error: unknown type name 'uint8_t'
+  uint8_t value=0;
+  ^~~~~~~
+../src/QMC5883.c:344:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:348:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:357:29: error: unknown type name 'uint8_t'
+ void QMC5883_writeRegister8(uint8_t reg, uint8_t value)
+                             ^~~~~~~
+../src/QMC5883.c:357:42: error: unknown type name 'uint8_t'
+ void QMC5883_writeRegister8(uint8_t reg, uint8_t value)
+                                          ^~~~~~~
+../src/QMC5883.c:369:1: error: unknown type name 'uint8_t'
+ uint8_t QMC5883_fastRegister8(uint8_t reg)
+ ^~~~~~~
+../src/QMC5883.c:369:31: error: unknown type name 'uint8_t'
+ uint8_t QMC5883_fastRegister8(uint8_t reg)
+                               ^~~~~~~
+../src/QMC5883.c:383:1: error: unknown type name 'uint8_t'
+ uint8_t QMC5883_readRegister8(uint8_t reg)
+ ^~~~~~~
+../src/QMC5883.c:383:31: error: unknown type name 'uint8_t'
+ uint8_t QMC5883_readRegister8(uint8_t reg)
+                               ^~~~~~~
+../src/QMC5883.c:396:1: error: unknown type name 'int16_t'
+ int16_t QMC5883_readRegister16(uint8_t reg)
+ ^~~~~~~
+../src/QMC5883.c:396:32: error: unknown type name 'uint8_t'
+ int16_t QMC5883_readRegister16(uint8_t reg)
+                                ^~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:414:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:416:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/QMC5883.o] Error 1
+17:53:28 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:124:1: error: unknown type name 'class'
+ class DFRobot_QMC5883
+ ^~~~~
+../src/QMC5883.h:125:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:27:3: error: 'isHMC_' undeclared (first use in this function)
+   isHMC_ = i2c_write(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+   ^~~~~~
+../src/QMC5883.c:27:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:31:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:33:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:37:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:44:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:45:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:46:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:47:3: error: 'mgPerDigit' undeclared (first use in this function)
+   mgPerDigit = 0.92f;
+   ^~~~~~~~~~
+../src/QMC5883.c:52:4: error: 'isQMC_' undeclared (first use in this function)
+    isQMC_ = i2c_write(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+    ^~~~~~
+../src/QMC5883.c:61:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:81:1: error: unknown type name 'Vector'
+ Vector QMC5883_readRaw(void)
+ ^~~~~~
+../src/QMC5883.c:81:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:87:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:89:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+    ^
+../src/QMC5883.c:89:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:92:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:100:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:101:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:104:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_calibrate':
+../src/QMC5883.c:126:5: error: 'v' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+     ^
+../src/QMC5883.c:126:15: error: 'minX' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:127:15: error: 'maxX' undeclared (first use in this function)
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:128:15: error: 'minY' undeclared (first use in this function)
+  if(v.YAxis < minY ) minY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:129:15: error: 'maxY' undeclared (first use in this function)
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:130:15: error: 'minZ' undeclared (first use in this function)
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c:131:15: error: 'maxZ' undeclared (first use in this function)
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c: In function 'QMC5883_initMinMax':
+../src/QMC5883.c:135:2: error: 'minX' undeclared (first use in this function)
+  minX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:135:9: error: 'v' undeclared (first use in this function)
+  minX = v.XAxis;
+         ^
+../src/QMC5883.c:136:2: error: 'maxX' undeclared (first use in this function)
+  maxX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:137:2: error: 'minY' undeclared (first use in this function)
+  minY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:138:2: error: 'maxY' undeclared (first use in this function)
+  maxY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:139:2: error: 'minZ' undeclared (first use in this function)
+  minZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c:140:2: error: 'maxZ' undeclared (first use in this function)
+  maxZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:142:1: error: unknown type name 'Vector'
+ Vector QMC5883_readNormalize(void)
+ ^~~~~~
+../src/QMC5883.c:142:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:148:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:150:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+    ^
+../src/QMC5883.c:150:63: error: 'mgPerDigit' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                                                               ^~~~~~~~~~
+../src/QMC5883.c:160:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:165:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:165:24: error: 'minX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                        ^~~~
+../src/QMC5883.c:165:29: error: 'maxX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                             ^~~~
+../src/QMC5883.c:166:24: error: 'minY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                        ^~~~
+../src/QMC5883.c:166:29: error: 'maxY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                             ^~~~
+../src/QMC5883.c:167:24: error: 'minZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                        ^~~~
+../src/QMC5883.c:167:29: error: 'maxZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                             ^~~~
+../src/QMC5883.c:169:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:196:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:199:4: error: 'mgPerDigit' undeclared (first use in this function)
+    mgPerDigit = 0.073f;
+    ^~~~~~~~~~
+../src/QMC5883.c:235:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:254:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:255:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c:256:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setMeasurementMode':
+../src/QMC5883.c:265:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:271:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getMeasurementMode':
+../src/QMC5883.c:283:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:285:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setDataRate':
+../src/QMC5883.c:295:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:301:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getDataRate':
+../src/QMC5883.c:313:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:317:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setSamples':
+../src/QMC5883.c:328:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:333:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getSamples':
+../src/QMC5883.c:344:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:348:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_writeRegister8':
+../src/QMC5883.c:362:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:363:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, temp, 2);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:364:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_fastRegister8':
+../src/QMC5883.c:372:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:373:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:375:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister8':
+../src/QMC5883.c:386:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:387:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:389:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:400:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:401:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:402:47: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, HMC5883L_ADDRESS, &temp, 1);
+                                               ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:404:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c:406:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, QMC5883_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:414:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:416:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/QMC5883.o] Error 1
+17:55:56 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:126:3: error: unknown type name 'Vector'
+   Vector QMC5883_readRaw(void);
+   ^~~~~~
+../src/QMC5883.h:126:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.h:127:3: error: unknown type name 'Vector'
+   Vector QMC5883_readNormalize(void);
+   ^~~~~~
+../src/QMC5883.h:127:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.h: In function 'QMC5883_isHMC':
+../src/QMC5883.h:144:31: error: 'isHMC_' undeclared (first use in this function)
+   bool QMC5883_isHMC(){return isHMC_;}
+                               ^~~~~~
+../src/QMC5883.h:144:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.h: In function 'QMC5883_isQMC':
+../src/QMC5883.h:145:31: error: 'isQMC_' undeclared (first use in this function)
+   bool QMC5883_isQMC(){return isQMC_;}
+                               ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:27:3: error: 'isHMC_' undeclared (first use in this function)
+   isHMC_ = i2c_write(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+   ^~~~~~
+../src/QMC5883.c:31:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:33:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:37:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:44:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:45:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:46:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:47:3: error: 'mgPerDigit' undeclared (first use in this function)
+   mgPerDigit = 0.92f;
+   ^~~~~~~~~~
+../src/QMC5883.c:52:4: error: 'isQMC_' undeclared (first use in this function)
+    isQMC_ = i2c_write(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+    ^~~~~~
+../src/QMC5883.c:61:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:81:1: error: unknown type name 'Vector'
+ Vector QMC5883_readRaw(void)
+ ^~~~~~
+../src/QMC5883.c:81:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:87:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:89:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+    ^
+../src/QMC5883.c:89:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:92:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+    ^~~~~~~~~
+../src/QMC5883.c:100:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:101:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:104:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_calibrate':
+../src/QMC5883.c:126:5: error: 'v' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+     ^
+../src/QMC5883.c:126:15: error: 'minX' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:127:15: error: 'maxX' undeclared (first use in this function)
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:128:15: error: 'minY' undeclared (first use in this function)
+  if(v.YAxis < minY ) minY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:129:15: error: 'maxY' undeclared (first use in this function)
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:130:15: error: 'minZ' undeclared (first use in this function)
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c:131:15: error: 'maxZ' undeclared (first use in this function)
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c: In function 'QMC5883_initMinMax':
+../src/QMC5883.c:135:2: error: 'minX' undeclared (first use in this function)
+  minX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:135:9: error: 'v' undeclared (first use in this function)
+  minX = v.XAxis;
+         ^
+../src/QMC5883.c:136:2: error: 'maxX' undeclared (first use in this function)
+  maxX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:137:2: error: 'minY' undeclared (first use in this function)
+  minY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:138:2: error: 'maxY' undeclared (first use in this function)
+  maxY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:139:2: error: 'minZ' undeclared (first use in this function)
+  minZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c:140:2: error: 'maxZ' undeclared (first use in this function)
+  maxZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:142:1: error: unknown type name 'Vector'
+ Vector QMC5883_readNormalize(void)
+ ^~~~~~
+../src/QMC5883.c:142:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:148:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:150:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+    ^
+../src/QMC5883.c:150:63: error: 'mgPerDigit' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                                                               ^~~~~~~~~~
+../src/QMC5883.c:160:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:165:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:165:24: error: 'minX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                        ^~~~
+../src/QMC5883.c:165:29: error: 'maxX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                             ^~~~
+../src/QMC5883.c:166:24: error: 'minY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                        ^~~~
+../src/QMC5883.c:166:29: error: 'maxY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                             ^~~~
+../src/QMC5883.c:167:24: error: 'minZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                        ^~~~
+../src/QMC5883.c:167:29: error: 'maxZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                             ^~~~
+../src/QMC5883.c:169:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:196:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:199:4: error: 'mgPerDigit' undeclared (first use in this function)
+    mgPerDigit = 0.073f;
+    ^~~~~~~~~~
+../src/QMC5883.c:235:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:254:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:255:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c:256:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setMeasurementMode':
+../src/QMC5883.c:265:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:271:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getMeasurementMode':
+../src/QMC5883.c:283:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:285:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setDataRate':
+../src/QMC5883.c:295:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:301:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getDataRate':
+../src/QMC5883.c:313:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:317:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setSamples':
+../src/QMC5883.c:328:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:333:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getSamples':
+../src/QMC5883.c:344:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:348:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_writeRegister8':
+../src/QMC5883.c:362:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:363:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, temp, 2);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:364:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_fastRegister8':
+../src/QMC5883.c:372:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:373:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:375:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister8':
+../src/QMC5883.c:386:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:387:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:389:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:400:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:401:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:402:47: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, HMC5883L_ADDRESS, &temp, 1);
+                                               ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:404:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c:406:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, QMC5883_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:414:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:416:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h: In function 'QMC5883_isHMC':
+../src/QMC5883.h:144:3: warning: control reaches end of non-void function [-Wreturn-type]
+   bool QMC5883_isHMC(){return isHMC_;}
+   ^~~~
+../src/QMC5883.h: In function 'QMC5883_isQMC':
+../src/QMC5883.h:145:3: warning: control reaches end of non-void function [-Wreturn-type]
+   bool QMC5883_isQMC(){return isQMC_;}
+   ^~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/QMC5883.o] Error 1
+17:56:35 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:126:3: error: unknown type name 'Vector'
+   Vector QMC5883_readRaw(void);
+   ^~~~~~
+../src/QMC5883.h:126:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.h:127:3: error: unknown type name 'Vector'
+   Vector QMC5883_readNormalize(void);
+   ^~~~~~
+../src/QMC5883.h:127:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:27:3: error: 'isHMC_' undeclared (first use in this function)
+   isHMC_ = i2c_write(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+   ^~~~~~
+../src/QMC5883.c:27:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:31:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:33:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:37:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:44:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:45:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:46:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:47:3: error: 'mgPerDigit' undeclared (first use in this function)
+   mgPerDigit = 0.92f;
+   ^~~~~~~~~~
+../src/QMC5883.c:52:4: error: 'isQMC_' undeclared (first use in this function)
+    isQMC_ = i2c_write(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+    ^~~~~~
+../src/QMC5883.c:61:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:81:1: error: unknown type name 'Vector'
+ Vector QMC5883_readRaw(void)
+ ^~~~~~
+../src/QMC5883.c:81:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:87:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:89:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+    ^
+../src/QMC5883.c:89:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:92:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:100:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:101:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:104:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_calibrate':
+../src/QMC5883.c:126:5: error: 'v' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+     ^
+../src/QMC5883.c:126:15: error: 'minX' undeclared (first use in this function)
+  if(v.XAxis < minX ) minX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:127:15: error: 'maxX' undeclared (first use in this function)
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+               ^~~~
+../src/QMC5883.c:128:15: error: 'minY' undeclared (first use in this function)
+  if(v.YAxis < minY ) minY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:129:15: error: 'maxY' undeclared (first use in this function)
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+               ^~~~
+../src/QMC5883.c:130:15: error: 'minZ' undeclared (first use in this function)
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c:131:15: error: 'maxZ' undeclared (first use in this function)
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+               ^~~~
+../src/QMC5883.c: In function 'QMC5883_initMinMax':
+../src/QMC5883.c:135:2: error: 'minX' undeclared (first use in this function)
+  minX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:135:9: error: 'v' undeclared (first use in this function)
+  minX = v.XAxis;
+         ^
+../src/QMC5883.c:136:2: error: 'maxX' undeclared (first use in this function)
+  maxX = v.XAxis;
+  ^~~~
+../src/QMC5883.c:137:2: error: 'minY' undeclared (first use in this function)
+  minY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:138:2: error: 'maxY' undeclared (first use in this function)
+  maxY = v.YAxis;
+  ^~~~
+../src/QMC5883.c:139:2: error: 'minZ' undeclared (first use in this function)
+  minZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c:140:2: error: 'maxZ' undeclared (first use in this function)
+  maxZ = v.ZAxis;
+  ^~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:142:1: error: unknown type name 'Vector'
+ Vector QMC5883_readNormalize(void)
+ ^~~~~~
+../src/QMC5883.c:142:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:148:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:150:4: error: 'v' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+    ^
+../src/QMC5883.c:150:63: error: 'mgPerDigit' undeclared (first use in this function)
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                                                               ^~~~~~~~~~
+../src/QMC5883.c:160:6: error: 'firstRun' undeclared (first use in this function)
+   if(firstRun){
+      ^~~~~~~~
+../src/QMC5883.c:165:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:165:24: error: 'minX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                        ^~~~
+../src/QMC5883.c:165:29: error: 'maxX' undeclared (first use in this function)
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                             ^~~~
+../src/QMC5883.c:166:24: error: 'minY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                        ^~~~
+../src/QMC5883.c:166:29: error: 'maxY' undeclared (first use in this function)
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                             ^~~~
+../src/QMC5883.c:167:24: error: 'minZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                        ^~~~
+../src/QMC5883.c:167:29: error: 'maxZ' undeclared (first use in this function)
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                             ^~~~
+../src/QMC5883.c:169:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:196:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:199:4: error: 'mgPerDigit' undeclared (first use in this function)
+    mgPerDigit = 0.073f;
+    ^~~~~~~~~~
+../src/QMC5883.c:235:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:254:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:255:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c:256:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setMeasurementMode':
+../src/QMC5883.c:265:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:271:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getMeasurementMode':
+../src/QMC5883.c:283:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:285:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setDataRate':
+../src/QMC5883.c:295:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:301:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getDataRate':
+../src/QMC5883.c:313:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:317:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_setSamples':
+../src/QMC5883.c:328:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:333:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_getSamples':
+../src/QMC5883.c:344:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:348:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_writeRegister8':
+../src/QMC5883.c:362:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:363:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, temp, 2);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:364:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_fastRegister8':
+../src/QMC5883.c:372:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:373:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:375:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister8':
+../src/QMC5883.c:386:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:387:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:389:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:400:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:401:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:402:47: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, HMC5883L_ADDRESS, &temp, 1);
+                                               ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:404:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c:406:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, QMC5883_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:414:5: error: 'isHMC_' undeclared (first use in this function)
+  if(isHMC_){
+     ^~~~~~
+../src/QMC5883.c:416:11: error: 'isQMC_' undeclared (first use in this function)
+  }else if(isQMC_){
+           ^~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/QMC5883.c: In function 'QMC5883_getICType':
+../src/QMC5883.c:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/QMC5883.o] Error 1
+17:56:43 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+In file included from ../src/QMC5883.c:14:0:
+../src/QMC5883.h:126:3: error: unknown type name 'Vector'
+   Vector QMC5883_readRaw(void);
+   ^~~~~~
+../src/QMC5883.h:126:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.h:127:3: error: unknown type name 'Vector'
+   Vector QMC5883_readNormalize(void);
+   ^~~~~~
+../src/QMC5883.h:127:3: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c:24:1: error: unknown type name 'Vector'
+ Vector v;
+ ^~~~~~
+../src/QMC5883.c:24:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:45:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:49:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:55:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:56:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:57:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:58:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:73:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:93:1: error: unknown type name 'Vector'
+ Vector QMC5883_readRaw(void)
+ ^~~~~~
+../src/QMC5883.c:93:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:101:5: error: request for member 'XAxis' in something not a structure or union
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+     ^
+../src/QMC5883.c:101:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:102:5: error: request for member 'YAxis' in something not a structure or union
+    v.YAxis = readRegister16(HMC5883L_REG_OUT_Y_M);
+     ^
+../src/QMC5883.c:103:5: error: request for member 'ZAxis' in something not a structure or union
+    v.ZAxis = readRegister16(HMC5883L_REG_OUT_Z_M);
+     ^
+../src/QMC5883.c:104:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:105:13: error: request for member 'XAxis' in something not a structure or union
+    Xsum += v.XAxis;
+             ^
+../src/QMC5883.c:106:13: error: request for member 'YAxis' in something not a structure or union
+    Ysum += v.YAxis;
+             ^
+../src/QMC5883.c:107:13: error: request for member 'ZAxis' in something not a structure or union
+    Zsum += v.ZAxis;
+             ^
+../src/QMC5883.c:109:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis = Xsum/range;
+    ^
+../src/QMC5883.c:110:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis = Ysum/range;
+    ^
+../src/QMC5883.c:111:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis = Zsum/range;
+    ^
+../src/QMC5883.c:113:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:118:5: error: request for member 'XAxis' in something not a structure or union
+    v.XAxis = readRegister16(QMC5883_REG_OUT_X_M);
+     ^
+../src/QMC5883.c:119:5: error: request for member 'YAxis' in something not a structure or union
+    v.YAxis = readRegister16(QMC5883_REG_OUT_Y_M);
+     ^
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+../src/QMC5883.c:120:5: error: request for member 'ZAxis' in something not a structure or union
+    v.ZAxis = readRegister16(QMC5883_REG_OUT_Z_M);
+     ^
+../src/QMC5883.c:122:13: error: request for member 'XAxis' in something not a structure or union
+    Xsum += v.XAxis;
+             ^
+../src/QMC5883.c:123:13: error: request for member 'YAxis' in something not a structure or union
+    Ysum += v.YAxis;
+             ^
+../src/QMC5883.c:124:13: error: request for member 'ZAxis' in something not a structure or union
+    Zsum += v.ZAxis;
+             ^
+../src/QMC5883.c:126:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis = Xsum/range;
+    ^
+../src/QMC5883.c:127:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis = Ysum/range;
+    ^
+../src/QMC5883.c:128:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis = Zsum/range;
+    ^
+../src/QMC5883.c: In function 'QMC5883_calibrate':
+../src/QMC5883.c:138:6: error: request for member 'XAxis' in something not a structure or union
+  if(v.XAxis < minX ) minX = v.XAxis;
+      ^
+../src/QMC5883.c:138:30: error: request for member 'XAxis' in something not a structure or union
+  if(v.XAxis < minX ) minX = v.XAxis;
+                              ^
+../src/QMC5883.c:139:6: error: request for member 'XAxis' in something not a structure or union
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+      ^
+../src/QMC5883.c:139:30: error: request for member 'XAxis' in something not a structure or union
+  if(v.XAxis > maxX ) maxX = v.XAxis;
+                              ^
+../src/QMC5883.c:140:6: error: request for member 'YAxis' in something not a structure or union
+  if(v.YAxis < minY ) minY = v.YAxis;
+      ^
+../src/QMC5883.c:140:30: error: request for member 'YAxis' in something not a structure or union
+  if(v.YAxis < minY ) minY = v.YAxis;
+                              ^
+../src/QMC5883.c:141:6: error: request for member 'YAxis' in something not a structure or union
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+      ^
+../src/QMC5883.c:141:30: error: request for member 'YAxis' in something not a structure or union
+  if(v.YAxis > maxY ) maxY = v.YAxis;
+                              ^
+../src/QMC5883.c:142:6: error: request for member 'ZAxis' in something not a structure or union
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+      ^
+../src/QMC5883.c:142:30: error: request for member 'ZAxis' in something not a structure or union
+  if(v.ZAxis < minZ ) minZ = v.ZAxis;
+                              ^
+../src/QMC5883.c:143:6: error: request for member 'ZAxis' in something not a structure or union
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+      ^
+../src/QMC5883.c:143:30: error: request for member 'ZAxis' in something not a structure or union
+  if(v.ZAxis > maxZ ) maxZ = v.ZAxis;
+                              ^
+../src/QMC5883.c: In function 'QMC5883_initMinMax':
+../src/QMC5883.c:147:10: error: request for member 'XAxis' in something not a structure or union
+  minX = v.XAxis;
+          ^
+../src/QMC5883.c:148:10: error: request for member 'XAxis' in something not a structure or union
+  maxX = v.XAxis;
+          ^
+../src/QMC5883.c:149:10: error: request for member 'YAxis' in something not a structure or union
+  minY = v.YAxis;
+          ^
+../src/QMC5883.c:150:10: error: request for member 'YAxis' in something not a structure or union
+  maxY = v.YAxis;
+          ^
+../src/QMC5883.c:151:10: error: request for member 'ZAxis' in something not a structure or union
+  minZ = v.ZAxis;
+          ^
+../src/QMC5883.c:152:10: error: request for member 'ZAxis' in something not a structure or union
+  maxZ = v.ZAxis;
+          ^
+../src/QMC5883.c: At top level:
+../src/QMC5883.c:154:1: error: unknown type name 'Vector'
+ Vector QMC5883_readNormalize(void)
+ ^~~~~~
+../src/QMC5883.c:154:1: note: use 'struct' keyword to refer to the type
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:162:5: error: request for member 'XAxis' in something not a structure or union
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+     ^
+../src/QMC5883.c:163:5: error: request for member 'YAxis' in something not a structure or union
+    v.YAxis = ((float)readRegister16(HMC5883L_REG_OUT_Y_M )) * mgPerDigit;
+     ^
+../src/QMC5883.c:164:5: error: request for member 'ZAxis' in something not a structure or union
+    v.ZAxis = (float)readRegister16(HMC5883L_REG_OUT_Z_M) * mgPerDigit;
+     ^
+../src/QMC5883.c:165:13: error: request for member 'XAxis' in something not a structure or union
+    Xsum += v.XAxis;
+             ^
+../src/QMC5883.c:166:13: error: request for member 'YAxis' in something not a structure or union
+    Ysum += v.YAxis;
+             ^
+../src/QMC5883.c:167:13: error: request for member 'ZAxis' in something not a structure or union
+    Zsum += v.ZAxis;
+             ^
+../src/QMC5883.c:169:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis = Xsum/range;
+    ^
+../src/QMC5883.c:170:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis = Ysum/range;
+    ^
+../src/QMC5883.c:171:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis = Zsum/range;
+    ^
+../src/QMC5883.c:177:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+    ^
+../src/QMC5883.c:177:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:177:17: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                 ^
+../src/QMC5883.c:178:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+    ^
+../src/QMC5883.c:178:17: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                 ^
+../src/QMC5883.c:179:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+    ^
+../src/QMC5883.c:179:17: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                 ^
+../src/QMC5883.c:183:5: error: request for member 'XAxis' in something not a structure or union
+    v.XAxis = ((float)readRegister16(QMC5883_REG_OUT_X_M)) * mgPerDigit;
+     ^
+../src/QMC5883.c:184:5: error: request for member 'YAxis' in something not a structure or union
+    v.YAxis = ((float)readRegister16(QMC5883_REG_OUT_Y_M)) * mgPerDigit;
+     ^
+../src/QMC5883.c:185:5: error: request for member 'ZAxis' in something not a structure or union
+    v.ZAxis = (float)readRegister16(QMC5883_REG_OUT_Z_M) * mgPerDigit;
+     ^
+../src/QMC5883.c:186:13: error: request for member 'XAxis' in something not a structure or union
+    Xsum += v.XAxis;
+             ^
+../src/QMC5883.c:187:13: error: request for member 'YAxis' in something not a structure or union
+    Ysum += v.YAxis;
+             ^
+../src/QMC5883.c:188:13: error: request for member 'ZAxis' in something not a structure or union
+    Zsum += v.ZAxis;
+             ^
+../src/QMC5883.c:190:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis = Xsum/range;
+    ^
+../src/QMC5883.c:191:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis = Ysum/range;
+    ^
+../src/QMC5883.c:192:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis = Zsum/range;
+    ^
+../src/QMC5883.c:199:4: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+    ^
+../src/QMC5883.c:199:17: error: request for member 'XAxis' in something not a structure or union
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+                 ^
+../src/QMC5883.c:200:4: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+    ^
+../src/QMC5883.c:200:17: error: request for member 'YAxis' in something not a structure or union
+   v.YAxis= map(v.YAxis,minY,maxY,-360,360);
+                 ^
+../src/QMC5883.c:201:4: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+    ^
+../src/QMC5883.c:201:17: error: request for member 'ZAxis' in something not a structure or union
+   v.ZAxis= map(v.ZAxis,minZ,maxZ,-360,360);
+                 ^
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:267:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_writeRegister8':
+../src/QMC5883.c:375:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, temp, 2);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_fastRegister8':
+../src/QMC5883.c:385:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister8':
+../src/QMC5883.c:399:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:413:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:414:47: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, HMC5883L_ADDRESS, &temp, 1);
+                                               ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:418:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, QMC5883_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+make: *** [src/QMC5883.o] Error 1
+17:59:27 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:45:2: error: 'Serial' undeclared (first use in this function)
+  Serial.print("isHMC_= ");
+  ^~~~~~
+../src/QMC5883.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:49:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:55:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:56:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:57:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:58:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:73:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:101:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:104:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:113:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:177:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:267:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_writeRegister8':
+../src/QMC5883.c:375:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, temp, 2);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_fastRegister8':
+../src/QMC5883.c:385:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister8':
+../src/QMC5883.c:399:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:413:13: error: 'HMC5883L_device' undeclared (first use in this function)
+   i2c_write(HMC5883L_device, HMC5883L_ADDRESS, &reg, 1);
+             ^~~~~~~~~~~~~~~
+../src/QMC5883.c:414:47: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, HMC5883L_ADDRESS, &temp, 1);
+                                               ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:418:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(HMC5883L_device, QMC5883_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+make: *** [src/QMC5883.o] Error 1
+18:00:20 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:47:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:53:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:54:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:55:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:56:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:68:3: error: 'Serial' undeclared (first use in this function)
+   Serial.print("isQMC_= ");
+   ^~~~~~
+../src/QMC5883.c:68:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/QMC5883.c:71:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:99:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:102:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:111:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:175:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:265:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:412:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+src/subdir.mk:21: recipe for target 'src/QMC5883.o' failed
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:416:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+make: *** [src/QMC5883.o] Error 1
+18:00:34 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c:47:8: warning: implicit declaration of function 'fastRegister8' [-Wimplicit-function-declaration]
+   if ((fastRegister8(HMC5883L_REG_IDENT_A) != 0x48)
+        ^~~~~~~~~~~~~
+../src/QMC5883.c:53:3: warning: implicit declaration of function 'setRange' [-Wimplicit-function-declaration]
+   setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~
+../src/QMC5883.c:54:3: warning: implicit declaration of function 'setMeasurementMode' [-Wimplicit-function-declaration]
+   setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~
+../src/QMC5883.c:55:3: warning: implicit declaration of function 'setDataRate' [-Wimplicit-function-declaration]
+   setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~
+../src/QMC5883.c:56:3: warning: implicit declaration of function 'setSamples' [-Wimplicit-function-declaration]
+   setSamples(HMC5883L_SAMPLES_1);
+   ^~~~~~~~~~
+../src/QMC5883.c:70:4: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+    writeRegister8(QMC5883_REG_IDENT_B,0X01);
+    ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRaw':
+../src/QMC5883.c:98:14: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = readRegister16(HMC5883L_REG_OUT_X_M);
+              ^~~~~~~~~~~~~~
+../src/QMC5883.c:101:4: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+    calibrate();
+    ^~~~~~~~~
+../src/QMC5883.c:110:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:174:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:264:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:411:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:415:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:01:39 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:159:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:170:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:173:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c:174:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:243:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:264:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:411:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:415:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:01:55 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:43:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:159:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:174:12: warning: implicit declaration of function 'map' [-Wimplicit-function-declaration]
+   v.XAxis= map(v.XAxis,minX,maxX,-360,360);
+            ^~~
+../src/QMC5883.c:191:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:195:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:243:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:264:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:411:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:415:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:04:14 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_begin':
+../src/QMC5883.c:47:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(20);
+   ^~~~~
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:163:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:195:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:199:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:247:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:268:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:415:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:419:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+18:05:16 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:166:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:198:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:202:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:250:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:271:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:418:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:422:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:05:18 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+18:06:57 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+Finished building: ../src/arduino_10DOF_IMU.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:08:18 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c:53:3: error: expected identifier or '(' before 'while'
+   while (!compass.begin()){
+   ^~~~~
+../src/arduino_10DOF_IMU.c:57:3: error: expected identifier or '(' before 'if'
+   if(compass.isHMC() ){
+   ^~
+../src/arduino_10DOF_IMU.c:63:4: error: expected identifier or '(' before 'else'
+   }else if(compass.isQMC()){
+    ^~~~
+src/subdir.mk:24: recipe for target 'src/arduino_10DOF_IMU.o' failed
+make: *** [src/arduino_10DOF_IMU.o] Error 1
+18:08:51 **** Auto Build of configuration Debug for project arduino_gesture ****
+make all 
+Building file: ../src/arduino_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
+Finished building: ../src/arduino_gesture.c
+ 
+Building target: arduino_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14840	    408	   3376	  18624	   48c0	arduino_gesture.elf
+Finished building: arduino_gesture.elf.size
+ 
+18:13:28 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:166:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:198:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:202:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:250:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:271:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:421:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:425:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c:53:3: error: expected identifier or '(' before 'while'
+   while (!compass.begin()){
+   ^~~~~
+../src/arduino_10DOF_IMU.c:57:3: error: expected identifier or '(' before 'if'
+   if(compass.isHMC() ){
+   ^~
+src/subdir.mk:24: recipe for target 'src/arduino_10DOF_IMU.o' failed
+../src/arduino_10DOF_IMU.c:63:4: error: expected identifier or '(' before 'else'
+   }else if(compass.isQMC()){
+    ^~~~
+make: *** [src/arduino_10DOF_IMU.o] Error 1
+18:18:41 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:166:22: warning: implicit declaration of function 'readRegister16' [-Wimplicit-function-declaration]
+    v.XAxis = ((float)readRegister16(HMC5883L_REG_OUT_X_M )) * mgPerDigit;
+                      ^~~~~~~~~~~~~~
+../src/QMC5883.c:198:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:202:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_setRange':
+../src/QMC5883.c:250:3: warning: implicit declaration of function 'writeRegister8' [-Wimplicit-function-declaration]
+   writeRegister8(HMC5883L_REG_CONFIG_B, range << 5);
+   ^~~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_getRange':
+../src/QMC5883.c:271:29: warning: implicit declaration of function 'readRegister8' [-Wimplicit-function-declaration]
+   return (QMC5883_range_t)((readRegister8(HMC5883L_REG_CONFIG_B) >> 5));
+                             ^~~~~~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:421:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:425:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c:53:3: error: expected identifier or '(' before 'while'
+   while (!compass.begin()){
+   ^~~~~
+../src/arduino_10DOF_IMU.c:57:3: error: expected identifier or '(' before 'if'
+   if(compass.isHMC() ){
+   ^~
+../src/arduino_10DOF_IMU.c:63:4: error: expected identifier or '(' before 'else'
+   }else if(compass.isQMC()){
+    ^~~~
+src/subdir.mk:24: recipe for target 'src/arduino_10DOF_IMU.o' failed
+make: *** [src/arduino_10DOF_IMU.o] Error 1
+18:19:32 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c: In function 'main':
+../src/arduino_10DOF_IMU.c:56:10: warning: implicit declaration of function 'QMC5883_begin' [-Wimplicit-function-declaration]
+  while (!QMC5883_begin()){
+          ^~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:57:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+   xil_printf("Could not find a valid QMC5883 sensor, check wiring!");
+   ^~~~~~~~~~
+../src/arduino_10DOF_IMU.c:58:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(500);
+   ^~~~~
+../src/arduino_10DOF_IMU.c:60:5: warning: implicit declaration of function 'QMC5883_isHMC' [-Wimplicit-function-declaration]
+  if(QMC5883_isHMC() ){
+     ^~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:62:3: warning: implicit declaration of function 'QMC5883_setRange' [-Wimplicit-function-declaration]
+   QMC5883_setRange(HMC5883L_RANGE_1_3GA);
+   ^~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:62:20: error: 'HMC5883L_RANGE_1_3GA' undeclared (first use in this function)
+   QMC5883_setRange(HMC5883L_RANGE_1_3GA);
+                    ^~~~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:62:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_10DOF_IMU.c:63:3: warning: implicit declaration of function 'QMC5883_setMeasurementMode' [-Wimplicit-function-declaration]
+   QMC5883_setMeasurementMode(HMC5883L_CONTINOUS);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:63:30: error: 'HMC5883L_CONTINOUS' undeclared (first use in this function)
+   QMC5883_setMeasurementMode(HMC5883L_CONTINOUS);
+                              ^~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:64:3: warning: implicit declaration of function 'QMC5883_setDataRate' [-Wimplicit-function-declaration]
+   QMC5883_setDataRate(HMC5883L_DATARATE_15HZ);
+   ^~~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:64:23: error: 'HMC5883L_DATARATE_15HZ' undeclared (first use in this function)
+   QMC5883_setDataRate(HMC5883L_DATARATE_15HZ);
+                       ^~~~~~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:65:3: warning: implicit declaration of function 'QMC5883_setSamples' [-Wimplicit-function-declaration]
+   QMC5883_setSamples(HMC5883L_SAMPLES_8);
+src/subdir.mk:24: recipe for target 'src/arduino_10DOF_IMU.o' failed
+   ^~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:65:22: error: 'HMC5883L_SAMPLES_8' undeclared (first use in this function)
+   QMC5883_setSamples(HMC5883L_SAMPLES_8);
+                      ^~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:66:11: error: 'compass' undeclared (first use in this function)
+  }else if(compass.isQMC()){
+           ^~~~~~~
+../src/arduino_10DOF_IMU.c:68:20: error: 'QMC5883_RANGE_2GA' undeclared (first use in this function)
+   QMC5883_setRange(QMC5883_RANGE_2GA);
+                    ^~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:69:30: error: 'QMC5883_CONTINOUS' undeclared (first use in this function)
+   QMC5883_setMeasurementMode(QMC5883_CONTINOUS);
+                              ^~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:70:23: error: 'QMC5883_DATARATE_50HZ' undeclared (first use in this function)
+   QMC5883_setDataRate(QMC5883_DATARATE_50HZ);
+                       ^~~~~~~~~~~~~~~~~~~~~
+../src/arduino_10DOF_IMU.c:71:22: error: 'QMC5883_SAMPLES_8' undeclared (first use in this function)
+   QMC5883_setSamples(QMC5883_SAMPLES_8);
+                      ^~~~~~~~~~~~~~~~~
+make: *** [src/arduino_10DOF_IMU.o] Error 1
+18:20:26 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c: In function 'main':
+../src/arduino_10DOF_IMU.c:73:11: error: 'compass' undeclared (first use in this function)
+  }else if(compass.isQMC()){
+           ^~~~~~~
+../src/arduino_10DOF_IMU.c:73:11: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:24: recipe for target 'src/arduino_10DOF_IMU.o' failed
+make: *** [src/arduino_10DOF_IMU.o] Error 1
+18:20:33 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+Finished building: ../src/arduino_10DOF_IMU.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/QMC5883.o: In function `QMC5883_setRange':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setMeasurementMode':
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setDataRate':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setSamples':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:370: undefined reference to `writeRegister8'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:21:36 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c: In function 'main':
+../src/arduino_10DOF_IMU.c:82:10: warning: unused variable 'mag' [-Wunused-variable]
+   Vector mag = QMC5883_readRaw();
+          ^~~
+Finished building: ../src/arduino_10DOF_IMU.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/QMC5883.o: In function `QMC5883_setRange':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+makefile:36: recipe for target 'arduino_10DOF_IMU.elf' failed
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setMeasurementMode':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setDataRate':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+./src/QMC5883.o: In function `QMC5883_setSamples':
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `readRegister8'
+/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/../src/QMC5883.c:413: undefined reference to `writeRegister8'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU.elf] Error 1
+18:23:43 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:198:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:202:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+../src/QMC5883.c: In function 'QMC5883_readRegister16':
+../src/QMC5883.c:421:46: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, HMC5883L_ADDRESS, &temp, 1);
+                                              ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+../src/QMC5883.c:425:45: warning: passing argument 3 of 'i2c_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   i2c_read(QMC5883_device, QMC5883_ADDRESS, &temp, 1);
+                                             ^
+In file included from ../src/QMC5883.c:15:0:
+../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h:66:10: note: expected 'unsigned char *' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ unsigned i2c_read(i2c dev_id, unsigned int slave_address,
+          ^~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_10DOF_IMU.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17428	    520	   3260	  21208	   52d8	arduino_10DOF_IMU.elf
+Finished building: arduino_10DOF_IMU.elf.size
+ 
+18:24:08 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+../src/QMC5883.c: In function 'QMC5883_readNormalize':
+../src/QMC5883.c:198:4: warning: implicit declaration of function 'initMinMax' [-Wimplicit-function-declaration]
+    initMinMax();
+    ^~~~~~~~~~
+../src/QMC5883.c:202:3: warning: implicit declaration of function 'calibrate' [-Wimplicit-function-declaration]
+   calibrate();
+   ^~~~~~~~~
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_10DOF_IMU.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17428	    520	   3260	  21208	   52d8	arduino_10DOF_IMU.elf
+Finished building: arduino_10DOF_IMU.elf.size
+ 
+18:24:16 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/QMC5883.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.c"
+Finished building: ../src/QMC5883.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_10DOF_IMU.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17428	    520	   3260	  21208	   52d8	arduino_10DOF_IMU.elf
+Finished building: arduino_10DOF_IMU.elf.size
+ 
+18:30:02 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+make all 
+Building file: ../src/arduino_10DOF_IMU.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
+../src/arduino_10DOF_IMU.c: In function 'main':
+../src/arduino_10DOF_IMU.c:84:10: warning: unused variable 'mag' [-Wunused-variable]
+   Vector mag = QMC5883_readRaw();
+          ^~~
+Finished building: ../src/arduino_10DOF_IMU.c
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_10DOF_IMU.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18496	    540	   3268	  22304	   5720	arduino_10DOF_IMU.elf
+Finished building: arduino_10DOF_IMU.elf.size
+ 

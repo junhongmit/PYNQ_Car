@@ -1,14 +1,9 @@
-15:34:27 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+15:52:59 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
 make all 
 Building file: ../src/4WD_MOTO.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
 Finished building: ../src/4WD_MOTO.c
- 
-Building file: ../src/arduino_4wdmoto.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
-Finished building: ../src/arduino_4wdmoto.c
  
 Building target: arduino_4wdmoto.elf
 Invoking: MicroBlaze gcc linker
@@ -26,5 +21,5 @@ mb-size arduino_4wdmoto.elf  |tee "arduino_4wdmoto.elf.size"
 Finished building: arduino_4wdmoto.elf.size
  
 
-15:34:28 Build Finished (took 1s.162ms)
+15:53:00 Build Finished (took 626ms)
 

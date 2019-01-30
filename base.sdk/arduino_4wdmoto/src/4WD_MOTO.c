@@ -261,10 +261,10 @@ void stop_all(){
 }
 
 void move_forward(unsigned int speed){
-	set_direction(1,0);
-	set_direction(2,0);
-	set_direction(3,1);
-	set_direction(4,1);
+	set_direction(1,1);
+	set_direction(2,1);
+	set_direction(3,0);
+	set_direction(4,0);
 	set_speed(1,speed);
 	set_speed(2,speed);
 	set_speed(3,speed);
@@ -273,10 +273,10 @@ void move_forward(unsigned int speed){
 }
 
 void move_backward(unsigned int speed){
-	set_direction(1,1);
-	set_direction(2,1);
-	set_direction(3,0);
-	set_direction(4,0);
+	set_direction(1,0);
+	set_direction(2,0);
+	set_direction(3,1);
+	set_direction(4,1);
 	set_speed(1,speed);
 	set_speed(2,speed);
 	set_speed(3,speed);

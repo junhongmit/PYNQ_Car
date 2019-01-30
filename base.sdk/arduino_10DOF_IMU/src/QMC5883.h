@@ -14,11 +14,8 @@
 #ifndef DFROBOT_QMC5883_H
 #define DFROBOT_QMC5883_H
 
-#if ARDUINO >= 100
-#include "Arduino.h"
-#else
-#include "WProgram.h"
-#endif
+#include <stdbool.h>
+#include <stdint.h>
 
 #define HMC5883L_ADDRESS             (0x1E)
 #define QMC5883_ADDRESS              (0x0D)
@@ -116,57 +113,41 @@ typedef enum
 
 #ifndef VECTOR_STRUCT_H
 #define VECTOR_STRUCT_H
-struct Vector
+typedef struct Vector
 {
   float XAxis;
   float YAxis;
   float ZAxis;
-};
+} Vector;
 #endif
 
-class DFRobot_QMC5883
-{
-public:
-  DFRobot_QMC5883():isHMC_(false),isQMC_(false),minX(0),maxX(0),minY(0), maxY(0), minZ(0), maxZ(0),firstRun(true)
-    {}
-  bool begin(void);
+  bool QMC5883_begin(void);
 
-  Vector readRaw(void);
-  Vector readNormalize(void);
+  Vector QMC5883_readRaw(void);
+  Vector QMC5883_readNormalize(void);
   
-  void initMinMax();
-  void calibrate(void);
+  void QMC5883_initMinMax();
+  void QMC5883_calibrate(void);
   
-  void  setRange(QMC5883_range_t range);
-  QMC5883_range_t getRange(void);
+  void  QMC5883_setRange(QMC5883_range_t range);
+  QMC5883_range_t QMC5883_getRange(void);
 
-  void  setMeasurementMode(QMC5883_mode_t mode);
-  QMC5883_mode_t getMeasurementMode(void);
+  void  QMC5883_setMeasurementMode(QMC5883_mode_t mode);
+  QMC5883_mode_t QMC5883_getMeasurementMode(void);
 
-  void  setDataRate(QMC5883_dataRate_t dataRate);
-  QMC5883_dataRate_t getDataRate(void);
+  void  QMC5883_setDataRate(QMC5883_dataRate_t dataRate);
+  QMC5883_dataRate_t QMC5883_getDataRate(void);
 
-  void  setSamples(QMC5883_samples_t samples);
-  QMC5883_samples_t getSamples(void);
-  int getICType(void);
-  bool isHMC(){return isHMC_;}
-  bool isQMC(){return isQMC_;}
-private:
-  bool isHMC_;
-  bool isQMC_;
-
-  float mgPerDigit;
-  Vector v;
+  void  QMC5883_setSamples(QMC5883_samples_t samples);
+  QMC5883_samples_t QMC5883_getSamples(void);
+  int QMC5883_getICType(void);
   
-  
-  float minX, maxX;
-  float minY, maxY;
-  float minZ, maxZ;
-  bool firstRun;
-  void writeRegister8(uint8_t reg, uint8_t value);
-  uint8_t readRegister8(uint8_t reg);
-  uint8_t fastRegister8(uint8_t reg);
-  int16_t readRegister16(uint8_t reg);
-};
+  bool QMC5883_isHMC();
+  bool QMC5883_isQMC();
+
+  void QMC5883_writeRegister8(uint8_t reg, uint8_t value);
+  uint8_t QMC5883_readRegister8(uint8_t reg);
+  uint8_t QMC5883_fastRegister8(uint8_t reg);
+  int16_t QMC5883_readRegister16(uint8_t reg);
 
 #endif

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arduino_gesture/src/arduino_getsture.c&apos; to &apos;arduino_gesture.c&apos;" description="Rename resource &apos;arduino_getsture.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_getsture.c" name="arduino_gesture.c" stamp="1548659822043" updateReferences="true"/>
+</session>
