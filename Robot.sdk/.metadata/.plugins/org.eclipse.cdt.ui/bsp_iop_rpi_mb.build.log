@@ -1,0 +1,25 @@
+16:47:10 **** Clean-only build of project bsp_iop_rpi_mb ****
+make -k clean 
+make -C iop_rpi_mb/libsrc/qspips_v3_4/src -s clean 
+make -C iop_rpi_mb/libsrc/standalone_v6_7/src -s clean 
+make -C iop_rpi_mb/libsrc/gpiops_v3_3/src -s clean 
+make -C iop_rpi_mb/libsrc/emacps_v3_7/src -s clean 
+make -C iop_rpi_mb/libsrc/uartps_v3_6/src -s clean 
+make -C iop_rpi_mb/libsrc/io_switch_v1_0/src -s clean 
+make -C iop_rpi_mb/libsrc/iic_v3_4/src -s clean 
+make -C iop_rpi_mb/libsrc/iicps_v3_7/src -s clean 
+make -C iop_rpi_mb/libsrc/pynqmb_v1_0/src -s clean 
+make -C iop_rpi_mb/libsrc/gpio_v4_3/src -s clean 
+make -C iop_rpi_mb/libsrc/uartlite_v3_2/src -s clean 
+make -C iop_rpi_mb/libsrc/spi_v4_4/src -s clean 
+make -C iop_rpi_mb/libsrc/cpu_v2_7/src -s clean 
+make -C iop_rpi_mb/libsrc/intc_v3_7/src -s clean 
+make -C iop_rpi_mb/libsrc/intrgpio_v4_1/src -s clean 
+make -C iop_rpi_mb/libsrc/sdps_v3_5/src -s clean 
+make -C iop_rpi_mb/libsrc/mailbox_bram_v0_1/src -s clean 
+make -C iop_rpi_mb/libsrc/usbps_v2_4/src -s clean 
+make -C iop_rpi_mb/libsrc/tmrctr_v4_4/src -s clean 
+rm -f iop_rpi_mb/lib/libxil.a
+
+16:47:11 Build Finished (took 782ms)
+

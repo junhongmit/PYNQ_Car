@@ -1,0 +1,464 @@
+
+*** Running vivado
+    with args -log base_PulseCounter_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_PulseCounter_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source base_PulseCounter_0_1.tcl -notrace
+Command: synth_design -top base_PulseCounter_0_1 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15766 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.820 ; gain = 85.707 ; free physical = 117 ; free virtual = 3412
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_PulseCounter_0_1' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ip/base_PulseCounter_0_1/synth/base_PulseCounter_0_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter_v2_0' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0.v:4]
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter_v2_0_S_AXI' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:4]
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/PulseCounter.v:23]
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/Filter.v:23]
+	Parameter STAT_WIDTH bound to: 3 - type: integer 
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+	Parameter S5 bound to: 3'b101 
+	Parameter S6 bound to: 3'b110 
+INFO: [Synth 8-6155] done synthesizing module 'Filter' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/Filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/Counter.v:23]
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (2#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'io_switch' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/io_switch.v:23]
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'io_switch' (3#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/io_switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter' (4#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/PulseCounter.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Sel' does not match port width (33) of module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:606]
+WARNING: [Synth 8-689] width (32) of port connection 'IO_Sel0' does not match port width (33) of module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:608]
+WARNING: [Synth 8-689] width (32) of port connection 'IO_Sel1' does not match port width (33) of module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:609]
+WARNING: [Synth 8-689] width (32) of port connection 'IO_Sel2' does not match port width (33) of module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:610]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter_v2_0_S_AXI' (5#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter_v2_0' (6#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/hdl/PulseCounter_v2_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'base_PulseCounter_0_1' (7#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ip/base_PulseCounter_0_1/synth/base_PulseCounter_0_1.v:56]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[20]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port Sel[32]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1390.445 ; gain = 130.332 ; free physical = 222 ; free virtual = 3426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1390.445 ; gain = 130.332 ; free physical = 236 ; free virtual = 3441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1390.445 ; gain = 130.332 ; free physical = 238 ; free virtual = 3443
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1755.477 ; gain = 2.000 ; free physical = 1384 ; free virtual = 4319
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1499 ; free virtual = 4435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1499 ; free virtual = 4435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1501 ; free virtual = 4437
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/Counter.v:42]
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'Filter'
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                              000 |                              000
+                      S4 |                              001 |                              100
+                      S5 |                              010 |                              101
+                      S6 |                              011 |                              110
+                      S1 |                              100 |                              001
+                      S2 |                              101 |                              010
+                      S3 |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_c_reg' using encoding 'sequential' in module 'Filter'
+WARNING: [Synth 8-327] inferring latch for variable 'dire_reg' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7e84/src/PulseCounter.v:124]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:01:15 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1509 ; free virtual = 4446
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               32 Bit    Registers := 23    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 30    
+	  23 Input     32 Bit        Muxes := 14    
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 294   
+	   7 Input      3 Bit        Muxes := 56    
+	   2 Input      1 Bit        Muxes := 36    
+	   9 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 21    
+	   7 Input      3 Bit        Muxes := 4     
+Module PulseCounter 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 16    
+Module PulseCounter_v2_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 15    
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  23 Input     32 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[20]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port Sel[32]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /nolabel_line603/\dire_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/PulseCounter_v2_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/PulseCounter_v2_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/PulseCounter_v2_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/PulseCounter_v2_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (dire_reg[7]) is unused and will be removed from module PulseCounter.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:23 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1417 ; free virtual = 4373
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:44 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1184 ; free virtual = 4146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:45 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1177 ; free virtual = 4139
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:46 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1805 ; free virtual = 4772
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:47 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1801 ; free virtual = 4771
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:47 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1801 ; free virtual = 4772
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:47 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1802 ; free virtual = 4773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:47 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1802 ; free virtual = 4773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:48 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1803 ; free virtual = 4773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:48 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1803 ; free virtual = 4773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    64|
+|2     |LUT1   |     9|
+|3     |LUT2   |   250|
+|4     |LUT3   |    15|
+|5     |LUT4   |   295|
+|6     |LUT5   |   115|
+|7     |LUT6   |   275|
+|8     |MUXF7  |    92|
+|9     |FDCE   |   326|
+|10    |FDRE   |   497|
+|11    |FDSE   |     1|
+|12    |LD     |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  1946|
+|2     |  inst                           |PulseCounter_v2_0       |  1946|
+|3     |    PulseCounter_v2_0_S_AXI_inst |PulseCounter_v2_0_S_AXI |  1943|
+|4     |      nolabel_line603            |PulseCounter            |  1092|
+|5     |        \genblk1[0].u1           |Filter                  |    16|
+|6     |        \genblk1[0].u2           |Filter_0                |    18|
+|7     |        \genblk1[1].u1           |Filter_1                |    16|
+|8     |        \genblk1[1].u2           |Filter_2                |    18|
+|9     |        \genblk1[2].u1           |Filter_3                |    16|
+|10    |        \genblk1[2].u2           |Filter_4                |    18|
+|11    |        \genblk1[3].u1           |Filter_5                |    16|
+|12    |        \genblk1[3].u2           |Filter_6                |    18|
+|13    |        \genblk1[4].u1           |Filter_7                |    16|
+|14    |        \genblk1[4].u2           |Filter_8                |    18|
+|15    |        \genblk1[5].u1           |Filter_9                |    16|
+|16    |        \genblk1[5].u2           |Filter_10               |    18|
+|17    |        \genblk1[6].u1           |Filter_11               |    16|
+|18    |        \genblk1[6].u2           |Filter_12               |    18|
+|19    |        u10                      |Counter                 |   105|
+|20    |        u3                       |Counter_13              |   104|
+|21    |        u4                       |Counter_14              |   104|
+|22    |        u5                       |Counter_15              |   104|
+|23    |        u6                       |Counter_16              |   104|
+|24    |        u7                       |Counter_17              |   104|
+|25    |        u8                       |Counter_18              |   104|
+|26    |        u9                       |Counter_19              |   104|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:48 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1803 ; free virtual = 4773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 1755.477 ; gain = 130.332 ; free physical = 1859 ; free virtual = 4830
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:48 . Memory (MB): peak = 1755.477 ; gain = 495.363 ; free physical = 1859 ; free virtual = 4830
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:51 . Memory (MB): peak = 1773.500 ; gain = 525.133 ; free physical = 1842 ; free virtual = 4814
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_PulseCounter_0_1_synth_1/base_PulseCounter_0_1.dcp' has been generated.

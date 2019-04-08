@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1553679851">
+  <File Type="VDS-TIMING-PB" Name="base_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="base_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="base_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="base_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="base_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="base_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="base_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="base_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="base_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/base/base.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../PYNQ_18.2/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd"/>
+        <Attr Name="ImportTime" Val="1551922726"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/base/hdl/base_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../PYNQ_18.2/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1551922740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/video/video.bd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../PYNQ_18.2/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/video/video.bd"/>
+        <Attr Name="ImportTime" Val="1551946890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="base_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/base.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../PYNQ_18.2/boards/Pynq-Z2/base/vivado/constraints/base.xdc"/>
+        <Attr Name="ImportTime" Val="1544058804"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_PulseCounter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xlconcat_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_system_interrupts_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_switches_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rp_pin_sel_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_pmodb_reset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_pmodb_intr_ack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi2pmoda_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_7_6_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_5_4_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_t_27_8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_t_sel_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_5_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_o_sel_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_distributor_rpi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_collector_pmoda_rpi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_pmoda_intr_ack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_arduino_reset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_audio_codec_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_logic_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_i_27_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_concat_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_rpi_reset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_trace_cntrl_64_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_if_cntlr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_3_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_o_27_8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_clk_wiz_1_100M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_bram_ctrl_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_bram_ctrl_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xadc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_clk_wiz_1_100M_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_bram_ctrl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi2pmoda_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timers_interrupt_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_pwm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_logic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_generate_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_3_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_pmoda_reset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_rpi_intr_ack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_clk_wiz_1_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_bram_ctrl_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_logic_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_concat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_hdmi_out_hpd_video_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb4_timer_pwm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dynclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_convert_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_proc_sys_reset_pixelclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_vdma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi2pmoda_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_7_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ps7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_5_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_unpack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_3_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_distributor_pmoda_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_7_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_arduino_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_concat_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_gpio_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_collector_rpi_27_8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_constant_tkeep_tstrb_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_if_cntlr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_direct_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb4_timers_interrupt_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb3_timer_capture_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_trace_cntrl_32_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_constant_tkeep_tstrb_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_data_fifo_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_v_vid_in_axi4s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dvi2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_logic_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_gpio_hdmiin_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_1_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_pack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_convert_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_shared_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_concat_pmodb_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_concat_interrupts_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_clk_wiz_10MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_leds_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_logic_1_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rgbleds_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_constant_8bit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_concat_rp_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_slice_pmodb_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iop_interrupts_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_iop_arduino_intr_ack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_direct_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_btns_gpio_0"/>
+</GenRun>

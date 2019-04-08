@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arduino_run_linetracker/src/arduino_4wdmoto.c&apos; to &apos;arduino_run_linetracker.c&apos;" description="Rename resource &apos;arduino_4wdmoto.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_4wdmoto.c" name="arduino_run_linetracker.c" stamp="1548830358839" updateReferences="true"/>
+</session>

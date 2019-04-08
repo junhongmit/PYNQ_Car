@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pulseCounter.srcs/sources_1/new/Filter.v" \
+"../../../../pulseCounter.srcs/sim_1/new/test_Filter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

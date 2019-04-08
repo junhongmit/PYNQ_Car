@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Fri Mar 15 17:08:30 2019
+# Process ID: 42510
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.sdk/webtalk/webtalk.log
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,8 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto f667b0e0e7d2469285139804581404d8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PulseCounter_v2_0_behav xil_defaultlib.PulseCounter_v2_0 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0_S_AXI.v:603]
+ERROR: [VRFC 10-2063] Module <Counter> not found while processing module instance <u3> [/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/PulseCounter.v:222]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

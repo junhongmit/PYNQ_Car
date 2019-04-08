@@ -1,0 +1,27 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Sun Feb 24 14:48:25 UTC 2019.
+#
+# This is license NODELOCKED to HOSTID=000c29a77eb7;
+# there is no need to run lmgrd for this license.
+#
+#
+#  This license is valid for evaluation ( 120 days ) from Sun Feb 24 14:48:25 UTC 2019
+INCREMENT v_osd xilinxd 2020.02 25-jun-2019 uncounted 45A18CCAC204 \
+VENDOR_STRING=License_Type:Hardware_Evaluation;junhonghust,v_osd,ip,evaluation,_211599699_0_0_905 \
+HOSTID=000c29a77eb7 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for junhonghust on 02/25/2019It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." START=24-Feb-2019 TS_OK
+#
+# Licenses for v_osd_v1_0
+FEATURE v_osd_v1_0 xilinxd 1.0 25-jun-2019 uncounted 41404217697C \
+VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=000c29a77eb7 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for junhonghust on 02/25/2019It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." TS_OK
+#
+# ----- REMOVE LINES BELOW HERE --------------------------

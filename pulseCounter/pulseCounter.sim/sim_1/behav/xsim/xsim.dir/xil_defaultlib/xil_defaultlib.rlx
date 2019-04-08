@@ -1,0 +1,11 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xilinx_vip,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_Filter.v,1550898397,verilog,,,,test_Filter,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v,1553155618,verilog,,,,test_PulseCounter,,xilinx_vip,/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/Counter.v,1553074517,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/Filter.v,,Counter,,xilinx_vip,/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/Filter.v,1550897379,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/PulseCounter.v,,Filter,,xilinx_vip,/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/PulseCounter.v,1553075700,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/io_switch.v,,PulseCounter,,xilinx_vip,/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/io_switch.v,1553075615,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v,,io_switch,,xilinx_vip,/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include,,,,,

@@ -61,6 +61,10 @@
  */
 typedef int spi;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 spi spi_open_device(unsigned int device);
 spi spi_open(unsigned int spiclk, unsigned int miso, 
              unsigned int mosi, unsigned int ss);
@@ -70,6 +74,10 @@ void spi_transfer(spi dev_id, const char* write_data, char* read_data,
                   unsigned int length);
 void spi_close(spi dev_id);
 unsigned int spi_get_num_devices(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 #endif  // _SPI_H_

@@ -1,0 +1,20 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 9a11c1af8fb24b5e90c5c4ecb1fa889f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_PulseCounter_behav xil_defaultlib.test_PulseCounter xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port Sel [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v:145]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port IO_Sel0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v:146]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port IO_Sel1 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v:147]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port IO_Sel2 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v:148]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.io_switch
+Compiling module xil_defaultlib.PulseCounter_default
+Compiling module xil_defaultlib.test_PulseCounter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_PulseCounter_behav

@@ -1,0 +1,631 @@
+
+*** Running vivado
+    with args -log system_lmb_bram_if_cntlr_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_lmb_bram_if_cntlr_3.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_lmb_bram_if_cntlr_3.tcl -notrace
+Command: synth_design -top system_lmb_bram_if_cntlr_3 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 35676 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1345.633 ; gain = 85.738 ; free physical = 902 ; free virtual = 1458
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_lmb_bram_if_cntlr_3' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_lmb_bram_if_cntlr_3/synth/system_lmb_bram_if_cntlr_3.vhd:95]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 2 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_lmb_bram_if_cntlr_3/synth/system_lmb_bram_if_cntlr_3.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_NUM_LMB bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI_CTRL_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET bound to: 3 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+	Parameter C_TARGET bound to: 3 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2902]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2902]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask__parameterized1' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-256] done synthesizing module 'system_lmb_bram_if_cntlr_3' (4#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_lmb_bram_if_cntlr_3/synth/system_lmb_bram_if_cntlr_3.vhd:95]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[3]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[4]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[5]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[6]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[7]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[8]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[9]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[10]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[11]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[12]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[13]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[14]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[15]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[16]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[17]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[18]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[19]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[20]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[21]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[22]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[23]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[24]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[25]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[26]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[27]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[28]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[29]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[30]
+WARNING: [Synth 8-3331] design pselect_mask__parameterized1 has unconnected port A[31]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[0]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[1]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[2]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[3]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[4]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[5]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[6]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[7]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[8]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[9]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[10]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[11]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[12]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[13]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[14]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[15]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[16]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[17]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[18]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[19]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[20]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[21]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[22]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[23]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[24]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[25]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[26]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[27]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[28]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[29]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[30]
+WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[31]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[0]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[1]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[2]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[3]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[4]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[5]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[6]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[7]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[8]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[9]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[10]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[11]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[12]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[13]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[14]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[15]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[16]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[17]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[18]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[19]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[20]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[21]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[22]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[23]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[24]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[25]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[26]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[27]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[28]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[29]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[30]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_ABus[31]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[0]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[1]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[2]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[3]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[4]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[5]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB2_WriteDBus[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.258 ; gain = 131.363 ; free physical = 930 ; free virtual = 1488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.258 ; gain = 131.363 ; free physical = 1016 ; free virtual = 1574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.258 ; gain = 131.363 ; free physical = 1016 ; free virtual = 1574
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1760.266 ; gain = 2.000 ; free physical = 655 ; free virtual = 1237
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 854 ; free virtual = 1438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 854 ; free virtual = 1438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 856 ; free virtual = 1440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:01:07 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 843 ; free virtual = 1428
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lmb_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 21    
+Module lmb_bram_if_cntlr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design system_lmb_bram_if_cntlr_3 has port BRAM_Rst_A driven by constant 0
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][0]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][1]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][2]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][3]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][4]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][5]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[1].LMB_WriteECC_vec_Q_reg[1][6]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][0]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][1]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][2]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][3]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][4]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][5]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteECC_vec_Q_reg[0][6]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteStrobe_vec_Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_AddrStrobe_vec_Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][0] )
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][0]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][1]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][2]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][3]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][4]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][5]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][6]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][7]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][8]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][9]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][10]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][11]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][12]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][13]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][14]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][15]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][16]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][17]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][18]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][19]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][20]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][21]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][22]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][23]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][24]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][25]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][26]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][27]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][28]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][29]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][30]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_ABus_vec_Q_reg[0][31]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][0]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][1]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][2]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][3]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][4]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][5]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][6]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][7]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][8]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][9]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][10]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][11]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][12]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][13]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][14]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][15]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][16]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][17]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][18]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][19]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][20]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][21]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][22]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][23]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][24]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][25]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][26]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][27]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][28]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][29]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][30]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_WriteDBus_vec_Q_reg[0][31]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][0]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][1]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][2]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+INFO: [Synth 8-3332] Sequential element (U0/lmb_mux_I/more_than_one_lmb.lmb_mux_generate[0].LMB_BE_vec_Q_reg[0][3]) is unused and will be removed from module system_lmb_bram_if_cntlr_3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:08 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 832 ; free virtual = 1426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 622 ; free virtual = 1220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 621 ; free virtual = 1220
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 620 ; free virtual = 1218
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1214
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1214
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     7|
+|3     |LUT5 |    70|
+|4     |LUT6 |     2|
+|5     |FDRE |    74|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------+------------------+------+
+|      |Instance      |Module            |Cells |
++------+--------------+------------------+------+
+|1     |top           |                  |   154|
+|2     |  U0          |lmb_bram_if_cntlr |   154|
+|3     |    lmb_mux_I |lmb_mux           |   152|
++------+--------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 615 ; free virtual = 1213
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 1760.266 ; gain = 131.363 ; free physical = 672 ; free virtual = 1270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:30 . Memory (MB): peak = 1760.266 ; gain = 500.371 ; free physical = 672 ; free virtual = 1270
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1760.266 ; gain = 512.086 ; free physical = 654 ; free virtual = 1252
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_lmb_bram_if_cntlr_3_synth_1/system_lmb_bram_if_cntlr_3.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_lmb_bram_if_cntlr_3/system_lmb_bram_if_cntlr_3.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_lmb_bram_if_cntlr_3_synth_1/system_lmb_bram_if_cntlr_3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_lmb_bram_if_cntlr_3_utilization_synth.rpt -pb system_lmb_bram_if_cntlr_3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1784.277 ; gain = 0.000 ; free physical = 641 ; free virtual = 1240
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 14:24:16 2019...

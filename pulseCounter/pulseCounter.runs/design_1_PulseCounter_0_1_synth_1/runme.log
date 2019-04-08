@@ -1,0 +1,570 @@
+
+*** Running vivado
+    with args -log design_1_PulseCounter_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PulseCounter_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_PulseCounter_0_1.tcl -notrace
+Command: synth_design -top design_1_PulseCounter_0_1 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 95431 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1340.828 ; gain = 82.707 ; free physical = 2324 ; free virtual = 5764
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_PulseCounter_0_1' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ip/design_1_PulseCounter_0_1/synth/design_1_PulseCounter_0_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter_v2_0' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0.v:4]
+	Parameter COUNT_WIDTH bound to: 16 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter_v2_0_S_AXI' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:4]
+	Parameter COUNT_WIDTH bound to: 16 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/PulseCounter.v:23]
+	Parameter COUNT_WIDTH bound to: 16 - type: integer 
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/Filter.v:23]
+	Parameter STAT_WIDTH bound to: 3 - type: integer 
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+	Parameter S5 bound to: 3'b101 
+	Parameter S6 bound to: 3'b110 
+INFO: [Synth 8-6155] done synthesizing module 'Filter' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/Filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/Counter.v:23]
+	Parameter COUNT_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (2#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'io_switch' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/io_switch.v:23]
+	Parameter INPUT_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'io_switch' (3#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/io_switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter' (4#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/PulseCounter.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Sel' does not match port width (33) of module 'PulseCounter' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:606]
+WARNING: [Synth 8-350] instance 'nolabel_line603' of module 'PulseCounter' requires 23 connections, but only 20 given [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter_v2_0_S_AXI' (5#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PulseCounter_v2_0' (6#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PulseCounter_0_1' (7#1) [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ip/design_1_PulseCounter_0_1/synth/design_1_PulseCounter_0_1.v:56]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel0[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel1[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[32]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port IO_Sel2[20]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port Sel[32]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1384.453 ; gain = 126.332 ; free physical = 2330 ; free virtual = 5771
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[32] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[31] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[30] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[29] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[28] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[27] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[26] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[25] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[24] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[23] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[22] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[21] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[20] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[19] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[18] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[17] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[16] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[15] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[14] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[13] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[12] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[11] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[10] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[9] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[8] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[7] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[6] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[5] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[4] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[3] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[2] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[1] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel0[0] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[32] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[31] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[30] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[29] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[28] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[27] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[26] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[25] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[24] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[23] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[22] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[21] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[20] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[19] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[18] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[17] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[16] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[15] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[14] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[13] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[12] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[11] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[10] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[9] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[8] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[7] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[6] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[5] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[4] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[3] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[2] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[1] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel1[0] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[32] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[31] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[30] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[29] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[28] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[27] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[26] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[25] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[24] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[23] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[22] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[21] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[20] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[19] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[18] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[17] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[16] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[15] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[14] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[13] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[12] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[11] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[10] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[9] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[8] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[7] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[6] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[5] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[4] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[3] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[2] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[1] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line603:IO_Sel2[0] to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/hdl/PulseCounter_v2_0_S_AXI.v:603]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1384.453 ; gain = 126.332 ; free physical = 2334 ; free virtual = 5775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1384.453 ; gain = 126.332 ; free physical = 2334 ; free virtual = 5775
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.25 . Memory (MB): peak = 1762.484 ; gain = 2.000 ; free physical = 2064 ; free virtual = 5505
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2139 ; free virtual = 5581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2139 ; free virtual = 5581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2142 ; free virtual = 5583
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/Counter.v:42]
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'Filter'
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                              000 |                              000
+                      S4 |                              001 |                              100
+                      S5 |                              010 |                              101
+                      S6 |                              011 |                              110
+                      S1 |                              100 |                              001
+                      S2 |                              101 |                              010
+                      S3 |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_c_reg' using encoding 'sequential' in module 'Filter'
+WARNING: [Synth 8-327] inferring latch for variable 'dire_reg' [/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ipshared/9626/src/PulseCounter.v:124]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2133 ; free virtual = 5575
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               32 Bit    Registers := 15    
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  23 Input     32 Bit        Muxes := 14    
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 294   
+	   7 Input      3 Bit        Muxes := 56    
+	   2 Input      1 Bit        Muxes := 36    
+	   9 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 21    
+	   7 Input      3 Bit        Muxes := 4     
+Module PulseCounter 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 16    
+Module PulseCounter_v2_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 15    
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  23 Input     32 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port Sel[32]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel0[32]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel0[31]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel0[30]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel1[32]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel1[31]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel1[30]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[32]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[31]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[30]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[29]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[28]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[27]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[26]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[25]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[24]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[23]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[22]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[21]
+WARNING: [Synth 8-3331] design PulseCounter has unconnected port IO_Sel2[20]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PulseCounter_v2_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /nolabel_line603/\dire_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/PulseCounter_v2_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/PulseCounter_v2_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/PulseCounter_v2_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/PulseCounter_v2_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PulseCounter_v2_0_S_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (dire_reg[7]) is unused and will be removed from module PulseCounter.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module PulseCounter_v2_0_S_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2114 ; free virtual = 5558
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1986 ; free virtual = 5430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1985 ; free virtual = 5429
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:08 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1983 ; free virtual = 5427
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    32|
+|2     |LUT1   |     9|
+|3     |LUT2   |   122|
+|4     |LUT3   |    15|
+|5     |LUT4   |   167|
+|6     |LUT5   |    85|
+|7     |LUT6   |   189|
+|8     |MUXF7  |    32|
+|9     |FDCE   |   198|
+|10    |FDRE   |   495|
+|11    |FDSE   |     1|
+|12    |LD     |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  1352|
+|2     |  inst                           |PulseCounter_v2_0       |  1352|
+|3     |    PulseCounter_v2_0_S_AXI_inst |PulseCounter_v2_0_S_AXI |  1349|
+|4     |      nolabel_line603            |PulseCounter            |   564|
+|5     |        \genblk1[0].u1           |Filter                  |     8|
+|6     |        \genblk1[0].u2           |Filter_0                |    10|
+|7     |        \genblk1[1].u1           |Filter_1                |     8|
+|8     |        \genblk1[1].u2           |Filter_2                |    10|
+|9     |        \genblk1[2].u1           |Filter_3                |     8|
+|10    |        \genblk1[2].u2           |Filter_4                |    10|
+|11    |        \genblk1[3].u1           |Filter_5                |     8|
+|12    |        \genblk1[3].u2           |Filter_6                |    10|
+|13    |        \genblk1[4].u1           |Filter_7                |     8|
+|14    |        \genblk1[4].u2           |Filter_8                |    10|
+|15    |        \genblk1[5].u1           |Filter_9                |     8|
+|16    |        \genblk1[5].u2           |Filter_10               |    10|
+|17    |        \genblk1[6].u1           |Filter_11               |     8|
+|18    |        \genblk1[6].u2           |Filter_12               |    10|
+|19    |        u10                      |Counter                 |    53|
+|20    |        u3                       |Counter_13              |    52|
+|21    |        u4                       |Counter_14              |    52|
+|22    |        u5                       |Counter_15              |    52|
+|23    |        u6                       |Counter_16              |    52|
+|24    |        u7                       |Counter_17              |    52|
+|25    |        u8                       |Counter_18              |    52|
+|26    |        u9                       |Counter_19              |    52|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 1984 ; free virtual = 5428
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.484 ; gain = 126.332 ; free physical = 2042 ; free virtual = 5486
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:10 . Memory (MB): peak = 1762.484 ; gain = 504.363 ; free physical = 2042 ; free virtual = 5486
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:12 . Memory (MB): peak = 1770.492 ; gain = 524.117 ; free physical = 2037 ; free virtual = 5481
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.runs/design_1_PulseCounter_0_1_synth_1/design_1_PulseCounter_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/bd/design_1/ip/design_1_PulseCounter_0_1/design_1_PulseCounter_0_1.xci
+INFO: [Coretcl 2-1174] Renamed 25 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.runs/design_1_PulseCounter_0_1_synth_1/design_1_PulseCounter_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_PulseCounter_0_1_utilization_synth.rpt -pb design_1_PulseCounter_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1794.504 ; gain = 0.000 ; free physical = 2034 ; free virtual = 5479
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 18:26:58 2019...

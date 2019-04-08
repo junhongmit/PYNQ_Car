@@ -102,10 +102,18 @@ enum io_configuration {
 
 #define SWITCH_BASEADDR XPAR_IO_SWITCH_0_S_AXI_BASEADDR
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // Functions defined in xio_switch.c					
 void config_io_switch(int num_of_pins);
 void set_pin(int pin_number, u8 pin_type);
 void init_io_switch(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // _XIO_SWITCH_H_
 

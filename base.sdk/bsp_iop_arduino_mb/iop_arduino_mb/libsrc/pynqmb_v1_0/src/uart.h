@@ -60,12 +60,21 @@
  */
 typedef int uart;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 uart uart_open_device(unsigned int device);
 uart uart_open(unsigned int tx, unsigned int rx);
-void uart_read(uart dev_id, unsigned char* read_data, unsigned int length);
-void uart_write(uart dev_id, unsigned char* write_data, unsigned int length);
+unsigned int uart_available(uart dev_id);
+unsigned int uart_read(uart dev_id, unsigned char* read_data, unsigned int length);
+unsigned int uart_write(uart dev_id, unsigned char* write_data, unsigned int length);
 void uart_close(uart dev_id);
 unsigned int uart_get_num_devices(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 #endif  // _UART_H_

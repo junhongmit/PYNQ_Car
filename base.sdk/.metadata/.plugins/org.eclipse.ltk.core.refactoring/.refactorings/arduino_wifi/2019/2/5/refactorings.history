@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arduino_wifi/src/arduino_wifi.c&apos; to &apos;arduino_wifi.cpp&apos;" description="Rename resource &apos;arduino_wifi.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/arduino_wifi.c" name="arduino_wifi.cpp" stamp="1549008551879" updateReferences="true"/>
+</session>

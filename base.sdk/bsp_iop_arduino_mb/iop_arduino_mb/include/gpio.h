@@ -64,6 +64,10 @@ GPIO_INDEX_MAX = 31,
 
 typedef int gpio;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 gpio gpio_open_device(unsigned int device);
 gpio gpio_open(unsigned int pin);
 gpio gpio_configure(gpio device, unsigned int low, unsigned int high, 
@@ -73,6 +77,9 @@ int gpio_read(gpio device);
 void gpio_write(gpio device, unsigned int data);
 void gpio_close(gpio device);
 unsigned int gpio_get_num_devices(void);
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 #endif  // _GPIO_H_

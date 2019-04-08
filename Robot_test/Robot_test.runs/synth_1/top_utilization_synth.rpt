@@ -1,0 +1,441 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue Mar 19 11:31:47 2019
+| Host         : ubuntu running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+| Design       : top
+| Device       : 7z020clg400-1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs*             |    8 |     0 |     53200 |  0.02 |
+|   LUT as Logic          |    8 |     0 |     53200 |  0.02 |
+|   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
+| Slice Registers         |    0 |     0 |    106400 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
+|   Register as Latch     |    0 |     0 |    106400 |  0.00 |
+| F7 Muxes                |    0 |     0 |     26600 |  0.00 |
+| F8 Muxes                |    0 |     0 |     13300 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       140 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
+|   RAMB18       |    0 |     0 |       280 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       220 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |  105 |     0 |       125 | 84.00 |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
+| IBUFDS                      |    0 |     0 |       121 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
+| ILOGIC                      |    0 |     0 |       125 |  0.00 |
+| OLOGIC                      |    0 |     0 |       125 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| IBUF     |   87 |                  IO |
+| OBUFT    |   66 |                  IO |
+| OBUF     |   18 |                  IO |
+| LUT3     |   16 |                 LUT |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------------------------------+------+
+|             Ref Name             | Used |
++----------------------------------+------+
+| system_xlslice_5_5               |    1 |
+| system_xlslice_5_4               |    1 |
+| system_xlslice_5_3               |    1 |
+| system_xlslice_5_2               |    1 |
+| system_xlslice_5_1               |    1 |
+| system_xlslice_5_0               |    1 |
+| system_xlslice_4_0               |    1 |
+| system_xlslice_3_0               |    1 |
+| system_xlslice_2_0               |    1 |
+| system_xlslice_1_0               |    1 |
+| system_xlslice_0_2               |    1 |
+| system_xlslice_0_1               |    1 |
+| system_xlconcat_0_0              |    1 |
+| system_xbar_9                    |    1 |
+| system_xbar_8                    |    1 |
+| system_xbar_7                    |    1 |
+| system_xbar_6                    |    1 |
+| system_xbar_5                    |    1 |
+| system_xbar_4                    |    1 |
+| system_xbar_3                    |    1 |
+| system_xbar_2                    |    1 |
+| system_xbar_10                   |    1 |
+| system_xbar_1                    |    1 |
+| system_xbar_0                    |    1 |
+| system_xadc_0                    |    1 |
+| system_vtc_out_0                 |    1 |
+| system_vtc_in_0                  |    1 |
+| system_v_vid_in_axi4s_0_0        |    1 |
+| system_v_axi4s_vid_out_0_0       |    1 |
+| system_uartlite_1                |    1 |
+| system_uartlite_0                |    1 |
+| system_trace_cntrl_64_0_0        |    1 |
+| system_trace_cntrl_32_0_0        |    1 |
+| system_timer_5_0                 |    1 |
+| system_timer_4_0                 |    1 |
+| system_timer_3_0                 |    1 |
+| system_timer_2_0                 |    1 |
+| system_timer_1_1                 |    1 |
+| system_timer_1_0                 |    1 |
+| system_timer_1                   |    1 |
+| system_timer_0_1                 |    1 |
+| system_timer_0_0                 |    1 |
+| system_timer_0                   |    1 |
+| system_tier2_xbar_2_0            |    1 |
+| system_tier2_xbar_1_0            |    1 |
+| system_tier2_xbar_0_0            |    1 |
+| system_system_interrupts_0       |    1 |
+| system_switches_gpio_0           |    1 |
+| system_spi_shared_0              |    1 |
+| system_spi_direct_0              |    1 |
+| system_spi_1_0                   |    1 |
+| system_spi_1                     |    1 |
+| system_spi_0_0                   |    1 |
+| system_spi_0                     |    1 |
+| system_s00_regslice_6            |    1 |
+| system_s00_regslice_5            |    1 |
+| system_s00_regslice_4            |    1 |
+| system_s00_regslice_3            |    1 |
+| system_s00_regslice_2            |    1 |
+| system_s00_regslice_1            |    1 |
+| system_s00_regslice_0            |    1 |
+| system_rst_ps7_0_fclk3_0         |    1 |
+| system_rst_ps7_0_fclk1_0         |    1 |
+| system_rst_ps7_0_fclk0_0         |    1 |
+| system_rst_clk_wiz_1_100M_3      |    1 |
+| system_rst_clk_wiz_1_100M_2      |    1 |
+| system_rst_clk_wiz_1_100M_1      |    1 |
+| system_rst_clk_wiz_1_100M_0      |    1 |
+| system_rpi_gpio_0                |    1 |
+| system_rgbleds_gpio_0            |    1 |
+| system_rgb2dvi_0_0               |    1 |
+| system_ps7_0_0                   |    1 |
+| system_proc_sys_reset_pixelclk_0 |    1 |
+| system_pmoda_rp_pin_sel_0        |    1 |
+| system_pixel_unpack_0            |    1 |
+| system_pixel_pack_0              |    1 |
+| system_mdm_1_0                   |    1 |
+| system_mb_iop_rpi_reset_0        |    1 |
+| system_mb_iop_rpi_intr_ack_0     |    1 |
+| system_mb_iop_pmodb_reset_0      |    1 |
+| system_mb_iop_pmodb_intr_ack_0   |    1 |
+| system_mb_iop_pmoda_reset_0      |    1 |
+| system_mb_iop_pmoda_intr_ack_0   |    1 |
+| system_mb_iop_arduino_reset_0    |    1 |
+| system_mb_iop_arduino_intr_ack_0 |    1 |
+| system_mb_bram_ctrl_3            |    1 |
+| system_mb_bram_ctrl_2            |    1 |
+| system_mb_bram_ctrl_1            |    1 |
+| system_mb_bram_ctrl_0            |    1 |
+| system_mb_3                      |    1 |
+| system_mb_2                      |    1 |
+| system_mb_1                      |    1 |
+| system_mb_0                      |    1 |
+| system_mb4_timers_interrupt_0    |    1 |
+| system_mb4_timer_pwm_0           |    1 |
+| system_mb3_timers_interrupt_0    |    1 |
+| system_mb3_timer_pwm_0           |    1 |
+| system_mb3_timer_generate_0      |    1 |
+| system_mb3_timer_capture_7_0     |    1 |
+| system_mb3_timer_capture_6_0     |    1 |
+| system_mb3_timer_capture_5_0     |    1 |
+| system_mb3_timer_capture_4_0     |    1 |
+| system_mb3_timer_capture_3_0     |    1 |
+| system_mb3_timer_capture_2_0     |    1 |
+| system_mb3_timer_capture_1_0     |    1 |
+| system_mb3_timer_capture_0_0     |    1 |
+| system_m16_regslice_0            |    1 |
+| system_m15_regslice_0            |    1 |
+| system_m14_regslice_0            |    1 |
+| system_m13_regslice_0            |    1 |
+| system_m12_regslice_0            |    1 |
+| system_m11_regslice_1            |    1 |
+| system_m11_regslice_0            |    1 |
+| system_m10_regslice_1            |    1 |
+| system_m10_regslice_0            |    1 |
+| system_m09_regslice_2            |    1 |
+| system_m09_regslice_1            |    1 |
+| system_m09_regslice_0            |    1 |
+| system_m08_regslice_2            |    1 |
+| system_m08_regslice_1            |    1 |
+| system_m08_regslice_0            |    1 |
+| system_m07_regslice_5            |    1 |
+| system_m07_regslice_4            |    1 |
+| system_m07_regslice_3            |    1 |
+| system_m07_regslice_2            |    1 |
+| system_m07_regslice_1            |    1 |
+| system_m07_regslice_0            |    1 |
+| system_m06_regslice_5            |    1 |
+| system_m06_regslice_4            |    1 |
+| system_m06_regslice_3            |    1 |
+| system_m06_regslice_2            |    1 |
+| system_m06_regslice_1            |    1 |
+| system_m06_regslice_0            |    1 |
+| system_m05_regslice_5            |    1 |
+| system_m05_regslice_4            |    1 |
+| system_m05_regslice_3            |    1 |
+| system_m05_regslice_2            |    1 |
+| system_m05_regslice_1            |    1 |
+| system_m05_regslice_0            |    1 |
+| system_m04_regslice_5            |    1 |
+| system_m04_regslice_4            |    1 |
+| system_m04_regslice_3            |    1 |
+| system_m04_regslice_2            |    1 |
+| system_m04_regslice_1            |    1 |
+| system_m04_regslice_0            |    1 |
+| system_m03_regslice_6            |    1 |
+| system_m03_regslice_5            |    1 |
+| system_m03_regslice_4            |    1 |
+| system_m03_regslice_3            |    1 |
+| system_m03_regslice_2            |    1 |
+| system_m03_regslice_1            |    1 |
+| system_m03_regslice_0            |    1 |
+| system_m02_regslice_6            |    1 |
+| system_m02_regslice_5            |    1 |
+| system_m02_regslice_4            |    1 |
+| system_m02_regslice_3            |    1 |
+| system_m02_regslice_2            |    1 |
+| system_m02_regslice_1            |    1 |
+| system_m02_regslice_0            |    1 |
+| system_m01_regslice_6            |    1 |
+| system_m01_regslice_5            |    1 |
+| system_m01_regslice_4            |    1 |
+| system_m01_regslice_3            |    1 |
+| system_m01_regslice_2            |    1 |
+| system_m01_regslice_1            |    1 |
+| system_m01_regslice_0            |    1 |
+| system_m00_regslice_6            |    1 |
+| system_m00_regslice_5            |    1 |
+| system_m00_regslice_4            |    1 |
+| system_m00_regslice_3            |    1 |
+| system_m00_regslice_2            |    1 |
+| system_m00_regslice_1            |    1 |
+| system_m00_regslice_0            |    1 |
+| system_logic_1_4                 |    1 |
+| system_logic_1_3                 |    1 |
+| system_logic_1_2                 |    1 |
+| system_logic_1_1                 |    1 |
+| system_logic_1_0                 |    1 |
+| system_lmb_bram_if_cntlr_3       |    1 |
+| system_lmb_bram_if_cntlr_2       |    1 |
+| system_lmb_bram_if_cntlr_1       |    1 |
+| system_lmb_bram_if_cntlr_0       |    1 |
+| system_lmb_bram_3                |    1 |
+| system_lmb_bram_2                |    1 |
+| system_lmb_bram_1                |    1 |
+| system_lmb_bram_0                |    1 |
+| system_leds_gpio_0               |    1 |
+| system_iop_interrupts_0          |    1 |
+| system_io_switch_3               |    1 |
+| system_io_switch_2               |    1 |
+| system_io_switch_1               |    1 |
+| system_io_switch_0               |    1 |
+| system_intr_concat_2             |    1 |
+| system_intr_concat_1             |    1 |
+| system_intr_concat_0             |    1 |
+| system_intr_3                    |    1 |
+| system_intr_2                    |    1 |
+| system_intr_1                    |    1 |
+| system_intr_0                    |    1 |
+| system_interrupt_concat_0        |    1 |
+| system_intc_3                    |    1 |
+| system_intc_2                    |    1 |
+| system_intc_1                    |    1 |
+| system_intc_0                    |    1 |
+| system_ilmb_v10_3                |    1 |
+| system_ilmb_v10_2                |    1 |
+| system_ilmb_v10_1                |    1 |
+| system_ilmb_v10_0                |    1 |
+| system_iic_direct_0              |    1 |
+| system_iic_1_0                   |    1 |
+| system_iic_1                     |    1 |
+| system_iic_0_0                   |    1 |
+| system_iic_0                     |    1 |
+| system_hdmi_out_hpd_video_0      |    1 |
+| system_gpio_1                    |    1 |
+| system_gpio_0                    |    1 |
+| system_dvi2rgb_0_0               |    1 |
+| system_dlmb_v10_3                |    1 |
+| system_dlmb_v10_2                |    1 |
+| system_dlmb_v10_1                |    1 |
+| system_dlmb_v10_0                |    1 |
+| system_dff_en_reset_vector_0_3   |    1 |
+| system_dff_en_reset_vector_0_2   |    1 |
+| system_dff_en_reset_vector_0_1   |    1 |
+| system_dff_en_reset_vector_0_0   |    1 |
+| system_constant_tkeep_tstrb_1    |    1 |
+| system_constant_tkeep_tstrb_0    |    1 |
+| system_constant_8bit_0_0         |    1 |
+| system_concat_rp_0               |    1 |
+| system_concat_pmodb_0            |    1 |
+| system_concat_interrupts_0       |    1 |
+| system_color_swap_0_1            |    1 |
+| system_color_swap_0_0            |    1 |
+| system_color_convert_1           |    1 |
+| system_color_convert_0           |    1 |
+| system_clk_wiz_10MHz_0           |    1 |
+| system_btns_gpio_0               |    1 |
+| system_axis_register_slice_0_1   |    1 |
+| system_axis_register_slice_0_0   |    1 |
+| system_axis_data_fifo_0_1        |    1 |
+| system_axis_data_fifo_0_0        |    1 |
+| system_axi_vdma_0                |    1 |
+| system_axi_gpio_hdmiin_0         |    1 |
+| system_axi_dynclk_0              |    1 |
+| system_axi_dma_0_1               |    1 |
+| system_axi_dma_0_0               |    1 |
+| system_auto_us_1                 |    1 |
+| system_auto_us_0                 |    1 |
+| system_auto_pc_9                 |    1 |
+| system_auto_pc_8                 |    1 |
+| system_auto_pc_7                 |    1 |
+| system_auto_pc_6                 |    1 |
+| system_auto_pc_5                 |    1 |
+| system_auto_pc_4                 |    1 |
+| system_auto_pc_3                 |    1 |
+| system_auto_pc_2                 |    1 |
+| system_auto_pc_11                |    1 |
+| system_auto_pc_10                |    1 |
+| system_auto_pc_1                 |    1 |
+| system_auto_pc_0                 |    1 |
+| system_auto_cc_3                 |    1 |
+| system_auto_cc_2                 |    1 |
+| system_auto_cc_1                 |    1 |
+| system_auto_cc_0                 |    1 |
+| system_audio_codec_ctrl_0_0      |    1 |
+| system_arduino_gpio_0            |    1 |
+| system_PulseCounter_0_2          |    1 |
+| system_PulseCounter_0_1          |    1 |
+| system_PulseCounter_0_0          |    1 |
++----------------------------------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+

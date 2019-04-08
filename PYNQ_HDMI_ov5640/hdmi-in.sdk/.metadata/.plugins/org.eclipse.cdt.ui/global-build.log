@@ -1,0 +1,681 @@
+01:30:51 **** Build of project PYNQ_ov5640_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_4/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling dmaps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_4/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling axivdma
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling iicps
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+01:31:27 **** Clean-only build of configuration Debug for project PYNQ_ov5640 ****
+make clean 
+rm -rf  ./src/vdma/xaxivdma_ext.o  ./src/timer_ps/timer_ps.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/OV5640.o ./src/SCCB.o ./src/display_demo.o ./src/platform.o  ./src/vdma/xaxivdma_ext.d  ./src/timer_ps/timer_ps.d  ./src/dynclk/dynclk.d  ./src/display_ctrl/display_ctrl.d  ./src/OV5640.d ./src/SCCB.d ./src/display_demo.d ./src/platform.d  PYNQ_ov5640.elf.size  PYNQ_ov5640.elf
+ 
+01:31:28 **** Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/vdma/xaxivdma_ext.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma/xaxivdma_ext.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma/xaxivdma_ext.d" -MT"src/vdma/xaxivdma_ext.o" -o "src/vdma/xaxivdma_ext.o" "../src/vdma/xaxivdma_ext.c"
+Finished building: ../src/vdma/xaxivdma_ext.c
+ 
+Building file: ../src/timer_ps/timer_ps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_ps/timer_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_ps/timer_ps.d" -MT"src/timer_ps/timer_ps.o" -o "src/timer_ps/timer_ps.o" "../src/timer_ps/timer_ps.c"
+Finished building: ../src/timer_ps/timer_ps.c
+ 
+Building file: ../src/dynclk/dynclk.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.o" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+Finished building: ../src/dynclk/dynclk.c
+ 
+Building file: ../src/display_ctrl/display_ctrl.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.o" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+../src/display_ctrl/display_ctrl.c: In function 'DisplayStart':
+../src/display_ctrl/display_ctrl.c:146:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+../src/display_ctrl/display_ctrl.c: In function 'DisplayInitialize':
+../src/display_ctrl/display_ctrl.c:244:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+Finished building: ../src/display_ctrl/display_ctrl.c
+ 
+Building file: ../src/OV5640.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/OV5640.d" -MT"src/OV5640.o" -o "src/OV5640.o" "../src/OV5640.c"
+../src/OV5640.c: In function 'ov5640_i2c_burst_write':
+../src/OV5640.c:148:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+             pr_err("%s: failed->cnt = %d\r\n", __func__, i);
+                                        ^
+../src/OV5640.c: In function 'ov5640_setting_capture':
+../src/OV5640.c:781:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_exposure = 0x%05x\r\n", __func__, preview_exposure);
+                                           ^
+../src/OV5640.c:792:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_maxlines = 0x%04x\r\n", __func__, preview_maxlines);
+                                           ^
+../src/OV5640.c:842:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_maxlines = 0x%04x\r\n", __func__, capture_maxlines);
+                                           ^
+../src/OV5640.c:851:37: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: lines_10ms = 0x%04x\r\n", __func__, lines_10ms);
+                                     ^
+../src/OV5640.c:854:50: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                                                  ^
+../src/OV5640.c:854:16: warning: format '%x' expects argument of type 'unsigned int', but argument 5 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                ^
+../src/OV5640.c:879:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_exposure = 0x%05x\r\n", __func__, capture_exposure);
+                                           ^
+../src/OV5640.c:882:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_gain = 0x%02x\r\n", __func__, capture_gain);
+                                       ^
+At top level:
+../src/OV5640.c:1226:12: warning: 'ov5640_set_para_scene_mode' defined but not used [-Wunused-function]
+ static int ov5640_set_para_scene_mode(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:1197:12: warning: 'ov5640_set_para_test_pattern' defined but not used [-Wunused-function]
+ static int ov5640_set_para_test_pattern(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:748:12: warning: 'ov5640_setting_capture' defined but not used [-Wunused-function]
+ static int ov5640_setting_capture(u8 preview_fps)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:484:12: warning: 'ov5640_af_focus_zone_mode' defined but not used [-Wunused-function]
+ static int ov5640_af_focus_zone_mode (
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:462:12: warning: 'ov5640_af_weights_of_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_weights_of_focus_zones(u8 wt0, u8 wt1, u8 wt2, u8 wt3, u8 wt4)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:443:12: warning: 'ov5640_af_launch_custom_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_custom_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:413:12: warning: 'ov5640_af_configure_focus_zone' defined but not used [-Wunused-function]
+ static int ov5640_af_configure_focus_zone(u8 zone, u8 xc, u8 yc, u8 w, u8 h)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:393:12: warning: 'ov5640_af_enable_custom_focus_zone_config' defined but not used [-Wunused-function]
+ static int ov5640_af_enable_custom_focus_zone_config(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:372:12: warning: 'ov5640_af_launch_touch_mode_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_touch_mode_focus_zones(u8 xc, u8 yc)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:352:12: warning: 'ov5640_af_re_launch_default_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_default_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:329:12: warning: 'ov5640_af_get_vcm_step' defined but not used [-Wunused-function]
+ static int ov5640_af_get_vcm_step(u8 *step)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:290:12: warning: 'ov5640_af_re_launch_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:249:12: warning: 'ov5640_af_pause_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_pause_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:204:12: warning: 'ov5640_af_trig_single_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_trig_single_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:162:12: warning: 'ov5640_i2c_burst_read' defined but not used [-Wunused-function]
+ static int ov5640_i2c_burst_read(struct reg_value *preg, u32 size)
+            ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/OV5640.h:4:0,
+                 from ../src/OV5640.c:1:
+../src/SCCB.h:11:14: warning: 'IIC' defined but not used [-Wunused-variable]
+ static XGpio IIC;
+              ^~~
+Finished building: ../src/OV5640.c
+ 
+Building file: ../src/SCCB.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SCCB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SCCB.d" -MT"src/SCCB.o" -o "src/SCCB.o" "../src/SCCB.c"
+../src/SCCB.c: In function 'startSCCB':
+../src/SCCB.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+ {int Status;
+      ^~~~~~
+Finished building: ../src/SCCB.c
+ 
+Building file: ../src/display_demo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c:37:20: fatal error: ov5640.h: No such file or directory
+ #include "ov5640.h"
+                    ^
+compilation terminated.
+make: *** [src/display_demo.o] Error 1
+src/subdir.mk:30: recipe for target 'src/display_demo.o' failed
+01:34:17 **** Auto Build of project PYNQ_ov5640_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_4/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_7/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling dmaps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_4/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling axivdma
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_7/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling XilFFs Library
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling iicps
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+01:34:38 **** Clean-only build of configuration Debug for project PYNQ_ov5640 ****
+make clean 
+rm -rf  ./src/vdma/xaxivdma_ext.o  ./src/timer_ps/timer_ps.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/OV5640.o ./src/SCCB.o ./src/display_demo.o ./src/platform.o  ./src/vdma/xaxivdma_ext.d  ./src/timer_ps/timer_ps.d  ./src/dynclk/dynclk.d  ./src/display_ctrl/display_ctrl.d  ./src/OV5640.d ./src/SCCB.d ./src/display_demo.d ./src/platform.d  PYNQ_ov5640.elf.size  PYNQ_ov5640.elf
+ 
+01:34:39 **** Auto Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/vdma/xaxivdma_ext.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma/xaxivdma_ext.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma/xaxivdma_ext.d" -MT"src/vdma/xaxivdma_ext.o" -o "src/vdma/xaxivdma_ext.o" "../src/vdma/xaxivdma_ext.c"
+Finished building: ../src/vdma/xaxivdma_ext.c
+ 
+Building file: ../src/timer_ps/timer_ps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_ps/timer_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_ps/timer_ps.d" -MT"src/timer_ps/timer_ps.o" -o "src/timer_ps/timer_ps.o" "../src/timer_ps/timer_ps.c"
+Finished building: ../src/timer_ps/timer_ps.c
+ 
+Building file: ../src/dynclk/dynclk.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.o" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+Finished building: ../src/dynclk/dynclk.c
+ 
+Building file: ../src/display_ctrl/display_ctrl.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.o" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+../src/display_ctrl/display_ctrl.c: In function 'DisplayStart':
+../src/display_ctrl/display_ctrl.c:146:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+../src/display_ctrl/display_ctrl.c: In function 'DisplayInitialize':
+../src/display_ctrl/display_ctrl.c:244:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+Finished building: ../src/display_ctrl/display_ctrl.c
+ 
+Building file: ../src/OV5640.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/OV5640.d" -MT"src/OV5640.o" -o "src/OV5640.o" "../src/OV5640.c"
+../src/OV5640.c: In function 'ov5640_i2c_burst_write':
+../src/OV5640.c:148:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+             pr_err("%s: failed->cnt = %d\r\n", __func__, i);
+                                        ^
+../src/OV5640.c: In function 'ov5640_setting_capture':
+../src/OV5640.c:781:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_exposure = 0x%05x\r\n", __func__, preview_exposure);
+                                           ^
+../src/OV5640.c:792:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_maxlines = 0x%04x\r\n", __func__, preview_maxlines);
+                                           ^
+../src/OV5640.c:842:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_maxlines = 0x%04x\r\n", __func__, capture_maxlines);
+                                           ^
+../src/OV5640.c:851:37: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: lines_10ms = 0x%04x\r\n", __func__, lines_10ms);
+                                     ^
+../src/OV5640.c:854:50: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                                                  ^
+../src/OV5640.c:854:16: warning: format '%x' expects argument of type 'unsigned int', but argument 5 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                ^
+../src/OV5640.c:879:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_exposure = 0x%05x\r\n", __func__, capture_exposure);
+                                           ^
+../src/OV5640.c:882:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_gain = 0x%02x\r\n", __func__, capture_gain);
+                                       ^
+At top level:
+../src/OV5640.c:1226:12: warning: 'ov5640_set_para_scene_mode' defined but not used [-Wunused-function]
+ static int ov5640_set_para_scene_mode(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:1197:12: warning: 'ov5640_set_para_test_pattern' defined but not used [-Wunused-function]
+ static int ov5640_set_para_test_pattern(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:748:12: warning: 'ov5640_setting_capture' defined but not used [-Wunused-function]
+ static int ov5640_setting_capture(u8 preview_fps)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:484:12: warning: 'ov5640_af_focus_zone_mode' defined but not used [-Wunused-function]
+ static int ov5640_af_focus_zone_mode (
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:462:12: warning: 'ov5640_af_weights_of_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_weights_of_focus_zones(u8 wt0, u8 wt1, u8 wt2, u8 wt3, u8 wt4)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:443:12: warning: 'ov5640_af_launch_custom_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_custom_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:413:12: warning: 'ov5640_af_configure_focus_zone' defined but not used [-Wunused-function]
+ static int ov5640_af_configure_focus_zone(u8 zone, u8 xc, u8 yc, u8 w, u8 h)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:393:12: warning: 'ov5640_af_enable_custom_focus_zone_config' defined but not used [-Wunused-function]
+ static int ov5640_af_enable_custom_focus_zone_config(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:372:12: warning: 'ov5640_af_launch_touch_mode_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_touch_mode_focus_zones(u8 xc, u8 yc)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:352:12: warning: 'ov5640_af_re_launch_default_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_default_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:329:12: warning: 'ov5640_af_get_vcm_step' defined but not used [-Wunused-function]
+ static int ov5640_af_get_vcm_step(u8 *step)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:290:12: warning: 'ov5640_af_re_launch_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:249:12: warning: 'ov5640_af_pause_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_pause_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:204:12: warning: 'ov5640_af_trig_single_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_trig_single_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:162:12: warning: 'ov5640_i2c_burst_read' defined but not used [-Wunused-function]
+ static int ov5640_i2c_burst_read(struct reg_value *preg, u32 size)
+            ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/OV5640.h:4:0,
+                 from ../src/OV5640.c:1:
+../src/SCCB.h:11:14: warning: 'IIC' defined but not used [-Wunused-variable]
+ static XGpio IIC;
+              ^~~
+Finished building: ../src/OV5640.c
+ 
+Building file: ../src/SCCB.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SCCB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SCCB.d" -MT"src/SCCB.o" -o "src/SCCB.o" "../src/SCCB.c"
+../src/SCCB.c: In function 'startSCCB':
+../src/SCCB.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+ {int Status;
+      ^~~~~~
+Finished building: ../src/SCCB.c
+ 
+Building file: ../src/display_demo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c:37:20: fatal error: ov5640.h: No such file or directory
+ #include "ov5640.h"
+                    ^
+compilation terminated.
+src/subdir.mk:30: recipe for target 'src/display_demo.o' failed
+make: *** [src/display_demo.o] Error 1
+01:34:47 **** Auto Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/display_demo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:90:7: warning: unused variable 'Status' [-Wunused-variable]
+  u32  Status;
+       ^~~~~~
+../src/display_demo.c: In function 'store_img':
+../src/display_demo.c:425:14: warning: unused variable 'ver' [-Wunused-variable]
+     u32 temp,ver;
+              ^~~
+In file included from ../src/display_demo.c:37:0:
+../src/display_demo.c: At top level:
+../src/OV5640.h:7:12: warning: 'ov5640_get_para_chip_id' declared 'static' but never defined [-Wunused-function]
+ static int ov5640_get_para_chip_id(int *val);
+            ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/display_demo.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: PYNQ_ov5640.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PYNQ_ov5640_bsp/ps7_cortexa9_0/lib -o "PYNQ_ov5640.elf"  ./src/vdma/xaxivdma_ext.o  ./src/timer_ps/timer_ps.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/OV5640.o ./src/SCCB.o ./src/display_demo.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: PYNQ_ov5640.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PYNQ_ov5640.elf  |tee "PYNQ_ov5640.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 169568	   2948	27983456	28155972	1ada044	PYNQ_ov5640.elf
+Finished building: PYNQ_ov5640.elf.size
+ 
+01:37:00 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:38:04 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:38:24 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:39:37 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:40:21 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:40:56 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:42:53 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:44:40 **** Auto Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/OV5640.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PYNQ_ov5640_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/OV5640.d" -MT"src/OV5640.o" -o "src/OV5640.o" "../src/OV5640.c"
+../src/OV5640.c: In function 'ov5640_i2c_burst_write':
+../src/OV5640.c:148:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+             pr_err("%s: failed->cnt = %d\r\n", __func__, i);
+                                        ^
+../src/OV5640.c: In function 'ov5640_setting_capture':
+../src/OV5640.c:781:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_exposure = 0x%05x\r\n", __func__, preview_exposure);
+                                           ^
+../src/OV5640.c:792:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: preview_maxlines = 0x%04x\r\n", __func__, preview_maxlines);
+                                           ^
+../src/OV5640.c:842:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_maxlines = 0x%04x\r\n", __func__, capture_maxlines);
+                                           ^
+../src/OV5640.c:851:37: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: lines_10ms = 0x%04x\r\n", __func__, lines_10ms);
+                                     ^
+../src/OV5640.c:854:50: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                                                  ^
+../src/OV5640.c:854:16: warning: format '%x' expects argument of type 'unsigned int', but argument 5 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         pr_err("%s(error): preview_maxlines(0x%04x), preview_fps(0x%02x), "
+                ^
+../src/OV5640.c:879:43: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_exposure = 0x%05x\r\n", __func__, capture_exposure);
+                                           ^
+../src/OV5640.c:882:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+     pr_debug("%s: capture_gain = 0x%02x\r\n", __func__, capture_gain);
+                                       ^
+At top level:
+../src/OV5640.c:1226:12: warning: 'ov5640_set_para_scene_mode' defined but not used [-Wunused-function]
+ static int ov5640_set_para_scene_mode(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:1197:12: warning: 'ov5640_set_para_test_pattern' defined but not used [-Wunused-function]
+ static int ov5640_set_para_test_pattern(unsigned char val)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:748:12: warning: 'ov5640_setting_capture' defined but not used [-Wunused-function]
+ static int ov5640_setting_capture(u8 preview_fps)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:484:12: warning: 'ov5640_af_focus_zone_mode' defined but not used [-Wunused-function]
+ static int ov5640_af_focus_zone_mode (
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:462:12: warning: 'ov5640_af_weights_of_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_weights_of_focus_zones(u8 wt0, u8 wt1, u8 wt2, u8 wt3, u8 wt4)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:443:12: warning: 'ov5640_af_launch_custom_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_custom_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:413:12: warning: 'ov5640_af_configure_focus_zone' defined but not used [-Wunused-function]
+ static int ov5640_af_configure_focus_zone(u8 zone, u8 xc, u8 yc, u8 w, u8 h)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:393:12: warning: 'ov5640_af_enable_custom_focus_zone_config' defined but not used [-Wunused-function]
+ static int ov5640_af_enable_custom_focus_zone_config(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:372:12: warning: 'ov5640_af_launch_touch_mode_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_launch_touch_mode_focus_zones(u8 xc, u8 yc)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:352:12: warning: 'ov5640_af_re_launch_default_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_default_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:329:12: warning: 'ov5640_af_get_vcm_step' defined but not used [-Wunused-function]
+ static int ov5640_af_get_vcm_step(u8 *step)
+            ^~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:290:12: warning: 'ov5640_af_re_launch_focus_zones' defined but not used [-Wunused-function]
+ static int ov5640_af_re_launch_focus_zones(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:249:12: warning: 'ov5640_af_pause_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_pause_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:204:12: warning: 'ov5640_af_trig_single_auto_focus' defined but not used [-Wunused-function]
+ static int ov5640_af_trig_single_auto_focus(void)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/OV5640.c:162:12: warning: 'ov5640_i2c_burst_read' defined but not used [-Wunused-function]
+ static int ov5640_i2c_burst_read(struct reg_value *preg, u32 size)
+            ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/OV5640.h:4:0,
+                 from ../src/OV5640.c:1:
+../src/SCCB.h:11:14: warning: 'IIC' defined but not used [-Wunused-variable]
+ static XGpio IIC;
+              ^~~
+Finished building: ../src/OV5640.c
+ 
+Building target: PYNQ_ov5640.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PYNQ_ov5640_bsp/ps7_cortexa9_0/lib -o "PYNQ_ov5640.elf"  ./src/vdma/xaxivdma_ext.o  ./src/timer_ps/timer_ps.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/OV5640.o ./src/SCCB.o ./src/display_demo.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: PYNQ_ov5640.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PYNQ_ov5640.elf  |tee "PYNQ_ov5640.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 169568	   2948	27983456	28155972	1ada044	PYNQ_ov5640.elf
+Finished building: PYNQ_ov5640.elf.size
+ 
+01:44:58 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:46:44 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:47:44 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:54:26 **** Incremental Build of configuration Debug for project PYNQ_ov5640 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

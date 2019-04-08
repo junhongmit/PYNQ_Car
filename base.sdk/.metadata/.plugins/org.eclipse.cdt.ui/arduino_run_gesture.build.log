@@ -1,0 +1,25 @@
+16:36:19 **** Auto Build of configuration Debug for project arduino_run_gesture ****
+make all 
+Building file: ../src/arduino_run_gesture.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_gesture.d" -MT"src/arduino_run_gesture.o" -o "src/arduino_run_gesture.o" "../src/arduino_run_gesture.c"
+Finished building: ../src/arduino_run_gesture.c
+ 
+Building target: arduino_run_gesture.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_gesture.elf"  ./src/4WD_MOTO.o ./src/SparkFun_APDS9960.o ./src/arduino_run_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_gesture.elf arduino_run_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_gesture.elf  |tee "arduino_run_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32984	    576	   3688	  37248	   9180	arduino_run_gesture.elf
+Finished building: arduino_run_gesture.elf.size
+ 
+
+16:36:19 Build Finished (took 542ms)
+

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Feb 23 13:03:41 2019
+# Process ID: 20670
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim/xsim.dir/test_Filter_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.sim/sim_1/behav/xsim/xsim.dir/test_Filter_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:06 . Memory (MB): peak = 295.516 ; gain = 0.000 ; free physical = 648 ; free virtual = 4907
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 23 13:03:47 2019...

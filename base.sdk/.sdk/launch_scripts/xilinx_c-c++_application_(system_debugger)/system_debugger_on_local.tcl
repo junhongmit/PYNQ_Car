@@ -12,6 +12,7 @@ targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 12
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "microblaze*#2" && bscan=="USER2"  && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 1
-dow /home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_10DOF_IMU/Debug/arduino_10DOF_IMU.elf
+dow /home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_wifi/Debug/arduino_wifi.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "microblaze*#2" && bscan=="USER2"  && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 1
+con

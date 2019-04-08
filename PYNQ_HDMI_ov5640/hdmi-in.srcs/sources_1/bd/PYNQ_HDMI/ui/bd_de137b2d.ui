@@ -1,0 +1,47 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port s_axi_aclk -pg 1 -y 630 -defaultsOSRD
+preplace port clk_in1 -pg 1 -y 320 -defaultsOSRD
+preplace port clk_out1 -pg 1 -y 460 -defaultsOSRD
+preplace port aclk -pg 1 -y 270 -defaultsOSRD
+preplace port line_valid_in -pg 1 -y 360 -defaultsOSRD
+preplace port frame_valid_in -pg 1 -y 380 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y 520 -defaultsOSRD
+preplace port video_out -pg 1 -y 200 -defaultsOSRD
+preplace portBus pixel_in -pg 1 -y 340 -defaultsOSRD
+preplace portBus aclken -pg 1 -y 250 -defaultsOSRD
+preplace portBus reset -pg 1 -y 450 -defaultsOSRD
+preplace portBus aresetn -pg 1 -y 430 -defaultsOSRD
+preplace inst v_cfa_0 -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -y 80 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst proc_sys_reset_2 -pg 1 -lvl 2 -y 540 -defaultsOSRD
+preplace inst CAM_interface_0 -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace netloc Conn1 1 4 1 NJ
+preplace netloc v_vid_in_axi4s_0_video_out 1 3 1 N
+preplace netloc s_axi_aclk_1 1 0 4 30J 430 NJ 430 NJ 430 1010J
+preplace netloc pixel_in_1 1 0 1 NJ
+preplace netloc clk_in1_1 1 0 1 NJ
+preplace netloc util_vector_logic_0_Res 1 2 1 670J
+preplace netloc line_valid_in_1 1 0 1 NJ
+preplace netloc CAM_interface_0_Dout 1 1 2 290 10 680J
+preplace netloc aclken_1 1 0 4 NJ 250 NJ 250 700 30 1010J
+preplace netloc CAM_interface_0_frame_valid_out 1 1 1 310
+preplace netloc ext_reset_in_1 1 0 2 NJ 520 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 2 320 240 680J
+preplace netloc frame_valid_in_1 1 0 1 NJ
+preplace netloc clk_wiz_0_clk_out2 1 4 1 NJ
+preplace netloc aresetn_1 1 0 4 20J 270 NJ 270 690 10 1020J
+preplace netloc util_vector_logic_1_Res 1 2 1 NJ
+preplace netloc CAM_interface_0_line_valid_out 1 1 2 300 20 720J
+preplace netloc reset_1 1 0 4 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc aclk_1 1 0 4 10J 260 NJ 260 710 50 1000
+preplace netloc proc_sys_reset_2_peripheral_reset 1 2 1 720
+levelinfo -pg 1 -10 160 500 860 1140 1280 -top 0 -bot 650
+",
+}
+

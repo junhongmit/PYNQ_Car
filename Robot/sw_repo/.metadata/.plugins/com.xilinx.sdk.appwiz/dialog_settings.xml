@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Linux" key="os"/>
+	<item value="CPP" key="language"/>
+	<item value="staticlib" key="libraryType"/>
+	<item value="microblaze" key="processor"/>
+	<item value="32-bit" key="compilerType"/>
+</section>

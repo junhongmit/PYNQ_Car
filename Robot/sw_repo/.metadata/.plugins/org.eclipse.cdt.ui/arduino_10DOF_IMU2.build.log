@@ -1,0 +1,6 @@
+16:03:38 **** Incremental Build of configuration Debug for project arduino_10DOF_IMU2 ****
+make all 
+make: Nothing to be done for 'all'.
+
+16:03:38 Build Finished (took 83ms)
+

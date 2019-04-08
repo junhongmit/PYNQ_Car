@@ -79,6 +79,10 @@
  */
 typedef int timer;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 timer timer_open_device(unsigned int device);
 void timer_open_capture(timer dev_id);
 timer timer_open(unsigned int pin);
@@ -96,6 +100,9 @@ unsigned int timer_get_num_devices(void);
 void delay_us(unsigned int us);
 void delay_ms(unsigned int ms);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 #endif  // _TIMER_H_

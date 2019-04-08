@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/Filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/PulseCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PulseCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0_S_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PulseCounter_v2_0_S_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PulseCounter_v2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/edit_PulseCounter_v2_0.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

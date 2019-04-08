@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 20 13:48:22 2019
+# Process ID: 32539
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_mb_bram_ctrl_3_synth_1
+# Command line: vivado -log base_mb_bram_ctrl_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_mb_bram_ctrl_3.tcl
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_mb_bram_ctrl_3_synth_1/base_mb_bram_ctrl_3.vds
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_mb_bram_ctrl_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source base_mb_bram_ctrl_3.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP base_mb_bram_ctrl_3, cache-ID = 75ef8ec51a01fe3a.
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 13:48:43 2019...

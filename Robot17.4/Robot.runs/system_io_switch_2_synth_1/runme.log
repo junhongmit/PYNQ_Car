@@ -1,0 +1,573 @@
+
+*** Running vivado
+    with args -log system_io_switch_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_io_switch_2.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_io_switch_2.tcl -notrace
+Command: synth_design -top system_io_switch_2 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1344.633 ; gain = 84.738 ; free physical = 578 ; free virtual = 1235
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_io_switch_2' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_io_switch_2/synth/system_io_switch_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: string 
+	Parameter C_IO_SWITCH_WIDTH bound to: 8 - type: integer 
+	Parameter C_NUM_PWMS bound to: 1 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 1 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1_S_AXI' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: string 
+	Parameter C_IO_SWITCH_WIDTH bound to: 8 - type: integer 
+	Parameter C_NUM_PWMS bound to: 1 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 1 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:7]
+	Parameter C_IO_SWITCH_WIDTH bound to: 8 - type: integer 
+	Parameter C_NUM_PWMS bound to: 1 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 1 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch_bit' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:57]
+	Parameter C_NUM_PWMS bound to: 1 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 1 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+WARNING: [Synth 8-324] index 1 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:159]
+WARNING: [Synth 8-324] index 2 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:160]
+WARNING: [Synth 8-324] index 3 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:161]
+WARNING: [Synth 8-324] index 4 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:162]
+WARNING: [Synth 8-324] index 5 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:163]
+WARNING: [Synth 8-324] index 1 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:164]
+WARNING: [Synth 8-324] index 1 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:167]
+WARNING: [Synth 8-324] index 2 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:168]
+WARNING: [Synth 8-324] index 3 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:169]
+WARNING: [Synth 8-324] index 4 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:170]
+WARNING: [Synth 8-324] index 5 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:171]
+WARNING: [Synth 8-324] index 6 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:172]
+WARNING: [Synth 8-324] index 7 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_bit' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch_bit.v:57]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 24 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 24 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 30 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 30 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 24 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 24 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 30 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 30 given [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-324] index 7 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:110]
+WARNING: [Synth 8-324] index 6 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:111]
+WARNING: [Synth 8-324] index 5 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:112]
+WARNING: [Synth 8-324] index 4 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:113]
+WARNING: [Synth 8-324] index 3 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:114]
+WARNING: [Synth 8-324] index 2 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:115]
+WARNING: [Synth 8-324] index 1 out of range [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:116]
+WARNING: [Synth 8-3848] Net uart1_rx_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sda1_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net scl1_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sck1_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net mosi1_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net miso1_int in module/entity io_switch does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch' (2#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:7]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1_S_AXI' (3#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1' (4#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_io_switch_2' (5#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_io_switch_2/synth/system_io_switch_2.v:57]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel2[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel3[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel4[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.258 ; gain = 128.363 ; free physical = 584 ; free virtual = 1243
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sda0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sda0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:scl0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:scl0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[0].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sda0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sda0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:scl0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:scl0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_1_0[1].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[2].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_3_2[3].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sda0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sda0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:scl0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:scl0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[4].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:mosi1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:ss1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:ss1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sda0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sda0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:scl0_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:scl0_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sda1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:sda1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:scl1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_5_4[5].d_i:scl1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:uart1_tx_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:sck1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:sck1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:miso1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:miso1_t to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-3295] tying undriven pin PMOD.io_switch_bit_7_6[6].d_i:mosi1_o to constant 0 [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ipshared/6c92/src/io_switch.v:189]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.258 ; gain = 128.363 ; free physical = 609 ; free virtual = 1261
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.258 ; gain = 128.363 ; free physical = 609 ; free virtual = 1261
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.25 . Memory (MB): peak = 1761.281 ; gain = 2.000 ; free physical = 1397 ; free virtual = 2055
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:01:15 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 1387 ; free virtual = 2045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:01:15 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 1387 ; free virtual = 2045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:15 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 1389 ; free virtual = 2047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:01:16 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 1360 ; free virtual = 2019
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	  25 Input     24 Bit        Muxes := 8     
+	   2 Input     24 Bit        Muxes := 8     
+	  32 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module io_switch_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  25 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	  32 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module io_switch_v1_1_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_io_switch_2.
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_io_switch_2.
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_io_switch_2.
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_io_switch_2.
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_io_switch_2.
+INFO: [Synth 8-3332] Sequential element (inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_io_switch_2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:24 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 1134 ; free virtual = 1794
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:45 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 704 ; free virtual = 1366
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:46 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 689 ; free virtual = 1351
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:47 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 681 ; free virtual = 1344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:48 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 662 ; free virtual = 1325
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:48 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 662 ; free virtual = 1325
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:48 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 663 ; free virtual = 1325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:48 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 663 ; free virtual = 1325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:49 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 662 ; free virtual = 1325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:49 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 662 ; free virtual = 1325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    29|
+|3     |LUT3  |    41|
+|4     |LUT4  |    66|
+|5     |LUT5  |     4|
+|6     |LUT6  |   232|
+|7     |MUXF7 |    12|
+|8     |FDRE  |   301|
+|9     |FDSE  |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |   687|
+|2     |  inst                        |io_switch_v1_1       |   687|
+|3     |    io_switch_v1_1_S_AXI_inst |io_switch_v1_1_S_AXI |   683|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:49 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 662 ; free virtual = 1324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 211 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1761.281 ; gain = 128.363 ; free physical = 719 ; free virtual = 1381
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:49 . Memory (MB): peak = 1761.281 ; gain = 501.387 ; free physical = 719 ; free virtual = 1381
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 236 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:51 . Memory (MB): peak = 1761.281 ; gain = 513.102 ; free physical = 689 ; free virtual = 1351
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_io_switch_2_synth_1/system_io_switch_2.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/system/ip/system_io_switch_2/system_io_switch_2.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_io_switch_2_synth_1/system_io_switch_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_io_switch_2_utilization_synth.rpt -pb system_io_switch_2_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.38 . Memory (MB): peak = 1785.293 ; gain = 0.000 ; free physical = 867 ; free virtual = 1530
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 13:33:22 2019...

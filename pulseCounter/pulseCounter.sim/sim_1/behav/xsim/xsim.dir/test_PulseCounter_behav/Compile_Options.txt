@@ -1,0 +1,1 @@
+-wto "9a11c1af8fb24b5e90c5c4ecb1fa889f" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "test_PulseCounter_behav" "xil_defaultlib.test_PulseCounter" "xil_defaultlib.glbl" -log "elaborate.log" 

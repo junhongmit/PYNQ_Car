@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;arduino_10DOF_IMU/src/QMC5883.c&apos; to &apos;QMC5883_c.c&apos;" description="Rename resource &apos;QMC5883.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/QMC5883.c" name="QMC5883_c.c" stamp="1548914945971" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;arduino_10DOF_IMU/src/QMC5883.h&apos; to &apos;QMC5883_c.h&apos;" description="Rename resource &apos;QMC5883.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/QMC5883.h" name="QMC5883_c.h" stamp="1548914957047" updateReferences="true"/>
+</session>

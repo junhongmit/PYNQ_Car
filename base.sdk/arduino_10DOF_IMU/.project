@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>arduino_10DOF_IMU</name>
-	<comment>Created by SDK v2017.4. arduino_10DOF_IMU_bsp - iop_arduino_mb</comment>
+	<comment>Created by SDK v2017.4. standalone_bsp_0 - iop_arduino_mb</comment>
 	<projects>
+		<project>standalone_bsp_0</project>
 		<project>bsp_iop_arduino_mb</project>
 	</projects>
 	<buildSpec>
@@ -22,5 +23,6 @@
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
 </projectDescription>

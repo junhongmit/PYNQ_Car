@@ -78,10 +78,18 @@ typedef struct circular_buffer
 
 circular_buffer circular_log;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int cb_init(circular_buffer *cb, volatile u32* log_start_addr,
             size_t capacity, size_t sz);
 void cb_push_back(circular_buffer *cb, const void *item);
 void cb_push_back_float(circular_buffer *cb, const float *item);
 void cb_push_incr_ptrs(circular_buffer *cb);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // _CIRCULAR_BUFFER_H_

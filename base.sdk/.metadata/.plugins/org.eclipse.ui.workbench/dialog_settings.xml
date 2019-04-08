@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="-749" key="DIALOG_X_ORIGIN"/>
-		<item value="-14" key="DIALOG_Y_ORIGIN"/>
+		<item value="10" key="DIALOG_X_ORIGIN"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
@@ -32,7 +32,9 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_gesture/src"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_4wdmoto/src"/>
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_linetracker/src"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_getsture/src"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car"/>

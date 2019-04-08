@@ -1,0 +1,147 @@
+13:53:15 **** Auto Build of configuration Debug for project arduino_wifi_temp ****
+make all 
+Building file: ../src/arduino_wifi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_wifi.o" -I../../standalone_bsp_0/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_wifi.d" -MT"src/arduino_wifi.o" -o "src/arduino_wifi.o" "../src/arduino_wifi.c"
+../src/arduino_wifi.c:65:7: error: unknown type name 'String'
+ const String separator = "|";
+       ^~~~~~
+../src/arduino_wifi.c:65:26: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ const String separator = "|";
+                          ^~~
+../src/arduino_wifi.c:74:1: error: unknown type name 'String'
+ String receiveStringIndex[10] = {};
+ ^~~~~~
+../src/arduino_wifi.c:84:1: error: unknown type name 'SoftwareSerial'
+ SoftwareSerial softSerial(10,11);
+ ^~~~~~~~~~~~~~
+../src/arduino_wifi.c:84:27: error: expected declaration specifiers or '...' before numeric constant
+ SoftwareSerial softSerial(10,11);
+                           ^~
+../src/arduino_wifi.c:84:30: error: expected declaration specifiers or '...' before numeric constant
+src/subdir.mk:21: recipe for target 'src/arduino_wifi.o' failed
+ SoftwareSerial softSerial(10,11);
+                              ^~
+../src/arduino_wifi.c:99:18: error: unknown type name 'String'
+ void sendMessage(String message)
+                  ^~~~~~
+../src/arduino_wifi.c: In function 'ping':
+../src/arduino_wifi.c:112:5: error: unknown type name 'String'
+     String pingMessage = "|1|1|";
+     ^~~~~~
+../src/arduino_wifi.c:112:26: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     String pingMessage = "|1|1|";
+                          ^~~~~~~
+../src/arduino_wifi.c:113:5: warning: implicit declaration of function 'sendMessage' [-Wimplicit-function-declaration]
+     sendMessage(pingMessage);
+     ^~~~~~~~~~~
+../src/arduino_wifi.c: At top level:
+../src/arduino_wifi.c:122:18: error: unknown type name 'String'
+ void connectWifi(String ssid,String pwd)
+                  ^~~~~~
+../src/arduino_wifi.c:122:30: error: unknown type name 'String'
+ void connectWifi(String ssid,String pwd)
+                              ^~~~~~
+../src/arduino_wifi.c:134:18: error: unknown type name 'String'
+ void connectMqtt(String server, String port, String iotid, String iotpwd)
+                  ^~~~~~
+../src/arduino_wifi.c:134:33: error: unknown type name 'String'
+ void connectMqtt(String server, String port, String iotid, String iotpwd)
+                                 ^~~~~~
+../src/arduino_wifi.c:134:46: error: unknown type name 'String'
+ void connectMqtt(String server, String port, String iotid, String iotpwd)
+                                              ^~~~~~
+../src/arduino_wifi.c:134:60: error: unknown type name 'String'
+ void connectMqtt(String server, String port, String iotid, String iotpwd)
+                                                            ^~~~~~
+../src/arduino_wifi.c: In function 'reconnectMqtt':
+../src/arduino_wifi.c:148:5: error: unknown type name 'String'
+     String mqttReconnectMessage = "|4|1|5|";
+     ^~~~~~
+../src/arduino_wifi.c:148:35: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     String mqttReconnectMessage = "|4|1|5|";
+                                   ^~~~~~~~~
+../src/arduino_wifi.c: At top level:
+../src/arduino_wifi.c:158:14: error: unknown type name 'String'
+ void publish(String topic,String message)
+              ^~~~~~
+../src/arduino_wifi.c:158:27: error: unknown type name 'String'
+ void publish(String topic,String message)
+                           ^~~~~~
+../src/arduino_wifi.c:170:16: error: unknown type name 'String'
+ void subscribe(String topic)
+                ^~~~~~
+../src/arduino_wifi.c:182:17: error: unknown type name 'String'
+ int splitString(String data[],String str,const char* delimiters)
+                 ^~~~~~
+../src/arduino_wifi.c:182:31: error: unknown type name 'String'
+ int splitString(String data[],String str,const char* delimiters)
+                               ^~~~~~
+../src/arduino_wifi.c: In function 'handleUart':
+../src/arduino_wifi.c:201:11: error: 'softSerial' undeclared (first use in this function)
+     while(softSerial.available() > 0)
+           ^~~~~~~~~~
+../src/arduino_wifi.c:201:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_wifi.c:203:9: error: unknown type name 'String'
+         String receivedata = softSerial.readStringUntil('\r');
+         ^~~~~~
+../src/arduino_wifi.c:204:47: error: request for member 'c_str' in something not a structure or union
+         const char* obloqMessage = receivedata.c_str();
+                                               ^
+../src/arduino_wifi.c:209:4: error: 'Serial' undeclared (first use in this function)
+    Serial.println("Pong");
+    ^~~~~~
+../src/arduino_wifi.c:251:13: warning: implicit declaration of function 'splitString' [-Wimplicit-function-declaration]
+             splitString(receiveStringIndex,receivedata,"|");
+             ^~~~~~~~~~~
+../src/arduino_wifi.c:252:13: warning: implicit declaration of function 'receiveMessageCallbak' [-Wimplicit-function-declaration]
+             receiveMessageCallbak(receiveStringIndex[3],receiveStringIndex[4]);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/arduino_wifi.c: In function 'sendPing':
+../src/arduino_wifi.c:266:18: warning: implicit declaration of function 'millis' [-Wimplicit-function-declaration]
+     if(pingOn && millis() - previousPingTime > pingInterval)
+                  ^~~~~~
+../src/arduino_wifi.c: In function 'execute':
+../src/arduino_wifi.c:283:22: warning: implicit declaration of function 'connectWifi' [-Wimplicit-function-declaration]
+         case PINGOK: connectWifi(WIFISSID,WIFIPWD); obloqState = WAIT; break;
+                      ^~~~~~~~~~~
+../src/arduino_wifi.c:284:22: warning: implicit declaration of function 'connectMqtt' [-Wimplicit-function-declaration]
+         case WIFIOK: connectMqtt(SERVER,String(PORT),IOTID,IOTPWD);obloqState = WAIT; break;
+                      ^~~~~~~~~~~
+../src/arduino_wifi.c:284:41: warning: implicit declaration of function 'String' [-Wimplicit-function-declaration]
+         case WIFIOK: connectMqtt(SERVER,String(PORT),IOTID,IOTPWD);obloqState = WAIT; break;
+                                         ^~~~~~
+../src/arduino_wifi.c: At top level:
+../src/arduino_wifi.c:296:27: error: unknown type name 'String'
+ void subscribeSingleTopic(String topic)
+                           ^~~~~~
+../src/arduino_wifi.c: In function 'checkWifiState':
+../src/arduino_wifi.c:320:9: error: 'Serial' undeclared (first use in this function)
+         Serial.println("Wifi abnormal disconnect");
+         ^~~~~~
+../src/arduino_wifi.c: At top level:
+../src/arduino_wifi.c:338:28: error: unknown type name 'String'
+ void receiveMessageCallbak(String topic,String message)
+                            ^~~~~~
+../src/arduino_wifi.c:338:41: error: unknown type name 'String'
+ void receiveMessageCallbak(String topic,String message)
+                                         ^~~~~~
+../src/arduino_wifi.c: In function 'setup':
+../src/arduino_wifi.c:347:5: error: 'Serial' undeclared (first use in this function)
+     Serial.begin(9600);
+     ^~~~~~
+../src/arduino_wifi.c:348:5: error: 'softSerial' undeclared (first use in this function)
+     softSerial.begin(9600);
+     ^~~~~~~~~~
+../src/arduino_wifi.c: In function 'loop':
+../src/arduino_wifi.c:355:5: warning: implicit declaration of function 'subscribeSingleTopic' [-Wimplicit-function-declaration]
+     subscribeSingleTopic("Hy6z0Pb1G");
+     ^~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/arduino_wifi.c:71:22: warning: 'sendMessageInterval' defined but not used [-Wunused-variable]
+ static unsigned long sendMessageInterval = 10000;
+                      ^~~~~~~~~~~~~~~~~~~
+make: *** [src/arduino_wifi.o] Error 1
+
+13:53:16 Build Finished (took 433ms)
+

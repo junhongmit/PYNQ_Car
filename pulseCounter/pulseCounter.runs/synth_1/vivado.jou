@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 22 11:29:02 2019
+# Process ID: 29498
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.runs/synth_1
+# Command line: vivado -log PulseCounter_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PulseCounter_wrapper.tcl
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.runs/synth_1/PulseCounter_wrapper.vds
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source PulseCounter_wrapper.tcl -notrace

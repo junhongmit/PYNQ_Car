@@ -50,6 +50,7 @@
  *****************************************************************************/
 #include <xparameters.h>
 #include "uart.h"
+#include <sleep.h>
 
 #ifdef XPAR_XUARTLITE_NUM_INSTANCES
 #include "xuartlite.h"
@@ -101,14 +102,46 @@ uart uart_open(unsigned int tx, unsigned int rx){
 #endif
 #endif
 
-
-void uart_read(uart dev_id, unsigned char* read_data, unsigned int length){
-    XUartLite_Recv(&xuart[dev_id], read_data, length);
+unsigned int uart_available(uart dev_id) {
+	u8 StatusRegister;
+	StatusRegister = XUartLite_GetStatusReg(xuart[dev_id].RegBaseAddress);
+	return StatusRegister & XUL_SR_RX_FIFO_VALID_DATA;
 }
 
 
-void uart_write(uart dev_id, unsigned char* write_data, unsigned int length){
-    XUartLite_Send(&xuart[dev_id], write_data, length);
+unsigned int uart_read(uart dev_id, unsigned char* read_data, unsigned int length){
+	unsigned int recv = 0, temp, fail = 0;
+	while (recv < length) {
+		temp = XUartLite_Recv(&xuart[dev_id], read_data+recv, length-recv);
+		if (temp == 0) {
+			fail++;
+			if (fail > 20)
+				break;
+			usleep(15000);
+		} else {
+			fail = 0;
+		}
+		recv+= temp;
+	}
+	return recv;
+}
+
+
+unsigned int uart_write(uart dev_id, unsigned char* write_data, unsigned int length){
+	unsigned int send = 0, temp, fail = 0;
+	while (send < length) {
+		temp = XUartLite_Send(&xuart[dev_id], write_data + send, length-send);
+		if (temp == 0) {
+			fail++;
+			if (fail > 20)
+				break;
+			usleep(15000);
+		} else {
+			fail = 0;
+		}
+    	send+=temp;
+	}
+	return send;
 }
 
 

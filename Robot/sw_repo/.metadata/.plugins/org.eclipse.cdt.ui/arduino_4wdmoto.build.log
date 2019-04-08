@@ -1,0 +1,29 @@
+13:56:08 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building target: arduino_4wdmoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_4wdmoto.elf"  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_4wdmoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_4wdmoto.elf arduino_4wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_4wdmoto.elf  |tee "arduino_4wdmoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12356	    516	   3392	  16264	   3f88	arduino_4wdmoto.elf
+Finished building: arduino_4wdmoto.elf.size
+ 
+
+13:56:09 Build Finished (took 337ms)
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="base_mb_bram_ctrl_0_synth_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_mb_bram_ctrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_7_synth_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_xbar_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_6_synth_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_xbar_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_5_synth_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_m02_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="base_mb_bram_ctrl_0_synth_1"/>
+		<Parent Id="base_xbar_7_synth_1"/>
+		<Parent Id="base_xbar_6_synth_1"/>
+		<Parent Id="base_m02_regslice_5_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="base_mb_bram_ctrl_0_synth_1"/>
+		<Parent Id="base_xbar_7_synth_1"/>
+		<Parent Id="base_xbar_6_synth_1"/>
+		<Parent Id="base_m02_regslice_5_synth_1"/>
+	</Run>
+</Runs>
+

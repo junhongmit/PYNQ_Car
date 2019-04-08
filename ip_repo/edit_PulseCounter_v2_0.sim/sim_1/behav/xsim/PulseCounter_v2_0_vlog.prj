@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PulseCounter_2.0/src/Counter.v" \
+"../../../../PulseCounter_2.0/src/Filter.v" \
+"../../../../PulseCounter_2.0/src/PulseCounter.v" \
+"../../../../PulseCounter_2.0/hdl/PulseCounter_v2_0_S_AXI.v" \
+"../../../../PulseCounter_2.0/hdl/PulseCounter_v2_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

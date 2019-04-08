@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log system_mb3_timer_pwm_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_mb3_timer_pwm_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_mb3_timer_pwm_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_mb3_timer_pwm_0, cache-ID = 760d742c6704a445.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 13:47:00 2019...

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/Filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/PulseCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PulseCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sources_1/new/io_switch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module io_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/junhonglin/Xilinx/PYNQ_Car/pulseCounter/pulseCounter.srcs/sim_1/new/test_PulseCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_PulseCounter

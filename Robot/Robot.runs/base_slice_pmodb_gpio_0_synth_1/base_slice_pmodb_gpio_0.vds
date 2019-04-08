@@ -1,0 +1,311 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 20 12:38:13 2019
+# Process ID: 18229
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_slice_pmodb_gpio_0_synth_1
+# Command line: vivado -log base_slice_pmodb_gpio_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_slice_pmodb_gpio_0.tcl
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_slice_pmodb_gpio_0_synth_1/base_slice_pmodb_gpio_0.vds
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_slice_pmodb_gpio_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source base_slice_pmodb_gpio_0.tcl -notrace
+Command: synth_design -top base_slice_pmodb_gpio_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1342.828 ; gain = 82.707 ; free physical = 2090 ; free virtual = 5419
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_slice_pmodb_gpio_0' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ip/base_slice_pmodb_gpio_0/synth/base_slice_pmodb_gpio_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'interface_slice' [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:3]
+	Parameter TYPE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+WARNING: [Synth 8-3848] Net scl_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:73]
+WARNING: [Synth 8-3848] Net scl_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:74]
+WARNING: [Synth 8-3848] Net scl_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:75]
+WARNING: [Synth 8-3848] Net sda_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:76]
+WARNING: [Synth 8-3848] Net sda_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:77]
+WARNING: [Synth 8-3848] Net sda_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:78]
+WARNING: [Synth 8-3848] Net spi0_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:92]
+WARNING: [Synth 8-3848] Net spi0_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:93]
+WARNING: [Synth 8-3848] Net spi0_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:94]
+WARNING: [Synth 8-3848] Net spi1_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:95]
+WARNING: [Synth 8-3848] Net spi1_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:96]
+WARNING: [Synth 8-3848] Net spi1_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:97]
+WARNING: [Synth 8-3848] Net sck_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:98]
+WARNING: [Synth 8-3848] Net sck_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:99]
+WARNING: [Synth 8-3848] Net sck_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:100]
+WARNING: [Synth 8-3848] Net ss_i in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:101]
+WARNING: [Synth 8-3848] Net ss_o in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:102]
+WARNING: [Synth 8-3848] Net ss_t in module/entity interface_slice does not have driver. [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'interface_slice' (1#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ipshared/7bdd/interface_slice.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'base_slice_pmodb_gpio_0' (2#1) [/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ip/base_slice_pmodb_gpio_0/synth/base_slice_pmodb_gpio_0.v:58]
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port scl_w_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sda_w_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi0_w_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port spi1_w_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port sck_w_t
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_w_i
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_w_o
+WARNING: [Synth 8-3331] design interface_slice has unconnected port ss_w_t
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1387.453 ; gain = 127.332 ; free physical = 1945 ; free virtual = 5275
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1387.453 ; gain = 127.332 ; free physical = 1942 ; free virtual = 5272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1387.453 ; gain = 127.332 ; free physical = 1942 ; free virtual = 5272
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1671.477 ; gain = 2.000 ; free physical = 1001 ; free virtual = 4332
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1671.477 ; gain = 411.355 ; free physical = 1031 ; free virtual = 4363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1671.477 ; gain = 411.355 ; free physical = 1031 ; free virtual = 4362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1671.477 ; gain = 411.355 ; free physical = 1031 ; free virtual = 4362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1671.477 ; gain = 411.355 ; free physical = 1030 ; free virtual = 4362
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design base_slice_pmodb_gpio_0 has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:17 . Memory (MB): peak = 1671.477 ; gain = 411.355 ; free physical = 1029 ; free virtual = 4361
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:43 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 721 ; free virtual = 4056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:43 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 720 ; free virtual = 4056
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:43 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 718 ; free virtual = 4054
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:44 . Memory (MB): peak = 1683.461 ; gain = 423.340 ; free physical = 684 ; free virtual = 4020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 1683.461 ; gain = 139.316 ; free physical = 760 ; free virtual = 4096
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:45 . Memory (MB): peak = 1683.469 ; gain = 423.340 ; free physical = 760 ; free virtual = 4096
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:46 . Memory (MB): peak = 1699.461 ; gain = 451.086 ; free physical = 752 ; free virtual = 4089
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_slice_pmodb_gpio_0_synth_1/base_slice_pmodb_gpio_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.srcs/sources_1/bd/base/ip/base_slice_pmodb_gpio_0/base_slice_pmodb_gpio_0.xci
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/base_slice_pmodb_gpio_0_synth_1/base_slice_pmodb_gpio_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_slice_pmodb_gpio_0_utilization_synth.rpt -pb base_slice_pmodb_gpio_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1703.461 ; gain = 0.000 ; free physical = 735 ; free virtual = 4072
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 12:40:36 2019...

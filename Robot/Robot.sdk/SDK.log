@@ -1,0 +1,13 @@
+10:54:13 INFO  : Registering command handlers for SDK TCF services
+10:54:13 INFO  : Launching XSCT server: xsct.bat -interactive D:\PYNQ-master\boards\Pynq-Z2\base\base\base.sdk\temp_xsdb_launch_script.tcl
+10:54:16 INFO  : XSCT server has started successfully.
+10:54:16 INFO  : Successfully done setting XSCT server connection channel  
+10:54:18 INFO  : Successfully done setting SDK workspace  
+10:54:18 INFO  : Processing command line option -hwspec D:/PYNQ-master/boards/Pynq-Z2/base/base/base.sdk/base_wrapper.hdf.
+17:05:19 INFO  : Launching XSCT server: xsct.bat -interactive D:\PYNQ-master\boards\Pynq-Z2\base\base\base.sdk\temp_xsdb_launch_script.tcl
+17:05:22 INFO  : XSCT server has started successfully.
+17:05:22 INFO  : Successfully done setting XSCT server connection channel  
+17:05:29 INFO  : Successfully done setting SDK workspace  
+17:05:45 INFO  : Registering command handlers for SDK TCF services
+17:05:46 INFO  : Processing command line option -hwspec D:/PYNQ-master/boards/Pynq-Z2/base/base/base.sdk/base_wrapper.hdf.
+17:05:46 INFO  : Checking for hwspec changes in the project base_wrapper_hw_platform_0.

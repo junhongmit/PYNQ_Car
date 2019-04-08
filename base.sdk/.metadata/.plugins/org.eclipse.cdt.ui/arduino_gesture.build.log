@@ -1,5 +1,10 @@
-18:08:51 **** Auto Build of configuration Debug for project arduino_gesture ****
+14:35:29 **** Auto Build of configuration Debug for project arduino_gesture ****
 make all 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
 Building file: ../src/arduino_gesture.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_gesture.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.c"
@@ -21,5 +26,5 @@ mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
 Finished building: arduino_gesture.elf.size
  
 
-18:08:53 Build Finished (took 2s.132ms)
+14:35:29 Build Finished (took 587ms)
 

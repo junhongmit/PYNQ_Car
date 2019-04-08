@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0.v,1553160397,verilog,,,,PulseCounter_v2_0,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0_S_AXI.v,1553161806,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0.v,,PulseCounter_v2_0_S_AXI,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/Counter.v,1553074517,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/Filter.v,,Counter,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/Filter.v,1550897379,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/PulseCounter.v,,Filter,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/src/PulseCounter.v,1553157467,verilog,,/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/PulseCounter_2.0/hdl/PulseCounter_v2_0_S_AXI.v,,PulseCounter,,,,,,,,
+/home/junhonglin/Xilinx/PYNQ_Car/ip_repo/edit_PulseCounter_v2_0.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,

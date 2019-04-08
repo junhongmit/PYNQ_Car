@@ -1,25 +1,39 @@
-18:30:02 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
+14:35:31 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
 make all 
-Building file: ../src/arduino_10DOF_IMU.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.c"
-../src/arduino_10DOF_IMU.c: In function 'main':
-../src/arduino_10DOF_IMU.c:84:10: warning: unused variable 'mag' [-Wunused-variable]
-   Vector mag = QMC5883_readRaw();
-          ^~~
-Finished building: ../src/arduino_10DOF_IMU.c
+Building file: ../src/BMP280.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/BMP280.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BMP280.d" -MT"src/BMP280.o" -o "src/BMP280.o" "../src/BMP280.cpp"
+../src/BMP280.cpp: In member function 'uint8_t DFRobot_BMP280::read8(uint8_t)':
+../src/BMP280.cpp:66:17: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  uint8_t value, status;
+                 ^~~~~~
+Finished building: ../src/BMP280.cpp
+ 
+Building file: ../src/QMC5883.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/QMC5883.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/QMC5883.d" -MT"src/QMC5883.o" -o "src/QMC5883.o" "../src/QMC5883.cpp"
+Finished building: ../src/QMC5883.cpp
+ 
+Building file: ../src/arduino_10DOF_IMU.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_10DOF_IMU.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_10DOF_IMU.d" -MT"src/arduino_10DOF_IMU.o" -o "src/arduino_10DOF_IMU.o" "../src/arduino_10DOF_IMU.cpp"
+../src/arduino_10DOF_IMU.cpp: In function 'int main()':
+../src/arduino_10DOF_IMU.cpp:65:8: warning: variable 'pres' set but not used [-Wunused-but-set-variable]
+  float pres;
+        ^~~~
+Finished building: ../src/arduino_10DOF_IMU.cpp
  
 Building target: arduino_10DOF_IMU.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Invoking: MicroBlaze g++ linker
+mb-g++ -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/BMP280.o ./src/QMC5883.o ./src/arduino_10DOF_IMU.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: arduino_10DOF_IMU.elf
  
 Invoking: MicroBlaze Print Size
 mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  18496	    540	   3268	  22304	   5720	arduino_10DOF_IMU.elf
+  33516	    544	   3316	  37376	   9200	arduino_10DOF_IMU.elf
 Finished building: arduino_10DOF_IMU.elf.size
  
 
-18:30:02 Build Finished (took 507ms)
+14:35:32 Build Finished (took 1s.222ms)
 

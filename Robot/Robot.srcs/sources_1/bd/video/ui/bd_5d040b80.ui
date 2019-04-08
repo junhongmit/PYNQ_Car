@@ -1,0 +1,23 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port hdmi_out -pg 1 -y 360 -defaultsOSRD
+preplace port hdmi_in -pg 1 -y 110 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -y 20 -defaultsOSRD
+preplace portBus hdmi_out_hpd -pg 1 -y 400 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -y 380 -defaultsOSRD
+preplace inst ps7_0 -pg 1 -lvl 2 -y 190 -defaultsOSRD
+preplace inst video -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace netloc video_dout 1 1 1 N
+preplace netloc hdmi_out_hpd_video_gpio_io_o 1 1 2 360J 400 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 1 1 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 1 N
+preplace netloc hdmi_in_1 1 0 1 N
+preplace netloc video_TMDS1 1 1 2 380J 360 NJ
+preplace netloc dvi2rgb_0_DDC 1 1 2 380J 20 NJ
+preplace netloc axi_gpio_video_gpio_io_o 1 1 2 370J 380 NJ
+levelinfo -pg 1 0 190 610 860 -top 0 -bot 420
+",
+}
+

@@ -1,0 +1,47 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port peripheral_aresetn -pg 1 -y 1180 -defaultsOSRD
+preplace port S_AXI -pg 1 -y 20 -defaultsOSRD
+preplace port FCLK_CLK0 -pg 1 -y 420 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -y 40 -defaultsOSRD
+preplace port S_AXI2 -pg 1 -y 840 -defaultsOSRD
+preplace portBus CH_i -pg 1 -y 440 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -y 260 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -y 360 -defaultsOSRD
+preplace inst xlslice_10 -pg 1 -lvl 1 -y 1100 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace inst xlslice_11 -pg 1 -lvl 1 -y 1200 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 1 -y 580 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 1 -y 680 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 1 -y 780 -defaultsOSRD
+preplace inst PulseCounter_0 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst xlslice_8 -pg 1 -lvl 1 -y 900 -defaultsOSRD
+preplace inst PulseCounter_1 -pg 1 -lvl 2 -y 850 -defaultsOSRD
+preplace inst xlslice_9 -pg 1 -lvl 1 -y 1000 -defaultsOSRD
+preplace inst PulseCounter_2 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace netloc Conn1 1 0 2 0J -10 290J
+preplace netloc Din_0_1 1 0 1 10
+preplace netloc Conn2 1 0 2 10J 0 300J
+preplace netloc xlslice_9_Dout 1 1 1 330J
+preplace netloc xlslice_4_Dout 1 1 1 240J
+preplace netloc xlslice_3_Dout 1 1 1 260J
+preplace netloc xlslice_1_Dout 1 1 1 240J
+preplace netloc Conn3 1 0 2 NJ 840 310J
+preplace netloc xlslice_7_Dout 1 1 1 270J
+preplace netloc xlslice_5_Dout 1 1 1 250J
+preplace netloc xlslice_10_Dout 1 1 1 340J
+preplace netloc xlslice_2_Dout 1 1 1 250J
+preplace netloc xlslice_11_Dout 1 1 1 350J
+preplace netloc xlslice_8_Dout 1 1 1 320J
+preplace netloc peripheral_aresetn_1 1 0 2 0J 1260 300
+preplace netloc FCLK_CLK0_1 1 0 2 NJ 420 280J
+preplace netloc xlslice_6_Dout 1 1 1 260J
+preplace netloc xlslice_0_Dout 1 1 1 280J
+levelinfo -pg 1 -20 130 460 570 -top -20 -bot 1280
+",
+}
+0

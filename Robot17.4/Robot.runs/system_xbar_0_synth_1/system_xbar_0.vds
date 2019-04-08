@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar 18 15:50:24 2019
+# Process ID: 55229
+# Current directory: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_xbar_0_synth_1
+# Command line: vivado -log system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+# Log file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_xbar_0_synth_1/system_xbar_0.vds
+# Journal file: /home/junhonglin/Xilinx/PYNQ_Car/Robot/Robot.runs/system_xbar_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_xbar_0, cache-ID = 9de42d31aef9d3ab.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 15:50:51 2019...
