@@ -1,0 +1,22 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include "xio_switch.h"
+#ifdef __cplusplus
+}
+#endif
+
+#include "gpio.h"
+
+int main()
+{
+	gpio g1;
+	set_pin(0, GPIO);
+	g1 = gpio_open(0);
+	gpio_set_direction(g1, GPIO_OUT);
+	while (1) {
+		gpio_write(g1, 0);
+		gpio_write(g1, 1);
+	}
+	return 0;
+}

@@ -4,6 +4,7 @@
 
 #include "BNO055.h"
 #include "BMP280.h"
+#include "I2CMultiplexer.h"
 #include "4WD_MOTO.h"
 #include "circular_buffer.h"
 #include <sleep.h>
@@ -33,6 +34,7 @@ extern unsigned char DIR_LEFT_PIN, DIR_RIGHT_PIN;
 extern unsigned char A_CHA_PIN, A_CHB_PIN, B_CHA_PIN, B_CHB_PIN;
 extern unsigned char C_CHA_PIN, C_CHB_PIN, D_CHA_PIN, D_CHB_PIN;
 
+I2CMultiplexer I2CMulti(0x70);
 BMP bmp(BMP::eSdo_low);
 BNO bno(0x28);
 int main()
@@ -45,6 +47,7 @@ int main()
 	int cmd, Page, direction, speed, opt;
 	unsigned int which;
 	unsigned int v;
+	uint8_t flag;
 	int16_t ax, ay, az;
 	int16_t gx, gy, gz;
 	int16_t mx, my, mz;
@@ -53,17 +56,7 @@ int main()
 	BNO::sQuaAnalog_t    sQuaAnalog;
 
 	// Initialization
-	bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
-
-	bno.reset();
-	while (bno.begin() != BNO::eStatusOK) {
-		xil_printf("Initialization failed");
-	}
-
-	bmp.reset();
-	if (bmp.begin() != BMP::eStatusOK) {
-		xil_printf("Initialization failed");
-	}
+	I2CMulti.I2CMulti_device = bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
 
 	// Run application
 	while(1){
@@ -79,17 +72,37 @@ int main()
 		  case CONFIG_IOP_SWITCH:
 			if (Page == 0) {
 				// use dedicated I2C - no operation needed
-				bno.reset();
-				if (bno.begin() != BNO::eStatusOK)
+				flag = 0;
+				while (I2CMulti.selectPort(MAILBOX_DATA(0))!=1 && flag<5) {
+					flag++;
+				}
+				if (flag == 5)
 					MAILBOX_DATA(0) = 0;
 				else
 					MAILBOX_DATA(0) = 1;
 
-				bmp.reset();
-				if (bmp.begin() != BMP::eStatusOK)
+				bno.reset();
+				delay(500);
+				flag = 0;
+				while (bno.begin() != BNO::eStatusOK && flag<5) {
+					flag++;
+					delay(500);
+				}
+				if (flag == 5)
 					MAILBOX_DATA(1) = 0;
 				else
 					MAILBOX_DATA(1) = 1;
+
+				bmp.reset();
+				flag = 0;
+				while (bmp.begin() != BMP::eStatusOK && flag<5) {
+					flag++;
+					delay(500);
+				}
+				if (flag == 5)
+					MAILBOX_DATA(2) = 0;
+				else
+					MAILBOX_DATA(2) = 1;
 			} else if (Page == 1) {
 				PWM_LEFT_PIN 	= MAILBOX_DATA(0);
 				PWM_RIGHT_PIN = MAILBOX_DATA(1);

@@ -4,6 +4,7 @@
 
 #include "BNO055.h"
 #include "BMP280.h"
+#include "I2CMultiplexer.h"
 #include "circular_buffer.h"
 #include <sleep.h>
 
@@ -22,6 +23,7 @@ typedef BNO055_IIC BNO;
 #define GET_PRESSURE            0xD
 #define RESET                   0xF
 
+I2CMultiplexer I2CMulti(0x70);
 BMP bmp(BMP::eSdo_low);
 BNO bno(0x28);
 int main()
@@ -32,6 +34,7 @@ int main()
 	//sGrvAnalog = bno.getAxis(BNO::eAxisGrv);    // read gravity vector
 
 	int cmd;
+	uint8_t channel, flag;
 	int16_t ax, ay, az;
 	int16_t gx, gy, gz;
 	int16_t mx, my, mz;
@@ -40,17 +43,27 @@ int main()
 	BNO::sQuaAnalog_t    sQuaAnalog;
 
 	// Initialization
-	bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
+	I2CMulti.I2CMulti_device = bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
 
-	bno.reset();
-	while (bno.begin() != BNO::eStatusOK) {
-		xil_printf("Initialization failed");
-	}
-
-	bmp.reset();
-	if (bmp.begin() != BMP::eStatusOK) {
-		xil_printf("Initialization failed");
-	}
+//	I2CMulti.selectPort(1);
+//
+//	bno.reset();
+//	delay(500);
+//	flag = 0;
+//	while (bno.begin() != BNO::eStatusOK && flag<5) {
+//		flag++;
+//		delay(1000);
+//	}
+//	if (flag == 5)
+//		MAILBOX_DATA(0) = 0;
+//	else
+//		MAILBOX_DATA(0) = 1;
+//
+//	bmp.reset();
+//	flag = 0;
+//	while (bmp.begin() != BMP::eStatusOK && flag<5) {
+//		flag++;
+//	}
 
 	// Run application
 	while(1){
@@ -61,17 +74,38 @@ int main()
 	  switch(cmd){
 		  case CONFIG_IOP_SWITCH:
 			// use dedicated I2C - no operation needed
-			bno.reset();
-			if (bno.begin() != BNO::eStatusOK)
+			flag = 0;
+			channel = MAILBOX_DATA(0);
+			while (I2CMulti.selectPort(channel)!=1 && flag<5) {
+				flag++;
+			}
+			if (flag == 5)
 				MAILBOX_DATA(0) = 0;
 			else
 				MAILBOX_DATA(0) = 1;
 
-			bmp.reset();
-			if (bmp.begin() != BMP::eStatusOK)
+			bno.reset();
+			delay(500);
+			flag = 0;
+			while (bno.begin() != BNO::eStatusOK && flag<5) {
+				flag++;
+				delay(500);
+			}
+			if (flag == 5)
 				MAILBOX_DATA(1) = 0;
 			else
 				MAILBOX_DATA(1) = 1;
+
+			bmp.reset();
+			flag = 0;
+			while (bmp.begin() != BMP::eStatusOK && flag<5) {
+				flag++;
+				delay(500);
+			}
+			if (flag == 5)
+				MAILBOX_DATA(2) = 0;
+			else
+				MAILBOX_DATA(2) = 1;
 			MAILBOX_CMD_ADDR = 0x0;
 			break;
 
@@ -134,10 +168,10 @@ int main()
 //int main()
 //{
 //	BNO::sQuaAnalog_t    sQuaAnalog;
-//
 //	// Initialization
-//	bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
+//	I2CMulti.I2CMulti_device = bmp.BMP280_device = bno.BNO055_device = i2c_open_device(0);
 //
+//	I2CMulti.selectPort(1);
 //	bno.reset();
 //	while (bno.begin() != BNO::eStatusOK) {
 //		xil_printf("Initialization failed");

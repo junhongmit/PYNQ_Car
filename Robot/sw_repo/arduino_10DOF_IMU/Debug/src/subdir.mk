@@ -11,7 +11,8 @@ CC_SRCS += \
 
 CPP_SRCS += \
 ../src/BMP280.cpp \
-../src/BNO055.cpp 
+../src/BNO055.cpp \
+../src/I2CMultiplexer.cpp 
 
 CC_DEPS += \
 ./src/main.d 
@@ -19,11 +20,13 @@ CC_DEPS += \
 OBJS += \
 ./src/BMP280.o \
 ./src/BNO055.o \
+./src/I2CMultiplexer.o \
 ./src/main.o 
 
 CPP_DEPS += \
 ./src/BMP280.d \
-./src/BNO055.d 
+./src/BNO055.d \
+./src/I2CMultiplexer.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

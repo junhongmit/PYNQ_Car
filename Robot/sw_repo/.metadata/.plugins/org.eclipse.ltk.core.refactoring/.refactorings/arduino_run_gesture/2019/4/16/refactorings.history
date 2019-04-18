@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arduino_run_gesture/src/4WD_MOTO.c&apos; to &apos;4WD_MOTO.cc&apos;" description="Rename resource &apos;4WD_MOTO.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/4WD_MOTO.c" name="4WD_MOTO.cc" stamp="1555498431829" updateReferences="true"/>
+</session>

@@ -10,7 +10,7 @@ src/main.o src/main.o: ../src/main.cc ../src/BNO055.h \
  ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xil_exception.h \
  ../../bsp_iop_arduino_mb/iop_arduino_mb/include/i2c.h \
  ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xparameters.h \
- ../src/BMP280.h \
+ ../src/BMP280.h ../src/I2CMultiplexer.h \
  ../../bsp_iop_arduino_mb/iop_arduino_mb/include/circular_buffer.h
 
 ../src/BNO055.h:
@@ -38,5 +38,7 @@ src/main.o src/main.o: ../src/main.cc ../src/BNO055.h \
 ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xparameters.h:
 
 ../src/BMP280.h:
+
+../src/I2CMultiplexer.h:
 
 ../../bsp_iop_arduino_mb/iop_arduino_mb/include/circular_buffer.h:

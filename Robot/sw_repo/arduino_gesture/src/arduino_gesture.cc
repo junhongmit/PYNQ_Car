@@ -50,6 +50,7 @@
  *****************************************************************************/
 
 #include "SparkFun_APDS9960.h"
+#include "I2CMultiplexer.h"
 #include "circular_buffer.h"
 #include "timer.h"
 #include "i2c.h"
@@ -58,12 +59,13 @@
 #define CONFIG_IOP_SWITCH           0x1
 #define READ_GESTURE                0x3
 
+I2CMultiplexer I2CMulti(0x70);
 int main()
 {
 	extern i2c APDS9960_device;
 	int cmd;
 	// Initialization
-	APDS9960_device = i2c_open_device(0);
+	I2CMulti.I2CMulti_device = APDS9960_device = i2c_open_device(0);
 
 	while(1){
 		// wait and store valid command
@@ -72,6 +74,7 @@ int main()
 
 		switch(cmd){
 			  case CONFIG_IOP_SWITCH:
+				  I2CMulti.selectPort(MAILBOX_DATA(0));
 				  MAILBOX_DATA(0) = APDS9960_init();
 				  MAILBOX_DATA(1) = APDS9960_enableGestureSensor(true);
 				  MAILBOX_CMD_ADDR = 0x0;
@@ -99,7 +102,9 @@ int main()
 //	extern i2c APDS9960_device;
 //	int gest;
 //	// Initialization
-//	APDS9960_device = i2c_open_device(0);
+//	I2CMulti.I2CMulti_device = APDS9960_device = i2c_open_device(0);
+//
+//	I2CMulti.selectPort(0);
 //
 //	APDS9960_init();
 //	APDS9960_enableGestureSensor(true);

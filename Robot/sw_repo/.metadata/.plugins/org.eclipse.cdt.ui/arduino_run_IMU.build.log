@@ -1,50 +1,50 @@
-13:58:45 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+17:40:29 **** Auto Build of configuration Debug for project arduino_run_IMU ****
 make all 
 Building file: ../src/main.cc
 Invoking: MicroBlaze g++ compiler
 mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
 ../src/main.cc: In function 'int main()':
-../src/main.cc:47:15: warning: unused variable 'v' [-Wunused-variable]
+../src/main.cc:49:15: warning: unused variable 'v' [-Wunused-variable]
   unsigned int v;
                ^
-../src/main.cc:48:10: warning: unused variable 'ax' [-Wunused-variable]
+../src/main.cc:51:10: warning: unused variable 'ax' [-Wunused-variable]
   int16_t ax, ay, az;
           ^~
-../src/main.cc:48:14: warning: unused variable 'ay' [-Wunused-variable]
+../src/main.cc:51:14: warning: unused variable 'ay' [-Wunused-variable]
   int16_t ax, ay, az;
               ^~
-../src/main.cc:48:18: warning: unused variable 'az' [-Wunused-variable]
+../src/main.cc:51:18: warning: unused variable 'az' [-Wunused-variable]
   int16_t ax, ay, az;
                   ^~
-../src/main.cc:49:10: warning: unused variable 'gx' [-Wunused-variable]
+../src/main.cc:52:10: warning: unused variable 'gx' [-Wunused-variable]
   int16_t gx, gy, gz;
           ^~
-../src/main.cc:49:14: warning: unused variable 'gy' [-Wunused-variable]
+../src/main.cc:52:14: warning: unused variable 'gy' [-Wunused-variable]
   int16_t gx, gy, gz;
               ^~
-../src/main.cc:49:18: warning: unused variable 'gz' [-Wunused-variable]
+../src/main.cc:52:18: warning: unused variable 'gz' [-Wunused-variable]
   int16_t gx, gy, gz;
                   ^~
-../src/main.cc:50:10: warning: unused variable 'mx' [-Wunused-variable]
+../src/main.cc:53:10: warning: unused variable 'mx' [-Wunused-variable]
   int16_t mx, my, mz;
           ^~
-../src/main.cc:50:14: warning: unused variable 'my' [-Wunused-variable]
+../src/main.cc:53:14: warning: unused variable 'my' [-Wunused-variable]
   int16_t mx, my, mz;
               ^~
-../src/main.cc:50:18: warning: unused variable 'mz' [-Wunused-variable]
+../src/main.cc:53:18: warning: unused variable 'mz' [-Wunused-variable]
   int16_t mx, my, mz;
                   ^~
-../src/main.cc:51:59: warning: unused variable 'sLiaAnalog' [-Wunused-variable]
+../src/main.cc:54:59: warning: unused variable 'sLiaAnalog' [-Wunused-variable]
   BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
                                                            ^~~~~~~~~~
-../src/main.cc:51:71: warning: unused variable 'sGrvAnalog' [-Wunused-variable]
+../src/main.cc:54:71: warning: unused variable 'sGrvAnalog' [-Wunused-variable]
   BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
                                                                        ^~~~~~~~~~
 Finished building: ../src/main.cc
  
 Building target: arduino_run_IMU.elf
 Invoking: MicroBlaze g++ linker
-mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_IMU.elf"  ./src/4WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_IMU.elf"  ./src/4WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: arduino_run_IMU.elf
  
 make --no-print-directory post-build
@@ -54,9 +54,9 @@ mb-objcopy -O binary arduino_run_IMU.elf arduino_run_IMU.bin
 Invoking: MicroBlaze Print Size
 mb-size arduino_run_IMU.elf  |tee "arduino_run_IMU.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 194596	   1844	   3728	 200168	  30de8	arduino_run_IMU.elf
+ 191584	   1840	   3744	 197168	  30230	arduino_run_IMU.elf
 Finished building: arduino_run_IMU.elf.size
  
 
-13:58:46 Build Finished (took 689ms)
+17:40:29 Build Finished (took 421ms)
 

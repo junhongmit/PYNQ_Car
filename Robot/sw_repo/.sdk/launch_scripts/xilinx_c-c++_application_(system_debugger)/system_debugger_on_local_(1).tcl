@@ -13,6 +13,6 @@ ps7_init
 ps7_post_config
 configparams mdm-detect-bscan-mask 2
 targets -set -nocase -filter {name =~ "microblaze*#2" && bscan=="USER2"  && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 1
-dow /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_gesture/Debug/arduino_gesture.elf
+dow /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_gesture/Debug/arduino_run_gesture.elf
 configparams force-mem-access 0
 bpadd -addr &main

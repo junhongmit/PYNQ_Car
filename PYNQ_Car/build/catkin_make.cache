@@ -1,0 +1,2 @@
+ls01D_Ros:openslam_gmapping:slam_gmapping/gmapping:slam_gmapping/slam_gmapping
+-DCATKIN_DEVEL_PREFIX=/home/junhonglin/Xilinx/PYNQ_Car/PYNQ_Car/devel -DCMAKE_INSTALL_PREFIX=/home/junhonglin/Xilinx/PYNQ_Car/PYNQ_Car/install -G Unix Makefiles

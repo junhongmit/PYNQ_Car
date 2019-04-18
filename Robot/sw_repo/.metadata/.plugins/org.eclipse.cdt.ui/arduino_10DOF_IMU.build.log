@@ -1,6 +1,59 @@
-13:44:44 **** Build of configuration Debug for project arduino_10DOF_IMU ****
+17:35:56 **** Auto Build of configuration Debug for project arduino_10DOF_IMU ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:38:10: warning: unused variable 'ax' [-Wunused-variable]
+  int16_t ax, ay, az;
+          ^~
+../src/main.cc:38:14: warning: unused variable 'ay' [-Wunused-variable]
+  int16_t ax, ay, az;
+              ^~
+../src/main.cc:38:18: warning: unused variable 'az' [-Wunused-variable]
+  int16_t ax, ay, az;
+                  ^~
+../src/main.cc:39:10: warning: unused variable 'gx' [-Wunused-variable]
+  int16_t gx, gy, gz;
+          ^~
+../src/main.cc:39:14: warning: unused variable 'gy' [-Wunused-variable]
+  int16_t gx, gy, gz;
+              ^~
+../src/main.cc:39:18: warning: unused variable 'gz' [-Wunused-variable]
+  int16_t gx, gy, gz;
+                  ^~
+../src/main.cc:40:10: warning: unused variable 'mx' [-Wunused-variable]
+  int16_t mx, my, mz;
+          ^~
+../src/main.cc:40:14: warning: unused variable 'my' [-Wunused-variable]
+  int16_t mx, my, mz;
+              ^~
+../src/main.cc:40:18: warning: unused variable 'mz' [-Wunused-variable]
+  int16_t mx, my, mz;
+                  ^~
+../src/main.cc:41:59: warning: unused variable 'sLiaAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                           ^~~~~~~~~~
+../src/main.cc:41:71: warning: unused variable 'sGrvAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                                       ^~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: arduino_10DOF_IMU.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU.elf"  ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: arduino_10DOF_IMU.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_10DOF_IMU.elf arduino_10DOF_IMU.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_10DOF_IMU.elf  |tee "arduino_10DOF_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 181936	   1724	   3460	 187120	  2daf0	arduino_10DOF_IMU.elf
+Finished building: arduino_10DOF_IMU.elf.size
+ 
 
-13:44:44 Build Finished (took 74ms)
+17:35:57 Build Finished (took 642ms)
 

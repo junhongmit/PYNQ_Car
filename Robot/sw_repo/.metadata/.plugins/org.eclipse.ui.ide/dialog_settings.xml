@@ -2,9 +2,12 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_run_gesture"/>
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_run_linetracker"/>
+			<item value="/home/junhonglin/Xilinx/PYNQ_Car/base.sdk/arduino_linetracker"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_gesture"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_10DOF_IMU2"/>
 			<item value="/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_10DOF_IMU"/>

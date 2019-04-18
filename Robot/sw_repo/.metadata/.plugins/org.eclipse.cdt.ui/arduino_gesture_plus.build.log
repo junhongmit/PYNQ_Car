@@ -1,0 +1,23 @@
+15:00:30 **** Auto Build of configuration Debug for project arduino_gesture_plus ****
+make all 
+Building target: arduino_gesture_plus.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture_plus.elf"  ./src/I2CMultiplexer.o ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: arduino_gesture_plus.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
+mb-objcopy: 'arduino_gesture.elf': No such file
+makefile:67: recipe for target 'post-build' failed
+ 
+Invoking: MicroBlaze Print Size
+make[1]: [post-build] Error 1 (ignored)
+mb-size arduino_gesture_plus.elf  |tee "arduino_gesture_plus.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15956	    420	   3384	  19760	   4d30	arduino_gesture_plus.elf
+Finished building: arduino_gesture_plus.elf.size
+ 
+
+15:00:31 Build Finished (took 349ms)
+

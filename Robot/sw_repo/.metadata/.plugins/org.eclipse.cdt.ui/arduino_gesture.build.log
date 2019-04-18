@@ -1,8 +1,13 @@
-16:08:31 **** Auto Build of configuration Debug for project arduino_gesture ****
+17:50:22 **** Auto Build of configuration Debug for project arduino_gesture ****
 make all 
+Building file: ../src/arduino_gesture.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_gesture.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_gesture.d" -MT"src/arduino_gesture.o" -o "src/arduino_gesture.o" "../src/arduino_gesture.cc"
+Finished building: ../src/arduino_gesture.cc
+ 
 Building target: arduino_gesture.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_gesture.elf"  ./src/I2CMultiplexer.o ./src/SparkFun_APDS9960.o ./src/arduino_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: arduino_gesture.elf
  
 make --no-print-directory post-build
@@ -12,9 +17,9 @@ mb-objcopy -O binary arduino_gesture.elf arduino_gesture.bin
 Invoking: MicroBlaze Print Size
 mb-size arduino_gesture.elf  |tee "arduino_gesture.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  14856	    416	   3376	  18648	   48d8	arduino_gesture.elf
+  15972	    420	   3384	  19776	   4d40	arduino_gesture.elf
 Finished building: arduino_gesture.elf.size
  
 
-16:08:31 Build Finished (took 180ms)
+17:50:22 Build Finished (took 473ms)
 

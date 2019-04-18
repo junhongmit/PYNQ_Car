@@ -1,0 +1,18 @@
+14:40:17 **** Build of configuration Debug for project arduino_10DOF_IMU_plus ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: arduino_10DOF_IMU_plus.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_10DOF_IMU_plus.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,\ -llibpynqmb,\ -lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld: cannot find  -llibpynqmb: No such file or directory
+makefile:48: recipe for target 'arduino_10DOF_IMU_plus.elf' failed
+/opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld: cannot find  -lxil: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [arduino_10DOF_IMU_plus.elf] Error 1
+
+14:40:17 Build Finished (took 327ms)
+

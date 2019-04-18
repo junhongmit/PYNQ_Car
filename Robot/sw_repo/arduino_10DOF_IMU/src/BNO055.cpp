@@ -65,7 +65,7 @@ BNO055::eStatus_t BNO055::begin()
     reset();
     do {
       temp = getReg(regOffset0(sRegsPage0.SYS_STATUS), 0);
-      delay(10);
+      delay(100);
       timeOut ++;
     } while((temp != 0) && (timeOut < 50));
     if(timeOut == 50)

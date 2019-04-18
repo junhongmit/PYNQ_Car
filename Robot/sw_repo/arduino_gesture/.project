@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>arduino_gesture</name>
-	<comment>Created by SDK v2017.4. arduino_getsture_bsp - iop_arduino_mb</comment>
+	<comment>Created by SDK v2018.2. bsp_iop_arduino_mb - iop_arduino_mb</comment>
 	<projects>
 		<project>bsp_iop_arduino_mb</project>
 	</projects>
@@ -22,5 +22,6 @@
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
 </projectDescription>

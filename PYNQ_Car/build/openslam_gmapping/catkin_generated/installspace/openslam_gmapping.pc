@@ -1,0 +1,8 @@
+prefix=/home/junhonglin/Xilinx/PYNQ_Car/PYNQ_Car/install
+
+Name: openslam_gmapping
+Description: Description of openslam_gmapping
+Version: 0.1.2
+Cflags: -I/home/junhonglin/Xilinx/PYNQ_Car/PYNQ_Car/install/include
+Libs: -L/home/junhonglin/Xilinx/PYNQ_Car/PYNQ_Car/install/lib -lgridfastslam -lscanmatcher -lsensor_base -lsensor_range -lsensor_odometry -lutils
+Requires: 

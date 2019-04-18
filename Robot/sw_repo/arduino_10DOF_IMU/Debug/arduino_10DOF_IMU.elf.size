@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
- 184940	   1728	   3452	 190120	  2e6a8	arduino_10DOF_IMU.elf
+ 181936	   1724	   3460	 187120	  2daf0	arduino_10DOF_IMU.elf
