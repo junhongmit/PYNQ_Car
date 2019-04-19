@@ -6,7 +6,7 @@ This repo contains all the development source including the overlay design and a
 
 [A release version](https://github.com/xupsh/PYNQ-Car) contains the pip install package for Robot Car Development Platform for PYNQ. It's only support PYNQ Z2 board.
 
-![](/home/junhonglin/Xilinx/PYNQ_Car/Pic/Robot.jpg  "The picture of the PYNQ_Robot")
+![](Pic/Robot.jpg  "The picture of the PYNQ_Robot")
 
 # Based on
 PYNQ : https://github.com/Xilinx/PYNQ
