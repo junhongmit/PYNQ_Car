@@ -1,35 +1,6 @@
-18:06:33 **** Auto Build of configuration Debug for project arduino_run_gesture ****
+12:22:43 **** Build of configuration Debug for project arduino_run_gesture ****
 make all 
-Building file: ../src/arduino_run_gesture.cc
-Invoking: MicroBlaze g++ compiler
-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_run_gesture.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_gesture.d" -MT"src/arduino_run_gesture.o" -o "src/arduino_run_gesture.o" "../src/arduino_run_gesture.cc"
-../src/arduino_run_gesture.cc: In function 'int main()':
-../src/arduino_run_gesture.cc:75:13: warning: unused variable 'period' [-Wunused-variable]
-  int which, period, duty;
-             ^~~~~~
-../src/arduino_run_gesture.cc:75:21: warning: unused variable 'duty' [-Wunused-variable]
-  int which, period, duty;
-                     ^~~~
-../src/arduino_run_gesture.cc:76:8: warning: unused variable 'v' [-Wunused-variable]
-  float v;
-        ^
-Finished building: ../src/arduino_run_gesture.cc
- 
-Building target: arduino_run_gesture.elf
-Invoking: MicroBlaze g++ linker
-mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_gesture.elf"  ./src/4WD_MOTO.o ./src/I2CMultiplexer.o ./src/SparkFun_APDS9960.o ./src/arduino_run_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: arduino_run_gesture.elf
- 
-make --no-print-directory post-build
-Microblaze Bin Gen
-mb-objcopy -O binary arduino_run_gesture.elf arduino_run_gesture.bin
- 
-Invoking: MicroBlaze Print Size
-mb-size arduino_run_gesture.elf  |tee "arduino_run_gesture.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  25912	    536	   3664	  30112	   75a0	arduino_run_gesture.elf
-Finished building: arduino_run_gesture.elf.size
- 
+make: Nothing to be done for 'all'.
 
-18:06:34 Build Finished (took 402ms)
+12:22:43 Build Finished (took 125ms)
 

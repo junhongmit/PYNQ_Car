@@ -13430,3 +13430,318 @@ mb-size arduino_run_gesture.elf  |tee "arduino_run_gesture.elf.size"
   25912	    536	   3664	  30112	   75a0	arduino_run_gesture.elf
 Finished building: arduino_run_gesture.elf.size
  
+
+**** Build of configuration Debug for project arduino_run_usranger ****
+
+Nothing to build for project arduino_run_usranger
+12:21:16 **** Clean-only build of configuration Debug for project arduino_run_usranger ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o  ./src/4WD_MOTO.d ./src/arduino_run_usranger.d ./src/arduino_usranger.d  arduino_run_usranger.elf.size  arduino_run_usranger.elf
+ 
+12:21:16 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:135:2: warning: implicit declaration of function 'timer_open_capture'; did you mean 'timer_open_device'? [-Wimplicit-function-declaration]
+  timer_open_capture(timer_e);
+  ^~~~~~~~~~~~~~~~~~
+  timer_open_device
+../src/4WD_MOTO.c: In function 'get_velocity':
+../src/4WD_MOTO.c:169:8: warning: implicit declaration of function 'timer_get_pulsewidth'; did you mean 'timer_get_num_devices'? [-Wimplicit-function-declaration]
+  v_a = timer_get_pulsewidth(timer_e,0);
+        ^~~~~~~~~~~~~~~~~~~~
+        timer_get_num_devices
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+In file included from ../src/arduino_run_usranger.c:54:0:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building file: ../src/arduino_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_usranger.d" -MT"src/arduino_usranger.o" -o "src/arduino_usranger.o" "../src/arduino_usranger.c"
+Finished building: ../src/arduino_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/4WD_MOTO.o: In function `init_ardumoto':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_open_capture'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_open_capture'
+./src/4WD_MOTO.o: In function `get_velocity':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_run_usranger.elf] Error 1
+makefile:36: recipe for target 'arduino_run_usranger.elf' failed
+12:22:03 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/4WD_MOTO.o: In function `init_ardumoto':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_open_capture'
+makefile:36: recipe for target 'arduino_run_usranger.elf' failed
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_open_capture'
+./src/4WD_MOTO.o: In function `get_velocity':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/4WD_MOTO.c:188: undefined reference to `timer_get_pulsewidth'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_run_usranger.elf] Error 1
+12:22:19 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/arduino_run_usranger.o: In function `main':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:82: undefined reference to `PWM_A_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:83: undefined reference to `PWM_B_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:84: undefined reference to `PWM_C_PIN'
+makefile:36: recipe for target 'arduino_run_usranger.elf' failed
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:85: undefined reference to `PWM_D_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:86: undefined reference to `DIR_A_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:87: undefined reference to `DIR_B_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:88: undefined reference to `DIR_C_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:89: undefined reference to `DIR_D_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:90: undefined reference to `FG_A_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:91: undefined reference to `FG_B_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:92: undefined reference to `FG_C_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:93: undefined reference to `FG_D_PIN'
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:130: undefined reference to `get_velocity'
+collect2: error: ld returned 1 exit status
+make: *** [arduino_run_usranger.elf] Error 1
+12:22:43 **** Build of configuration Debug for project arduino_run_gesture ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:10 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:83:7: error: 'PWM_A_PIN' undeclared (first use in this function); did you mean 'D_CHA_PIN'?
+       PWM_A_PIN = MAILBOX_DATA(0);
+       ^~~~~~~~~
+       D_CHA_PIN
+../src/arduino_run_usranger.c:83:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_run_usranger.c:84:7: error: 'PWM_B_PIN' undeclared (first use in this function); did you mean 'PWM_A_PIN'?
+       PWM_B_PIN = MAILBOX_DATA(1);
+       ^~~~~~~~~
+       PWM_A_PIN
+../src/arduino_run_usranger.c:85:7: error: 'PWM_C_PIN' undeclared (first use in this function); did you mean 'PWM_B_PIN'?
+       PWM_C_PIN = MAILBOX_DATA(2);
+       ^~~~~~~~~
+       PWM_B_PIN
+../src/arduino_run_usranger.c:86:7: error: 'PWM_D_PIN' undeclared (first use in this function); did you mean 'PWM_C_PIN'?
+       PWM_D_PIN = MAILBOX_DATA(3);
+       ^~~~~~~~~
+       PWM_C_PIN
+../src/arduino_run_usranger.c:87:7: error: 'DIR_A_PIN' undeclared (first use in this function); did you mean 'PWM_A_PIN'?
+       DIR_A_PIN = MAILBOX_DATA(4);
+       ^~~~~~~~~
+       PWM_A_PIN
+../src/arduino_run_usranger.c:88:7: error: 'DIR_B_PIN' undeclared (first use in this function); did you mean 'DIR_A_PIN'?
+       DIR_B_PIN = MAILBOX_DATA(5);
+       ^~~~~~~~~
+       DIR_A_PIN
+../src/arduino_run_usranger.c:89:7: error: 'DIR_C_PIN' undeclared (first use in this function); did you mean 'DIR_B_PIN'?
+       DIR_C_PIN = MAILBOX_DATA(6);
+       ^~~~~~~~~
+       DIR_B_PIN
+../src/arduino_run_usranger.c:90:7: error: 'DIR_D_PIN' undeclared (first use in this function); did you mean 'DIR_C_PIN'?
+       DIR_D_PIN = MAILBOX_DATA(7);
+       ^~~~~~~~~
+       DIR_C_PIN
+../src/arduino_run_usranger.c:91:7: error: 'FG_A_PIN' undeclared (first use in this function); did you mean 'DIR_A_PIN'?
+       FG_A_PIN  = MAILBOX_DATA(8);
+       ^~~~~~~~
+       DIR_A_PIN
+../src/arduino_run_usranger.c:92:7: error: 'FG_B_PIN' undeclared (first use in this function); did you mean 'FG_A_PIN'?
+       FG_B_PIN  = MAILBOX_DATA(9);
+       ^~~~~~~~
+       FG_A_PIN
+../src/arduino_run_usranger.c:93:7: error: 'FG_C_PIN' undeclared (first use in this function); did you mean 'FG_B_PIN'?
+       FG_C_PIN  = MAILBOX_DATA(10);
+       ^~~~~~~~
+       FG_B_PIN
+../src/arduino_run_usranger.c:94:7: error: 'FG_D_PIN' undeclared (first use in this function); did you mean 'FG_C_PIN'?
+       FG_D_PIN  = MAILBOX_DATA(11);
+       ^~~~~~~~
+       FG_C_PIN
+../src/arduino_run_usranger.c:131:11: warning: implicit declaration of function 'get_velocity' [-Wimplicit-function-declaration]
+       v = get_velocity();
+           ^~~~~~~~~~~~
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+src/subdir.mk:27: recipe for target 'src/arduino_run_usranger.o' failed
+make: *** [src/arduino_run_usranger.o] Error 1
+12:23:29 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:134:11: warning: implicit declaration of function 'get_velocity' [-Wimplicit-function-declaration]
+       v = get_velocity();
+           ^~~~~~~~~~~~
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/arduino_run_usranger.o: In function `main':
+/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/arduino_run_usranger/Debug/../src/arduino_run_usranger.c:134: undefined reference to `get_velocity'
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'arduino_run_usranger.elf' failed
+make: *** [arduino_run_usranger.elf] Error 1
+12:24:30 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:133:11: error: 'DISTANCE' undeclared (first use in this function); did you mean 'GET_DISTANCE'?
+      case DISTANCE:
+           ^~~~~~~~
+           GET_DISTANCE
+../src/arduino_run_usranger.c:133:11: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/arduino_run_usranger.o' failed
+../src/arduino_run_usranger.c:134:7: error: 'opt' undeclared (first use in this function)
+       opt = MAILBOX_DATA(0);
+       ^~~
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+make: *** [src/arduino_run_usranger.o] Error 1
+12:24:42 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:134:7: error: 'opt' undeclared (first use in this function)
+       opt = MAILBOX_DATA(0);
+       ^~~
+../src/arduino_run_usranger.c:134:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+src/subdir.mk:27: recipe for target 'src/arduino_run_usranger.o' failed
+             ^~~~~~
+make: *** [src/arduino_run_usranger.o] Error 1
+12:24:50 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_usranger.elf
+ 
+make --no-print-directory post-build
+mb-objcopy -O binary arduino_run_usranger.elf arduino_run_usranger.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15440	    552	   3560	  19552	   4c60	arduino_run_usranger.elf
+Finished building: arduino_run_usranger.elf.size
+ 
+12:25:10 **** Clean-only build of configuration Debug for project arduino_run_usranger ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o  ./src/4WD_MOTO.d ./src/arduino_run_usranger.d ./src/arduino_usranger.d  arduino_run_usranger.elf.size  arduino_run_usranger.elf
+ 
+12:25:10 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building file: ../src/arduino_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_usranger.d" -MT"src/arduino_usranger.o" -o "src/arduino_usranger.o" "../src/arduino_usranger.c"
+Finished building: ../src/arduino_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_usranger.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_usranger.elf arduino_run_usranger.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15440	    552	   3560	  19552	   4c60	arduino_run_usranger.elf
+Finished building: arduino_run_usranger.elf.size
+ 

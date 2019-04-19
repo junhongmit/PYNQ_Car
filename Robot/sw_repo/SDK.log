@@ -8934,3 +8934,10 @@ con
 
 17:56:34 INFO  : Launch script is exported to file '/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local_(1).tcl'
 17:57:14 INFO  : Disconnected from the channel tcfchan#3.
+12:06:20 INFO  : Registering command handlers for SDK TCF services
+12:06:22 INFO  : Launching XSCT server: xsct -n -interactive /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/temp_xsdb_launch_script.tcl
+12:06:28 INFO  : XSCT server has started successfully.
+12:06:28 INFO  : Successfully done setting XSCT server connection channel  
+12:06:29 INFO  : Successfully done setting SDK workspace  
+12:06:29 INFO  : Restoring local repository preferences: 
+		 /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo
