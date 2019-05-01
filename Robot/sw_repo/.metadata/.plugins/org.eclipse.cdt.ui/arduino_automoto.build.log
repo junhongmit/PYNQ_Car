@@ -1,0 +1,38 @@
+03:26:03 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13456	    516	   3396	  17368	   43d8	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+
+03:26:04 Build Finished (took 1s.30ms)
+

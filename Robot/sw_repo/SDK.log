@@ -8941,3 +8941,24 @@ con
 12:06:29 INFO  : Successfully done setting SDK workspace  
 12:06:29 INFO  : Restoring local repository preferences: 
 		 /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo
+15:18:10 INFO  : Registering command handlers for SDK TCF services
+15:18:12 INFO  : Launching XSCT server: xsct -n -interactive /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/temp_xsdb_launch_script.tcl
+15:18:21 INFO  : XSCT server has started successfully.
+15:18:21 INFO  : Successfully done setting XSCT server connection channel  
+15:18:56 INFO  : Successfully done setting SDK workspace  
+15:18:56 INFO  : Restoring local repository preferences: 
+		 /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo
+18:36:35 INFO  : Registering command handlers for SDK TCF services
+18:36:41 INFO  : Launching XSCT server: xsct -n -interactive /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/temp_xsdb_launch_script.tcl
+18:36:59 INFO  : XSCT server has started successfully.
+18:37:41 INFO  : Successfully done setting XSCT server connection channel  
+18:37:41 INFO  : Successfully done setting SDK workspace  
+18:37:41 INFO  : Restoring local repository preferences: 
+		 /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo
+03:08:22 INFO  : Registering command handlers for SDK TCF services
+03:08:28 INFO  : Launching XSCT server: xsct -n -interactive /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/temp_xsdb_launch_script.tcl
+03:08:47 INFO  : XSCT server has started successfully.
+03:09:11 INFO  : Successfully done setting XSCT server connection channel  
+03:09:11 INFO  : Successfully done setting SDK workspace  
+03:09:11 INFO  : Restoring local repository preferences: 
+		 /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo

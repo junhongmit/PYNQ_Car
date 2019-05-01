@@ -48,7 +48,7 @@
  *
  *****************************************************************************/
 
-#include "4WD_MOTO.h"
+#include "2WD_MOTO.h"
 #include <circular_buffer.h>
 #include "sleep.h"
 #include "arduino_usranger.h"
@@ -109,24 +109,36 @@ int main()
 				  direction = MAILBOX_DATA(0);
 				  speed = MAILBOX_DATA(1);
 				  switch (direction) {
-				  	  case 0://move forward
-				  		  move_forward(speed);
-				  		  break;
-				  	  case 1://move back
-				  		  move_backward(speed);
-				  		  break;
-				  	  case 2://move left stop
-				  		  move_left(STATUS_A, speed);
-				  		  break;
-				  	  case 3://move right stop
-				  		  move_right(STATUS_A, speed);
-				  		  break;
-				  	  case 4://left reverse
-				  		  move_left(STATUS_B, speed);
-				  		  break;
-				  	  case 5://right reverse
-				  		  move_right(STATUS_B, speed);
-				  		  break;
+					  case 0://move forward
+						  move_forward(speed);
+						  break;
+					  case 1://move back
+						  move_backward(speed);
+						  break;
+					  case 2:
+						  move_left(speed);
+						  break;
+					  case 3:
+						  move_right(speed);
+						  break;
+					  case 4://turn left
+						  turn_left(speed);
+						  break;
+					  case 5://turn right
+						  turn_right(speed);
+						  break;
+					  case 6://left reverse
+						  forward_left(speed);
+						  break;
+					  case 7://right reverse
+						  forward_right(speed);
+						  break;
+					  case 8:
+						  back_left(speed);
+						  break;
+					  case 9:
+						  back_right(speed);
+						  break;
 				  }
 				  MAILBOX_CMD_ADDR = 0x0;
 				  break;

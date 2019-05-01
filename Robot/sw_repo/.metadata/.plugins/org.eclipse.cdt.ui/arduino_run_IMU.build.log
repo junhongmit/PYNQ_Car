@@ -1,8 +1,12 @@
-17:40:29 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+17:19:03 **** Auto Build of configuration Debug for project arduino_run_IMU ****
 make all 
 Building file: ../src/main.cc
 Invoking: MicroBlaze g++ compiler
 mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:8:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
 ../src/main.cc: In function 'int main()':
 ../src/main.cc:49:15: warning: unused variable 'v' [-Wunused-variable]
   unsigned int v;
@@ -44,7 +48,7 @@ Finished building: ../src/main.cc
  
 Building target: arduino_run_IMU.elf
 Invoking: MicroBlaze g++ linker
-mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_IMU.elf"  ./src/4WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_IMU.elf"  ./src/2WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: arduino_run_IMU.elf
  
 make --no-print-directory post-build
@@ -54,9 +58,9 @@ mb-objcopy -O binary arduino_run_IMU.elf arduino_run_IMU.bin
 Invoking: MicroBlaze Print Size
 mb-size arduino_run_IMU.elf  |tee "arduino_run_IMU.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 191584	   1840	   3744	 197168	  30230	arduino_run_IMU.elf
+ 192120	   1840	   3744	 197704	  30448	arduino_run_IMU.elf
 Finished building: arduino_run_IMU.elf.size
  
 
-17:40:29 Build Finished (took 421ms)
+17:19:04 Build Finished (took 701ms)
 

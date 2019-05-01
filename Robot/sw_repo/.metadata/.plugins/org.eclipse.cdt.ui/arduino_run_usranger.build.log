@@ -1,17 +1,12 @@
-12:25:10 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+17:47:44 **** Auto Build of configuration Debug for project arduino_run_usranger ****
 make all 
-Building file: ../src/4WD_MOTO.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
-../src/4WD_MOTO.c: In function 'init_ardumoto':
-../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
-  u32 temp;
-      ^~~~
-Finished building: ../src/4WD_MOTO.c
- 
 Building file: ../src/arduino_run_usranger.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+In file included from ../src/arduino_run_usranger.c:51:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
 ../src/arduino_run_usranger.c: In function 'main':
 ../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
   float v;
@@ -30,7 +25,7 @@ Finished building: ../src/arduino_usranger.c
  
 Building target: arduino_run_usranger.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/2WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: arduino_run_usranger.elf
  
 make --no-print-directory post-build
@@ -40,9 +35,9 @@ mb-objcopy -O binary arduino_run_usranger.elf arduino_run_usranger.bin
 Invoking: MicroBlaze Print Size
 mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  15440	    552	   3560	  19552	   4c60	arduino_run_usranger.elf
+  15976	    552	   3560	  20088	   4e78	arduino_run_usranger.elf
 Finished building: arduino_run_usranger.elf.size
  
 
-12:25:11 Build Finished (took 768ms)
+17:47:45 Build Finished (took 573ms)
 

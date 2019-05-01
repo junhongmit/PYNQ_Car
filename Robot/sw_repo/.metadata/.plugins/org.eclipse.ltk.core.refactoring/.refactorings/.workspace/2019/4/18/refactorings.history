@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arduino_4wdmoto&apos; to &apos;arduino_automoto&apos;" description="Rename resource &apos;arduino_4wdmoto&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/arduino_4wdmoto" name="arduino_automoto" stamp="1556609485523" updateReferences="true"/>
+</session>

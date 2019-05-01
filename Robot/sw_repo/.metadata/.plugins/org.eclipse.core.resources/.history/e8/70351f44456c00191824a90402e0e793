@@ -1,0 +1,299 @@
+/******************************************************************************
+ *  Copyright (c) 2019, Xilinx, Inc.
+ *  All rights reserved.
+ * 
+ *  Redistribution and use in source and binary forms, with or without 
+ *  modification, are permitted provided that the following conditions are met:
+ *
+ *  1.  Redistributions of source code must retain the above copyright notice, 
+ *     this list of conditions and the following disclaimer.
+ *
+ *  2.  Redistributions in binary form must reproduce the above copyright 
+ *      notice, this list of conditions and the following disclaimer in the 
+ *      documentation and/or other materials provided with the distribution.
+ *
+ *  3.  Neither the name of the copyright holder nor the names of its 
+ *      contributors may be used to endorse or promote products derived from 
+ *      this software without specific prior written permission.
+ *
+ *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ *  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+ *  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+ *  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
+ *  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+ *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+ *  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ *  OR BUSINESS INTERRUPTION). HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+ *  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
+ *  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ *  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ *****************************************************************************/
+/******************************************************************************
+ *
+ *
+ * @file arduino_automoto.c
+ *
+ * IOP code (MicroBlaze) for automoto SEN:FIT0441.
+ * www.dfrobot.com.cn/goods-1270.html
+ *
+ * FIT0441 is controlled by both GPIO and PWM
+ *
+ * There are four automotos under control to drive a car
+ * auotmoto a: right front
+ * auotmoto b: right rear
+ * automoto c: left sacro-anterior / left front
+ * auotmoto d: left rear
+ *
+ * Hardware version 2.2.
+ * 
+ *
+ *
+ * <pre>
+ * MODIFICATION HISTORY:
+ *
+ * Ver   Who  Date     Changes
+ * ----- --- ------- -----------------------------------------------
+ * 1.00a zc  1/21/19 release
+ * 
+ *
+ * </pre>
+ *
+ *****************************************************************************/
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include "xio_switch.h"
+#ifdef __cplusplus
+}
+#endif
+
+#include "gpio.h"
+#include "timer.h"
+#include "xtmrctr.h"
+#include "2WD_MOTO.h"
+#include "pulse.h"
+
+#define DEFAULT_PERIOD 625998
+#define DEFAULT_DUTY 312998
+
+unsigned char PWM_LEFT_PIN=5, PWM_RIGHT_PIN=6;
+unsigned char DIR_LEFT_PIN=4, DIR_RIGHT_PIN=7;
+unsigned char A_CHA_PIN=3, A_CHB_PIN=2, B_CHA_PIN=9, B_CHB_PIN=8;
+unsigned char C_CHA_PIN=11, C_CHB_PIN=10, D_CHA_PIN=13, D_CHB_PIN=12;
+
+#define RATIO (0.08*3.14159/2.0/1920.0)
+
+//car is intialize to go straight forward with speed 50
+
+static unsigned int dir_left = 0, dir_right = 0;
+static unsigned int speed_left = 50, speed_right = 50;
+
+static timer timer_left;
+static timer timer_right;
+
+static gpio gpio_left;
+static gpio gpio_right;
+
+float distance();
+void stop_all();
+unsigned int init_ardumoto(){
+    timer_left  = timer_open_device(0);
+    timer_right = timer_open_device(1);
+    stop_all();
+
+	//link the pwm to output
+    set_pin(PWM_LEFT_PIN,  PWM0);
+    set_pin(PWM_RIGHT_PIN, PWM1);
+
+	//link the FG of automoto to input
+    gpio_left = gpio_open(DIR_LEFT_PIN);
+    gpio_right = gpio_open(DIR_RIGHT_PIN);
+
+    gpio_set_direction(gpio_left, GPIO_OUT);
+    gpio_set_direction(gpio_right, GPIO_OUT);
+
+    set_pin(A_CHA_PIN, GPIO);
+    set_pin(A_CHB_PIN, GPIO);
+    set_pin(B_CHA_PIN, GPIO);
+    set_pin(B_CHB_PIN, GPIO);
+    set_pin(C_CHA_PIN, GPIO);
+    set_pin(C_CHB_PIN, GPIO);
+    set_pin(D_CHA_PIN, GPIO);
+    set_pin(D_CHB_PIN, GPIO);
+
+    set_pulse_pin(COUNTER_A, A_CHA_PIN, A_CHB_PIN);
+    set_pulse_pin(COUNTER_B, B_CHA_PIN, B_CHB_PIN);
+    set_pulse_pin(COUNTER_C, C_CHA_PIN, C_CHB_PIN);
+    set_pulse_pin(COUNTER_D, D_CHA_PIN, D_CHB_PIN);
+    open_pulse_device(COUNTER_A | COUNTER_B | COUNTER_C | COUNTER_D);
+    return 0;
+}
+
+int get_distance(unsigned int opt, unsigned int motor) {
+	int  v_a, v_b;
+	switch (motor) {
+	case MOTOR_LEFT:
+		v_a = get_record(COUNTER_A) - (1<<31);
+		v_b = get_record(COUNTER_B) - (1<<31);
+		if (opt == READ_CLEAR) {
+			preset_record(COUNTER_A, 1<<31);
+			preset_record(COUNTER_B, 1<<31);
+		}
+		break;
+	case MOTOR_RIGHT:
+		v_a = get_record(COUNTER_C) - (1<<31);
+		v_b = get_record(COUNTER_D) - (1<<31);
+		if (opt == READ_CLEAR) {
+			preset_record(COUNTER_C, 1<<31);
+			preset_record(COUNTER_D, 1<<31);
+		}
+		break;
+	}
+	return (v_a + v_b) / 2;
+}
+
+
+static void set_direction(unsigned int motor, unsigned int direction){
+    if (motor == MOTOR_LEFT){
+        dir_left = direction;
+    }
+    else if (motor == MOTOR_RIGHT){
+        dir_right = direction;
+    }
+}
+
+void set_speed(unsigned int motor, float speed){
+    if (motor == MOTOR_LEFT) {
+        speed_left = abs(speed);
+        if (speed < 0) {
+        	set_direction(MOTOR_LEFT, 1);
+        } else {
+        	set_direction(MOTOR_LEFT, 0);
+        }
+    }else if (motor == MOTOR_RIGHT) {
+        speed_right = speed;
+    }
+}
+
+void run(unsigned int motor){
+    if (motor == MOTOR_LEFT) {
+        gpio_write(gpio_left, dir_left);
+        timer_pwm_generate(timer_left, DEFAULT_PERIOD,
+                           speed_left*(DEFAULT_PERIOD-1)/100);
+    }else if(motor == MOTOR_RIGHT) {
+        gpio_write(gpio_right, dir_right);
+        timer_pwm_generate(timer_right, DEFAULT_PERIOD,
+                           speed_right*(DEFAULT_PERIOD-1)/100);
+    }
+}
+
+void run_all(){
+	run(MOTOR_LEFT);
+	run(MOTOR_RIGHT);
+}
+
+void stop(unsigned int motor){
+    if (motor == MOTOR_LEFT) {
+        timer_pwm_generate(timer_left, DEFAULT_PERIOD, 0);
+    }else if(motor == MOTOR_RIGHT) {
+        timer_pwm_generate(timer_right, DEFAULT_PERIOD, 0);
+    }
+}
+
+void stop_all(){
+	stop(MOTOR_LEFT);
+	stop(MOTOR_RIGHT);
+}
+
+void move_forward(unsigned int speed){
+	set_direction(MOTOR_LEFT,0);
+	set_direction(MOTOR_RIGHT,0);
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+	run_all();
+}
+
+void move_backward(unsigned int speed){
+	set_direction(MOTOR_LEFT,1);
+	set_direction(MOTOR_RIGHT,1);
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+	run_all();
+}
+
+void move_left(unsigned int speed)
+{
+	//2WD don't support move left
+}
+
+void move_right(unsigned int speed)
+{
+	//2WD don't support move right
+}
+
+void forward_left(unsigned int speed){
+	set_direction(MOTOR_LEFT,1);
+	set_direction(MOTOR_RIGHT,0);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	stop(MOTOR_LEFT);
+	run(MOTOR_RIGHT);
+}
+
+void forward_right(unsigned int speed){
+	set_direction(MOTOR_LEFT,0);
+	set_direction(MOTOR_RIGHT,1);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	run(MOTOR_LEFT);
+	stop(MOTOR_RIGHT);
+}
+
+void back_left(unsigned int speed){
+	set_direction(MOTOR_LEFT,1);
+	set_direction(MOTOR_RIGHT,1);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	stop(MOTOR_LEFT);
+	run(MOTOR_RIGHT);
+}
+
+void back_right(unsigned int speed){
+	set_direction(MOTOR_LEFT,1);
+	set_direction(MOTOR_RIGHT,1);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	run(MOTOR_LEFT);
+	stop(MOTOR_RIGHT);
+}
+
+void turn_left(unsigned int speed)
+{
+	set_direction(MOTOR_LEFT,1);
+	set_direction(MOTOR_RIGHT,0);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	run_all();
+}
+void turn_right(unsigned int speed)
+{
+	set_direction(MOTOR_LEFT,0);
+	set_direction(MOTOR_RIGHT,1);
+
+	set_speed(MOTOR_LEFT,speed);
+	set_speed(MOTOR_RIGHT,speed);
+
+	run_all();
+}

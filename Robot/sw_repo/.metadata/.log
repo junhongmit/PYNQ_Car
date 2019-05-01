@@ -18231,3 +18231,1795 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-04-19 12:24:56.491
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+!SESSION 2019-04-30 15:15:15.993 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-30 15:15:37.530
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:15:42.579
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:15:42.580
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:15:47.055
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:15:47.055
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2019-04-30 15:15:49.039
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1236)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:815)
+	at org.eclipse.swt.widgets.Display.disposeExec(Display.java:1213)
+	at org.eclipse.jface.resource.ColorRegistry.hookDisplayDispose(ColorRegistry.java:256)
+	at org.eclipse.jface.resource.ColorRegistry.<init>(ColorRegistry.java:119)
+	at org.eclipse.jface.resource.ColorRegistry.<init>(ColorRegistry.java:102)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.init(WorkbenchThemeManager.java:135)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getCurrentTheme(WorkbenchThemeManager.java:259)
+	at org.eclipse.cdt.ui.CUIPreferenceInitializer.setThemeBasedPreferences(CUIPreferenceInitializer.java:103)
+	at org.eclipse.cdt.ui.PreferenceConstants.initializeDefaultValues(PreferenceConstants.java:2326)
+	at org.eclipse.cdt.ui.CUIPreferenceInitializer.initializeDefaultPreferences(CUIPreferenceInitializer.java:46)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:298)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:301)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:370)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:222)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:276)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:74)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getDefaultPreferences(ScopedPreferenceStore.java:237)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getPreferenceNodes(ScopedPreferenceStore.java:268)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.internalGet(ScopedPreferenceStore.java:418)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getInt(ScopedPreferenceStore.java:436)
+	at org.eclipse.cdt.internal.ui.preferences.BuildConsolePreferencePage.buildConsoleLines(BuildConsolePreferencePage.java:154)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.<init>(BuildConsolePartitioner.java:361)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getProjectConsolePartioner(BuildConsoleManager.java:454)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getProjectConsole(BuildConsoleManager.java:435)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getConsole(BuildConsoleManager.java:420)
+	at org.eclipse.cdt.internal.ui.buildconsole.CBuildConsole.start(CBuildConsole.java:55)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder$CfgBuildInfo.getConsole(CommonBuilder.java:169)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performExternalClean(CommonBuilder.java:1154)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1088)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:970)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-30 15:15:49.157
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.themes.Theme.<init>(Theme.java:93)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getTheme(WorkbenchThemeManager.java:307)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getTheme(WorkbenchThemeManager.java:317)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.doSetCurrentTheme(WorkbenchThemeManager.java:232)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.setCurrentTheme(WorkbenchThemeManager.java:346)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getCurrentTheme(WorkbenchThemeManager.java:270)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1842)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeFonts(Workbench.java:1835)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1673)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2938)
+	at org.eclipse.ui.internal.Workbench.access$9(Workbench.java:2869)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.core.resources 4 2 2019-04-30 15:15:49.921
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.utils.EFSExtensionManager.getPathFromURI(EFSExtensionManager.java:109)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.calcResourceLocation(BuildDescription.java:265)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.addInput(BuildDescription.java:1940)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.addInput(BuildDescription.java:1902)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.calculateInputs(BuildDescription.java:1593)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.handleMultiSteps(BuildDescription.java:836)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:107)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.cleanWithInternalBuilder(CommonBuilder.java:1180)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1098)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:970)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-04-30 15:15:49.931
+!MESSAGE An internal error occurred during: "Initiating resource change handling..".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:Participant must not be null
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.internal.resources.Workspace.addSaveParticipant(Workspace.java:338)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.startSaveParticipant(CProjectDescriptionManager.java:381)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$1(CProjectDescriptionManager.java:378)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$3.run(CProjectDescriptionManager.java:353)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-30 15:15:50.002
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-04-30 15:15:50.212
+!MESSAGE An internal error occurred during: "Setting up indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.core.model.LanguageManager.getLanguageForContentTypeID(LanguageManager.java:203)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.<init>(ProjectIndexerInputAdapter.java:75)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.getOrCreatePDOM(PDOMManager.java:400)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.createIndexer(PDOMManager.java:571)
+	at org.eclipse.cdt.internal.core.pdom.PDOMSetupJob.run(PDOMSetupJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-04-30 15:15:50.455
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.ui.CUIPlugin$3
+!SESSION 2019-04-30 15:17:17.657 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-30 15:17:24.275
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:17:25.112
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:17:25.112
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:17:26.251
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:17:26.251
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2019-04-30 15:17:26.757
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1236)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:815)
+	at org.eclipse.swt.widgets.Display.disposeExec(Display.java:1213)
+	at org.eclipse.jface.resource.ColorRegistry.hookDisplayDispose(ColorRegistry.java:256)
+	at org.eclipse.jface.resource.ColorRegistry.<init>(ColorRegistry.java:119)
+	at org.eclipse.jface.resource.ColorRegistry.<init>(ColorRegistry.java:102)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.init(WorkbenchThemeManager.java:135)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getCurrentTheme(WorkbenchThemeManager.java:259)
+	at org.eclipse.cdt.ui.CUIPreferenceInitializer.setThemeBasedPreferences(CUIPreferenceInitializer.java:103)
+	at org.eclipse.cdt.ui.PreferenceConstants.initializeDefaultValues(PreferenceConstants.java:2326)
+	at org.eclipse.cdt.ui.CUIPreferenceInitializer.initializeDefaultPreferences(CUIPreferenceInitializer.java:46)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:298)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:301)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:370)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:222)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:276)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:74)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getDefaultPreferences(ScopedPreferenceStore.java:237)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getPreferenceNodes(ScopedPreferenceStore.java:268)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.internalGet(ScopedPreferenceStore.java:418)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getInt(ScopedPreferenceStore.java:436)
+	at org.eclipse.cdt.internal.ui.preferences.BuildConsolePreferencePage.buildConsoleLines(BuildConsolePreferencePage.java:154)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.<init>(BuildConsolePartitioner.java:361)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getProjectConsolePartioner(BuildConsoleManager.java:454)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getProjectConsole(BuildConsoleManager.java:435)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.getConsole(BuildConsoleManager.java:420)
+	at org.eclipse.cdt.internal.ui.buildconsole.CBuildConsole.start(CBuildConsole.java:55)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder$CfgBuildInfo.getConsole(CommonBuilder.java:169)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performExternalClean(CommonBuilder.java:1154)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1088)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:970)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-30 15:17:26.875
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.themes.Theme.<init>(Theme.java:93)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getTheme(WorkbenchThemeManager.java:307)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getTheme(WorkbenchThemeManager.java:317)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.doSetCurrentTheme(WorkbenchThemeManager.java:232)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.setCurrentTheme(WorkbenchThemeManager.java:346)
+	at org.eclipse.ui.internal.themes.WorkbenchThemeManager.getCurrentTheme(WorkbenchThemeManager.java:270)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1842)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeFonts(Workbench.java:1835)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1673)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2938)
+	at org.eclipse.ui.internal.Workbench.access$9(Workbench.java:2869)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.core.resources 4 2 2019-04-30 15:17:27.313
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.utils.EFSExtensionManager.getPathFromURI(EFSExtensionManager.java:109)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.calcResourceLocation(BuildDescription.java:265)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.addInput(BuildDescription.java:1940)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.addInput(BuildDescription.java:1902)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.calculateInputs(BuildDescription.java:1593)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.handleMultiSteps(BuildDescription.java:836)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:107)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.cleanWithInternalBuilder(CommonBuilder.java:1180)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1098)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:970)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-04-30 15:17:27.320
+!MESSAGE An internal error occurred during: "Initiating resource change handling..".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:Participant must not be null
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.internal.resources.Workspace.addSaveParticipant(Workspace.java:338)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.startSaveParticipant(CProjectDescriptionManager.java:381)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$1(CProjectDescriptionManager.java:378)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$3.run(CProjectDescriptionManager.java:353)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-30 15:17:27.364
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-04-30 15:17:27.418
+!MESSAGE An internal error occurred during: "Setting up indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.pdom.indexer.IndexerPreferences.get(IndexerPreferences.java:226)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.getIndexerId(PDOMManager.java:453)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.createIndexer(PDOMManager.java:573)
+	at org.eclipse.cdt.internal.core.pdom.PDOMSetupJob.run(PDOMSetupJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-04-30 15:17:27.722
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.ui.CUIPlugin$3
+!SESSION 2019-04-30 15:17:44.529 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-30 15:17:56.427
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:17:57.400
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:17:57.400
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 15:17:59.021
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 15:17:59.021
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:21.892
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:21.893
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:21.915
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:21.916
+!MESSAGE XSCT Command: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:56.164
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:56.165
+!MESSAGE XSCT command with result: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:56.177
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:56.567
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:18:56.671
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:19:11.606
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.273
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.319
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.319
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.323
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.327
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.436
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Result: [null, {"audio_codec_ctrl_0": {"hier_name": "audio_codec_ctrl_0",
+"type": "audio_codec_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_interconnect_0": {"hier_name": "axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"axi_mem_intercon": {"hier_name": "axi_mem_intercon",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"btns_gpio": {"hier_name": "btns_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_10MHz": {"hier_name": "clk_wiz_10MHz",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"concat_interrupts": {"hier_name": "concat_interrupts",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"concat_pmodb": {"hier_name": "concat_pmodb",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"concat_rp": {"hier_name": "concat_rp",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"constant_8bit_0": {"hier_name": "constant_8bit_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_PulseCounter_0": {"hier_name": "iop_arduino_PulseCounter_0",
+"type": "PulseCounter",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_arduino_gpio": {"hier_name": "iop_arduino_arduino_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_dff_en_reset_vector_0": {"hier_name": "iop_arduino_dff_en_reset_vector_0",
+"type": "dff_en_reset_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_iic_direct": {"hier_name": "iop_arduino_iic_direct",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_intc": {"hier_name": "iop_arduino_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"iop_arduino_interrupt_concat": {"hier_name": "iop_arduino_interrupt_concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_intr": {"hier_name": "iop_arduino_intr",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_io_switch": {"hier_name": "iop_arduino_io_switch",
+"type": "io_switch",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_lmb_dlmb_v10": {"hier_name": "iop_arduino_lmb_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_arduino_lmb_ilmb_v10": {"hier_name": "iop_arduino_lmb_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_arduino_lmb_lmb_bram": {"hier_name": "iop_arduino_lmb_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"iop_arduino_lmb_lmb_bram_if_cntlr": {"hier_name": "iop_arduino_lmb_lmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_arduino_logic_1": {"hier_name": "iop_arduino_logic_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_mb": {"hier_name": "iop_arduino_mb",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"iop_arduino_mb_bram_ctrl": {"hier_name": "iop_arduino_mb_bram_ctrl",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_arduino_microblaze_0_axi_periph": {"hier_name": "iop_arduino_microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"iop_arduino_rst_clk_wiz_1_100M": {"hier_name": "iop_arduino_rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_spi_subsystem_spi_direct": {"hier_name": "iop_arduino_spi_subsystem_spi_direct",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_arduino_spi_subsystem_spi_shared": {"hier_name": "iop_arduino_spi_subsystem_spi_shared",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_0": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_1": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_1",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_2": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_2",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_3": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_3",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_4": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_4",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_5": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_5",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_6": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_6",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_capture_7": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_capture_7",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_generate": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_generate",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timer_pwm": {"hier_name": "iop_arduino_timers_subsystem_mb3_timer_pwm",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_mb3_timers_interrupt": {"hier_name": "iop_arduino_timers_subsystem_mb3_timers_interrupt",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_0": {"hier_name": "iop_arduino_timers_subsystem_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_1": {"hier_name": "iop_arduino_timers_subsystem_timer_1",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_2": {"hier_name": "iop_arduino_timers_subsystem_timer_2",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_3": {"hier_name": "iop_arduino_timers_subsystem_timer_3",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_4": {"hier_name": "iop_arduino_timers_subsystem_timer_4",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_timers_subsystem_timer_5": {"hier_name": "iop_arduino_timers_subsystem_timer_5",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_uartlite": {"hier_name": "iop_arduino_uartlite",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_uartlite1": {"hier_name": "iop_arduino_uartlite1",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_arduino_xadc": {"hier_name": "iop_arduino_xadc",
+"type": "xadc_wiz",
+"version": "3.3",
+"ip_type": "PERIPHERAL",
+},
+"iop_interrupts": {"hier_name": "iop_interrupts",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_dff_en_reset_vector_0": {"hier_name": "iop_pmoda_dff_en_reset_vector_0",
+"type": "dff_en_reset_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_gpio": {"hier_name": "iop_pmoda_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_iic": {"hier_name": "iop_pmoda_iic",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_intc": {"hier_name": "iop_pmoda_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"iop_pmoda_intr": {"hier_name": "iop_pmoda_intr",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_intr_concat": {"hier_name": "iop_pmoda_intr_concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_io_switch": {"hier_name": "iop_pmoda_io_switch",
+"type": "io_switch",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_lmb_dlmb_v10": {"hier_name": "iop_pmoda_lmb_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_pmoda_lmb_ilmb_v10": {"hier_name": "iop_pmoda_lmb_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_pmoda_lmb_lmb_bram": {"hier_name": "iop_pmoda_lmb_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"iop_pmoda_lmb_lmb_bram_if_cntlr": {"hier_name": "iop_pmoda_lmb_lmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmoda_logic_1": {"hier_name": "iop_pmoda_logic_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_mb": {"hier_name": "iop_pmoda_mb",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"iop_pmoda_mb_bram_ctrl": {"hier_name": "iop_pmoda_mb_bram_ctrl",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmoda_microblaze_0_axi_periph": {"hier_name": "iop_pmoda_microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"iop_pmoda_rst_clk_wiz_1_100M": {"hier_name": "iop_pmoda_rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmoda_spi": {"hier_name": "iop_pmoda_spi",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmoda_timer": {"hier_name": "iop_pmoda_timer",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_dff_en_reset_vector_0": {"hier_name": "iop_pmodb_dff_en_reset_vector_0",
+"type": "dff_en_reset_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_gpio": {"hier_name": "iop_pmodb_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_iic": {"hier_name": "iop_pmodb_iic",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_intc": {"hier_name": "iop_pmodb_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"iop_pmodb_intr": {"hier_name": "iop_pmodb_intr",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_intr_concat": {"hier_name": "iop_pmodb_intr_concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_io_switch": {"hier_name": "iop_pmodb_io_switch",
+"type": "io_switch",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_lmb_dlmb_v10": {"hier_name": "iop_pmodb_lmb_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_pmodb_lmb_ilmb_v10": {"hier_name": "iop_pmodb_lmb_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_pmodb_lmb_lmb_bram": {"hier_name": "iop_pmodb_lmb_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"iop_pmodb_lmb_lmb_bram_if_cntlr": {"hier_name": "iop_pmodb_lmb_lmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmodb_logic_1": {"hier_name": "iop_pmodb_logic_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_mb": {"hier_name": "iop_pmodb_mb",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"iop_pmodb_mb_bram_ctrl": {"hier_name": "iop_pmodb_mb_bram_ctrl",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmodb_microblaze_0_axi_periph": {"hier_name": "iop_pmodb_microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"iop_pmodb_rst_clk_wiz_1_100M": {"hier_name": "iop_pmodb_rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_pmodb_spi": {"hier_name": "iop_pmodb_spi",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_pmodb_timer": {"hier_name": "iop_pmodb_timer",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_dff_en_reset_vector_0": {"hier_name": "iop_rpi_dff_en_reset_vector_0",
+"type": "dff_en_reset_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_iic_subsystem_iic_0": {"hier_name": "iop_rpi_iic_subsystem_iic_0",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_iic_subsystem_iic_1": {"hier_name": "iop_rpi_iic_subsystem_iic_1",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_intc": {"hier_name": "iop_rpi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"iop_rpi_intr": {"hier_name": "iop_rpi_intr",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_intr_concat": {"hier_name": "iop_rpi_intr_concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_io_switch": {"hier_name": "iop_rpi_io_switch",
+"type": "io_switch",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_lmb_dlmb_v10": {"hier_name": "iop_rpi_lmb_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_rpi_lmb_ilmb_v10": {"hier_name": "iop_rpi_lmb_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"iop_rpi_lmb_lmb_bram": {"hier_name": "iop_rpi_lmb_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"iop_rpi_lmb_lmb_bram_if_cntlr": {"hier_name": "iop_rpi_lmb_lmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_rpi_logic_1": {"hier_name": "iop_rpi_logic_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_mb": {"hier_name": "iop_rpi_mb",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"iop_rpi_mb_bram_ctrl": {"hier_name": "iop_rpi_mb_bram_ctrl",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_rpi_microblaze_0_axi_periph": {"hier_name": "iop_rpi_microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"iop_rpi_rpi_gpio": {"hier_name": "iop_rpi_rpi_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_rst_clk_wiz_1_100M": {"hier_name": "iop_rpi_rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_spi_subsystem_spi_0": {"hier_name": "iop_rpi_spi_subsystem_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_rpi_spi_subsystem_spi_1": {"hier_name": "iop_rpi_spi_subsystem_spi_1",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"iop_rpi_timers_subsystem_mb4_timer_pwm": {"hier_name": "iop_rpi_timers_subsystem_mb4_timer_pwm",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_timers_subsystem_mb4_timers_interrupt": {"hier_name": "iop_rpi_timers_subsystem_mb4_timers_interrupt",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_timers_subsystem_timer_0": {"hier_name": "iop_rpi_timers_subsystem_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_timers_subsystem_timer_1": {"hier_name": "iop_rpi_timers_subsystem_timer_1",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"iop_rpi_uartlite": {"hier_name": "iop_rpi_uartlite",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"leds_gpio": {"hier_name": "leds_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"logic_1": {"hier_name": "logic_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_arduino_intr_ack": {"hier_name": "mb_iop_arduino_intr_ack",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_arduino_reset": {"hier_name": "mb_iop_arduino_reset",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_pmoda_intr_ack": {"hier_name": "mb_iop_pmoda_intr_ack",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_pmoda_reset": {"hier_name": "mb_iop_pmoda_reset",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_pmodb_intr_ack": {"hier_name": "mb_iop_pmodb_intr_ack",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_pmodb_reset": {"hier_name": "mb_iop_pmodb_reset",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_rpi_intr_ack": {"hier_name": "mb_iop_rpi_intr_ack",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mb_iop_rpi_reset": {"hier_name": "mb_iop_rpi_reset",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"pmoda_rp_pin_sel": {"hier_name": "pmoda_rp_pin_sel",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_0": {"hier_name": "ps7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"ps7_0_axi_periph1": {"hier_name": "ps7_0_axi_periph1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"ps7_0_axi_periph_1": {"hier_name": "ps7_0_axi_periph_1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rgbleds_gpio": {"hier_name": "rgbleds_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_ps7_0_fclk0": {"hier_name": "rst_ps7_0_fclk0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_ps7_0_fclk1": {"hier_name": "rst_ps7_0_fclk1",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_ps7_0_fclk3": {"hier_name": "rst_ps7_0_fclk3",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"slice_pmodb_gpio": {"hier_name": "slice_pmodb_gpio",
+"type": "interface_slice",
+"version": "1.0",
+"ip_type": "MONITOR",
+},
+"switches_gpio": {"hier_name": "switches_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"system_interrupts": {"hier_name": "system_interrupts",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"trace_analyzer_pi_axi_dma_0": {"hier_name": "trace_analyzer_pi_axi_dma_0",
+"type": "axi_dma",
+"version": "7.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pi_axis_data_fifo_0": {"hier_name": "trace_analyzer_pi_axis_data_fifo_0",
+"type": "axis_data_fifo",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pi_constant_tkeep_tstrb": {"hier_name": "trace_analyzer_pi_constant_tkeep_tstrb",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pi_trace_cntrl_64_0": {"hier_name": "trace_analyzer_pi_trace_cntrl_64_0",
+"type": "trace_cntrl_64",
+"version": "1.4",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pmodb_axi_dma_0": {"hier_name": "trace_analyzer_pmodb_axi_dma_0",
+"type": "axi_dma",
+"version": "7.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pmodb_axis_data_fifo_0": {"hier_name": "trace_analyzer_pmodb_axis_data_fifo_0",
+"type": "axis_data_fifo",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pmodb_constant_tkeep_tstrb": {"hier_name": "trace_analyzer_pmodb_constant_tkeep_tstrb",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"trace_analyzer_pmodb_trace_cntrl_32_0": {"hier_name": "trace_analyzer_pmodb_trace_cntrl_32_0",
+"type": "trace_cntrl_32",
+"version": "1.4",
+"ip_type": "PERIPHERAL",
+},
+"video_axi_interconnect_0": {"hier_name": "video_axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"video_axi_mem_intercon": {"hier_name": "video_axi_mem_intercon",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"video_axi_vdma": {"hier_name": "video_axi_vdma",
+"type": "axi_vdma",
+"version": "6.3",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_axis_register_slice_0": {"hier_name": "video_hdmi_in_axis_register_slice_0",
+"type": "axis_register_slice",
+"version": "1.1",
+"ip_type": "BUS",
+},
+"video_hdmi_in_color_convert": {"hier_name": "video_hdmi_in_color_convert",
+"type": "color_convert",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_frontend_axi_gpio_hdmiin": {"hier_name": "video_hdmi_in_frontend_axi_gpio_hdmiin",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_frontend_color_swap_0": {"hier_name": "video_hdmi_in_frontend_color_swap_0",
+"type": "color_swap",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_frontend_dvi2rgb_0": {"hier_name": "video_hdmi_in_frontend_dvi2rgb_0",
+"type": "dvi2rgb",
+"version": "1.7",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_frontend_v_vid_in_axi4s_0": {"hier_name": "video_hdmi_in_frontend_v_vid_in_axi4s_0",
+"type": "v_vid_in_axi4s",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_frontend_vtc_in": {"hier_name": "video_hdmi_in_frontend_vtc_in",
+"type": "v_tc",
+"version": "6.1",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_in_pixel_pack": {"hier_name": "video_hdmi_in_pixel_pack",
+"type": "pixel_pack",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_axis_register_slice_0": {"hier_name": "video_hdmi_out_axis_register_slice_0",
+"type": "axis_register_slice",
+"version": "1.1",
+"ip_type": "BUS",
+},
+"video_hdmi_out_color_convert": {"hier_name": "video_hdmi_out_color_convert",
+"type": "color_convert",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_axi_dynclk": {"hier_name": "video_hdmi_out_frontend_axi_dynclk",
+"type": "axi_dynclk",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_color_swap_0": {"hier_name": "video_hdmi_out_frontend_color_swap_0",
+"type": "color_swap",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_hdmi_out_hpd_video": {"hier_name": "video_hdmi_out_frontend_hdmi_out_hpd_video",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_rgb2dvi_0": {"hier_name": "video_hdmi_out_frontend_rgb2dvi_0",
+"type": "rgb2dvi",
+"version": "1.2",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_v_axi4s_vid_out_0": {"hier_name": "video_hdmi_out_frontend_v_axi4s_vid_out_0",
+"type": "v_axi4s_vid_out",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_frontend_vtc_out": {"hier_name": "video_hdmi_out_frontend_vtc_out",
+"type": "v_tc",
+"version": "6.1",
+"ip_type": "PERIPHERAL",
+},
+"video_hdmi_out_pixel_unpack": {"hier_name": "video_hdmi_out_pixel_unpack",
+"type": "pixel_unpack",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_proc_sys_reset_pixelclk": {"hier_name": "video_proc_sys_reset_pixelclk",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"video_xlconcat_0": {"hier_name": "video_xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_collector_pmoda_rpi": {"hier_name": "wire_distribution_network_collector_pmoda_rpi",
+"type": "wire_distributor",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_collector_rpi_27_8": {"hier_name": "wire_distribution_network_collector_rpi_27_8",
+"type": "wire_distributor",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_distributor_pmoda": {"hier_name": "wire_distribution_network_distributor_pmoda",
+"type": "wire_distributor",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_distributor_rpi": {"hier_name": "wire_distribution_network_distributor_rpi",
+"type": "wire_distributor",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_pmoda_rpi_o_sel": {"hier_name": "wire_distribution_network_pmoda_rpi_o_sel",
+"type": "mux_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_pmoda_rpi_t_sel": {"hier_name": "wire_distribution_network_pmoda_rpi_t_sel",
+"type": "mux_vector",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_27_0": {"hier_name": "wire_distribution_network_rpi_i_27_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_1_0": {"hier_name": "wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_1_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_3_2": {"hier_name": "wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_3_2",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_5_4": {"hier_name": "wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_5_4",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_7_6": {"hier_name": "wire_distribution_network_rpi_i_reorder_7_0_pmoda_rpi_7_6",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_i_reorder_7_0_rpi2pmoda": {"hier_name": "wire_distribution_network_rpi_i_reorder_7_0_rpi2pmoda",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_27_8": {"hier_name": "wire_distribution_network_rpi_o_27_8",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_reorder_7_0_rpi2pmoda": {"hier_name": "wire_distribution_network_rpi_o_reorder_7_0_rpi2pmoda",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_reorder_7_0_rpi_1_0": {"hier_name": "wire_distribution_network_rpi_o_reorder_7_0_rpi_1_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_reorder_7_0_rpi_3_2": {"hier_name": "wire_distribution_network_rpi_o_reorder_7_0_rpi_3_2",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_reorder_7_0_rpi_5_4": {"hier_name": "wire_distribution_network_rpi_o_reorder_7_0_rpi_5_4",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_o_reorder_7_0_rpi_7_6": {"hier_name": "wire_distribution_network_rpi_o_reorder_7_0_rpi_7_6",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_27_8": {"hier_name": "wire_distribution_network_rpi_t_27_8",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_reorder_7_0_rpi2pmoda": {"hier_name": "wire_distribution_network_rpi_t_reorder_7_0_rpi2pmoda",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_reorder_7_0_rpi_1_0": {"hier_name": "wire_distribution_network_rpi_t_reorder_7_0_rpi_1_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_reorder_7_0_rpi_3_2": {"hier_name": "wire_distribution_network_rpi_t_reorder_7_0_rpi_3_2",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_reorder_7_0_rpi_5_4": {"hier_name": "wire_distribution_network_rpi_t_reorder_7_0_rpi_5_4",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"wire_distribution_network_rpi_t_reorder_7_0_rpi_7_6": {"hier_name": "wire_distribution_network_rpi_t_reorder_7_0_rpi_7_6",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_i2c_0": {"hier_name": "ps7_i2c_0",
+"type": "ps7_i2c",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_i2c_1": {"hier_name": "ps7_i2c_1",
+"type": "ps7_i2c",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp1": {"hier_name": "ps7_m_axi_gp1",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.459
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.463
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Mar 27 17:42:41 2019",
+"vivado_version": "2018.2",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.465
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:20.467
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.635
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.641
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.642
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.645
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.646
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:29.648
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.872
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.876
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.877
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.880
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.881
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:21:30.882
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.658
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.665
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.666
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.669
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.670
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:15.672
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.093
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.098
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.098
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.101
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.102
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:17.105
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-04-30 15:31:28.018
+!MESSAGE Indexed 'arduino_automoto' (2 sources, 43 headers) in 1.42 sec: 982 declarations; 1,865 references; 0 unresolved inclusions; 0 syntax errors; 4 unresolved names (0.14%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.969
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.973
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.973
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, {"procname": "iop_arduino_mb",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.976
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 15:31:29.978
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/bsp_iop_arduino_mb/system.mss], Result: [null, ]. Thread: main
+!SESSION 2019-04-30 18:35:32.716 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 18:36:01.580
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 18:36:01.580
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-30 18:36:10.512
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-30 18:36:10.512
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:36:59.299
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:36:59.300
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:41.769
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:41.770
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:41.827
+!MESSAGE XSCT Command: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:41.874
+!MESSAGE XSCT command with result: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Result: [null, ]. Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:41.974
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:52.098
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:37:52.216
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-30 18:38:26.642
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Result: [null, ]. Thread: Worker-3
+!SESSION 2019-05-02 03:03:54.416 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2019-05-02 03:07:49.169
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-05-02 03:07:49.169
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-05-02 03:07:56.252
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-05-02 03:07:56.252
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:08:47.724
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:08:47.725
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:11.009
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:11.010
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:11.013
+!MESSAGE XSCT Command: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:11.052
+!MESSAGE XSCT command with result: [setws /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:11.118
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:16.915
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo"], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:17.103
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-05-02 03:09:50.883
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/junhonglin/Xilinx/PYNQ_Car/Robot/sw_repo/hw_base/system.hdf], Result: [null, ]. Thread: Worker-6

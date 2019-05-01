@@ -13745,3 +13745,1995 @@ mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
   15440	    552	   3560	  19552	   4c60	arduino_run_usranger.elf
 Finished building: arduino_run_usranger.elf.size
  
+15:21:17 **** Clean-only build of configuration Debug for project arduino_run_usranger ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o  ./src/4WD_MOTO.d ./src/arduino_run_usranger.d ./src/arduino_usranger.d  arduino_run_usranger.elf.size  arduino_run_usranger.elf
+ 
+15:21:18 **** Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building file: ../src/arduino_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_usranger.d" -MT"src/arduino_usranger.o" -o "src/arduino_usranger.o" "../src/arduino_usranger.c"
+Finished building: ../src/arduino_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_usranger.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_usranger.elf arduino_run_usranger.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15440	    552	   3560	  19552	   4c60	arduino_run_usranger.elf
+Finished building: arduino_run_usranger.elf.size
+ 
+15:21:22 **** Build of configuration Debug for project arduino_run_gesture ****
+make all 
+make: Nothing to be done for 'all'.
+15:24:53 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+Finished building: ../src/arduino_4wdmoto.c
+ 
+Building target: arduino_4wdmoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_4wdmoto.elf"  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_4wdmoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_4wdmoto.elf arduino_4wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_4wdmoto.elf  |tee "arduino_4wdmoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12356	    516	   3392	  16264	   3f88	arduino_4wdmoto.elf
+Finished building: arduino_4wdmoto.elf.size
+ 
+15:26:51 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+../src/4WD_MOTO.c: At top level:
+../src/4WD_MOTO.c:234:6: error: conflicting types for 'move_left'
+ void move_left(int status, unsigned int speed){
+      ^~~~~~~~~
+In file included from ../src/4WD_MOTO.c:75:0:
+../src/4WD_MOTO.h:28:6: note: previous declaration of 'move_left' was here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/4WD_MOTO.c: In function 'move_left':
+../src/4WD_MOTO.c:235:16: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+  if (status == STATUS_A){
+                ^~~~~~~~
+                XSTATUS_H
+../src/4WD_MOTO.c:235:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/4WD_MOTO.c:245:20: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+  else if(status == STATUS_B){
+                    ^~~~~~~~
+                    STATUS_A
+../src/4WD_MOTO.c: At top level:
+../src/4WD_MOTO.c:256:6: error: conflicting types for 'move_right'
+ void move_right(int status, unsigned int speed){
+      ^~~~~~~~~~
+In file included from ../src/4WD_MOTO.c:75:0:
+src/subdir.mk:24: recipe for target 'src/4WD_MOTO.o' failed
+../src/4WD_MOTO.h:29:6: note: previous declaration of 'move_right' was here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/4WD_MOTO.c: In function 'move_right':
+../src/4WD_MOTO.c:257:16: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+  if (status == STATUS_A){
+                ^~~~~~~~
+                XSTATUS_H
+../src/4WD_MOTO.c:267:20: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+  else if(status == STATUS_B){
+                    ^~~~~~~~
+                    STATUS_A
+make: *** [src/4WD_MOTO.o] Error 1
+15:28:21 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+../src/4WD_MOTO.c: At top level:
+../src/4WD_MOTO.c:234:6: error: conflicting types for 'move_left'
+ void move_left(int status, unsigned int speed){
+      ^~~~~~~~~
+In file included from ../src/4WD_MOTO.c:75:0:
+../src/4WD_MOTO.h:28:6: note: previous declaration of 'move_left' was here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/4WD_MOTO.c: In function 'move_left':
+../src/4WD_MOTO.c:235:16: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+  if (status == STATUS_A){
+                ^~~~~~~~
+                XSTATUS_H
+../src/4WD_MOTO.c:235:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/4WD_MOTO.c:245:20: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+  else if(status == STATUS_B){
+                    ^~~~~~~~
+                    STATUS_A
+../src/4WD_MOTO.c: At top level:
+../src/4WD_MOTO.c:256:6: error: conflicting types for 'move_right'
+ void move_right(int status, unsigned int speed){
+      ^~~~~~~~~~
+In file included from ../src/4WD_MOTO.c:75:0:
+../src/4WD_MOTO.h:29:6: note: previous declaration of 'move_right' was here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/4WD_MOTO.o' failed
+../src/4WD_MOTO.c: In function 'move_right':
+../src/4WD_MOTO.c:257:16: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+  if (status == STATUS_A){
+                ^~~~~~~~
+                XSTATUS_H
+../src/4WD_MOTO.c:267:20: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+  else if(status == STATUS_B){
+                    ^~~~~~~~
+                    STATUS_A
+make: *** [src/4WD_MOTO.o] Error 1
+15:29:12 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:29:30 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:29:55 **** Auto Build of configuration Debug for project arduino_4wdmoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:31:26 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o  ./src/4WD_MOTO.d ./src/arduino_4wdmoto.d  arduino_4wdmoto.elf.size  arduino_4wdmoto.elf
+ 
+15:31:26 **** Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:32:06 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o  ./src/4WD_MOTO.d ./src/arduino_4wdmoto.d  arduino_automoto.elf.size  arduino_automoto.elf
+ 
+15:32:06 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/4WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/4WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/4WD_MOTO.d" -MT"src/4WD_MOTO.o" -o "src/4WD_MOTO.o" "../src/4WD_MOTO.c"
+../src/4WD_MOTO.c: In function 'init_ardumoto':
+../src/4WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/4WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:32:39 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_4wdmoto.o  ./src/4WD_MOTO.d ./src/arduino_4wdmoto.d  arduino_automoto.elf.size  arduino_automoto.elf
+ 
+15:32:39 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+../src/2WD_MOTO.c: In function 'init_ardumoto':
+../src/2WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_4wdmoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:51:0:
+../src/4WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:33:20 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/2WD_MOTO.o ./src/arduino_4wdmoto.o  ./src/2WD_MOTO.d ./src/arduino_4wdmoto.d  arduino_automoto.elf.size  arduino_automoto.elf
+ 
+15:33:20 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+../src/2WD_MOTO.c: In function 'init_ardumoto':
+../src/2WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_4wdmoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_4wdmoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_4wdmoto.d" -MT"src/arduino_4wdmoto.o" -o "src/arduino_4wdmoto.o" "../src/arduino_4wdmoto.c"
+../src/arduino_4wdmoto.c:51:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+ fer.h>
+    ^
+In file included from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/stdint.h:14:0,
+                 from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/lib/gcc/microblaze-xilinx-elf/7.2.0/include/stdint.h:9,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xil_types.h:59,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/sleep.h:55,
+                 from ../src/arduino_4wdmoto.c:52:
+/opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/sys/_stdint.h:19:9: error: unknown type name '__int8_t'
+ typedef __int8_t int8_t ;
+         ^~~~~~~~
+../src/arduino_4wdmoto.c: In function 'main':
+../src/arduino_4wdmoto.c:75:10: error: 'MAILBOX_CMD_ADDR' undeclared (first use in this function)
+   while((MAILBOX_CMD_ADDR & 0x01)==0);
+          ^~~~~~~~~~~~~~~~
+../src/arduino_4wdmoto.c:75:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_4wdmoto.c:81:23: warning: implicit declaration of function 'MAILBOX_DATA'; did you mean 'XST_NO_DATA'? [-Wimplicit-function-declaration]
+       PWM_LEFT_PIN  = MAILBOX_DATA(0);
+                       ^~~~~~~~~~~~
+                       XST_NO_DATA
+../src/arduino_4wdmoto.c:115:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_4wdmoto.c:115:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:118:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:121:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+src/subdir.mk:24: recipe for target 'src/arduino_4wdmoto.o' failed
+../src/arduino_4wdmoto.c:121:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_4wdmoto.c:124:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_4wdmoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_4wdmoto.c:132:23: error: lvalue required as left operand of assignment
+       MAILBOX_DATA(0) = (signed int)get_distance(opt, which);
+                       ^
+../src/arduino_4wdmoto.c:71:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_4wdmoto.o] Error 1
+15:33:37 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/2WD_MOTO.o ./src/arduino_4wdmoto.o  ./src/2WD_MOTO.d ./src/arduino_4wdmoto.d  arduino_automoto.elf.size  arduino_automoto.elf
+ 
+15:33:37 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+../src/2WD_MOTO.c: In function 'init_ardumoto':
+../src/2WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+../src/arduino_automoto.c:51:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+ fer.h>
+    ^
+In file included from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/stdint.h:14:0,
+                 from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/lib/gcc/microblaze-xilinx-elf/7.2.0/include/stdint.h:9,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xil_types.h:59,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/sleep.h:55,
+                 from ../src/arduino_automoto.c:52:
+/opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/sys/_stdint.h:19:9: error: unknown type name '__int8_t'
+ typedef __int8_t int8_t ;
+         ^~~~~~~~
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:75:10: error: 'MAILBOX_CMD_ADDR' undeclared (first use in this function)
+   while((MAILBOX_CMD_ADDR & 0x01)==0);
+          ^~~~~~~~~~~~~~~~
+../src/arduino_automoto.c:75:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:81:23: warning: implicit declaration of function 'MAILBOX_DATA'; did you mean 'XST_NO_DATA'? [-Wimplicit-function-declaration]
+       PWM_LEFT_PIN  = MAILBOX_DATA(0);
+                       ^~~~~~~~~~~~
+                       XST_NO_DATA
+../src/arduino_automoto.c:115:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:115:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:118:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:121:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:121:11: error: too many arguments to function 'move_left'
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:124:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:132:23: error: lvalue required as left operand of assignment
+       MAILBOX_DATA(0) = (signed int)get_distance(opt, which);
+                       ^
+../src/arduino_automoto.c:71:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:33:55 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+../src/arduino_automoto.c:51:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+ fer.h>
+    ^
+In file included from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/stdint.h:14:0,
+                 from /opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/lib/gcc/microblaze-xilinx-elf/7.2.0/include/stdint.h:9,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/xil_types.h:59,
+                 from ../../bsp_iop_arduino_mb/iop_arduino_mb/include/sleep.h:55,
+                 from ../src/arduino_automoto.c:52:
+/opt/Xilinx/SDK/2018.2/gnu/microblaze/lin/microblaze-xilinx-elf/include/sys/_stdint.h:19:9: error: unknown type name '__int8_t'
+ typedef __int8_t int8_t ;
+         ^~~~~~~~
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:74:10: error: 'MAILBOX_CMD_ADDR' undeclared (first use in this function)
+   while((MAILBOX_CMD_ADDR & 0x01)==0);
+          ^~~~~~~~~~~~~~~~
+../src/arduino_automoto.c:74:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:80:23: warning: implicit declaration of function 'MAILBOX_DATA'; did you mean 'XST_NO_DATA'? [-Wimplicit-function-declaration]
+       PWM_LEFT_PIN  = MAILBOX_DATA(0);
+                       ^~~~~~~~~~~~
+                       XST_NO_DATA
+../src/arduino_automoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:117:11: error: too many arguments to function 'move_right'
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:131:23: error: lvalue required as left operand of assignment
+       MAILBOX_DATA(0) = (signed int)get_distance(opt, which);
+                       ^
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:34:39 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+      ^~~~~~~~~
+../src/arduino_automoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:28:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:29:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:35:49 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c: In function 'init_ardumoto':
+../src/2WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:36:00 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c: In function 'init_ardumoto':
+../src/2WD_MOTO.c:103:6: warning: unused variable 'temp' [-Wunused-variable]
+  u32 temp;
+      ^~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:37:55 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c:265:6: error: redefinition of 'back_left'
+ void back_left(unsigned int speed){
+      ^~~~~~~~~
+../src/2WD_MOTO.c:243:6: note: previous definition of 'back_left' was here
+ void back_left(unsigned int speed){
+      ^~~~~~~~~
+../src/2WD_MOTO.c:276:6: error: redefinition of 'back_right'
+src/subdir.mk:24: recipe for target 'src/2WD_MOTO.o' failed
+ void back_right(unsigned int speed){
+      ^~~~~~~~~~
+../src/2WD_MOTO.c:254:6: note: previous definition of 'back_right' was here
+ void back_right(unsigned int speed){
+      ^~~~~~~~~~
+make: *** [src/2WD_MOTO.o] Error 1
+15:38:18 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:114:21: error: 'STATUS_A' undeclared (first use in this function); did you mean 'XSTATUS_H'?
+           move_left(STATUS_A, speed);
+                     ^~~~~~~~
+                     XSTATUS_H
+../src/arduino_automoto.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:114:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_A, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:117:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_A, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+../src/arduino_automoto.c:120:21: error: 'STATUS_B' undeclared (first use in this function); did you mean 'STATUS_A'?
+           move_left(STATUS_B, speed);
+                     ^~~~~~~~
+                     STATUS_A
+../src/arduino_automoto.c:120:11: error: too many arguments to function 'move_left'
+           move_left(STATUS_B, speed);
+           ^~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:33:6: note: declared here
+ void move_left(unsigned int speed);
+      ^~~~~~~~~
+../src/arduino_automoto.c:123:11: error: too many arguments to function 'move_right'
+           move_right(STATUS_B, speed);
+           ^~~~~~~~~~
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:34:6: note: declared here
+ void move_right(unsigned int speed);
+      ^~~~~~~~~~
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+15:40:34 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12756	    516	   3392	  16664	   4118	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+15:42:26 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12756	    516	   3392	  16664	   4118	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+15:43:03 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12892	    516	   3392	  16800	   41a0	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+17:13:46 **** Clean-only build of configuration Debug for project arduino_run_gesture ****
+make clean 
+rm -rf  ./src/4WD_MOTO.d ./src/arduino_run_gesture.d  ./src/4WD_MOTO.o ./src/I2CMultiplexer.o ./src/SparkFun_APDS9960.o ./src/arduino_run_gesture.o  ./src/SparkFun_APDS9960.d  ./src/I2CMultiplexer.d  arduino_run_gesture.elf.size  arduino_run_gesture.elf
+ 
+17:13:46 **** Auto Build of configuration Debug for project arduino_run_gesture ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/I2CMultiplexer.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2CMultiplexer.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/I2CMultiplexer.d" -MT"src/I2CMultiplexer.o" -o "src/I2CMultiplexer.o" "../src/I2CMultiplexer.cpp"
+../src/I2CMultiplexer.cpp: In member function 'uint8_t* I2CMultiplexer::scan(uint8_t)':
+../src/I2CMultiplexer.cpp:16:6: warning: variable 'nDevices' set but not used [-Wunused-but-set-variable]
+  int nDevices;
+      ^~~~~~~~
+Finished building: ../src/I2CMultiplexer.cpp
+ 
+Building file: ../src/SparkFun_APDS9960.c
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SparkFun_APDS9960.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SparkFun_APDS9960.d" -MT"src/SparkFun_APDS9960.o" -o "src/SparkFun_APDS9960.o" "../src/SparkFun_APDS9960.c"
+Finished building: ../src/SparkFun_APDS9960.c
+ 
+Building file: ../src/arduino_run_gesture.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_run_gesture.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_gesture.d" -MT"src/arduino_run_gesture.o" -o "src/arduino_run_gesture.o" "../src/arduino_run_gesture.cc"
+../src/arduino_run_gesture.cc:51:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:52: recipe for target 'src/arduino_run_gesture.o' failed
+make: *** [src/arduino_run_gesture.o] Error 1
+17:13:56 **** Auto Build of configuration Debug for project arduino_run_gesture ****
+make all 
+Building file: ../src/arduino_run_gesture.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_run_gesture.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_gesture.d" -MT"src/arduino_run_gesture.o" -o "src/arduino_run_gesture.o" "../src/arduino_run_gesture.cc"
+../src/arduino_run_gesture.cc:51:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/arduino_run_gesture.o] Error 1
+src/subdir.mk:52: recipe for target 'src/arduino_run_gesture.o' failed
+17:14:30 **** Auto Build of configuration Debug for project arduino_run_gesture ****
+make all 
+Building file: ../src/arduino_run_gesture.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_run_gesture.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_gesture.d" -MT"src/arduino_run_gesture.o" -o "src/arduino_run_gesture.o" "../src/arduino_run_gesture.cc"
+In file included from ../src/arduino_run_gesture.cc:51:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
+../src/arduino_run_gesture.cc: In function 'int main()':
+../src/arduino_run_gesture.cc:75:13: warning: unused variable 'period' [-Wunused-variable]
+  int which, period, duty;
+             ^~~~~~
+../src/arduino_run_gesture.cc:75:21: warning: unused variable 'duty' [-Wunused-variable]
+  int which, period, duty;
+                     ^~~~
+../src/arduino_run_gesture.cc:76:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+Finished building: ../src/arduino_run_gesture.cc
+ 
+Building target: arduino_run_gesture.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_gesture.elf"  ./src/2WD_MOTO.o ./src/I2CMultiplexer.o ./src/SparkFun_APDS9960.o ./src/arduino_run_gesture.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: arduino_run_gesture.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_gesture.elf arduino_run_gesture.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_gesture.elf  |tee "arduino_run_gesture.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26436	    536	   3668	  30640	   77b0	arduino_run_gesture.elf
+Finished building: arduino_run_gesture.elf.size
+ 
+17:18:19 **** Clean-only build of configuration Debug for project arduino_run_IMU ****
+make clean 
+rm -rf  ./src/main.d  ./src/4WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o  ./src/4WD_MOTO.d  ./src/BMP280.d ./src/BNO055.d ./src/I2CMultiplexer.d  arduino_run_IMU.elf.size  arduino_run_IMU.elf
+ 
+17:18:20 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/BMP280.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BMP280.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BMP280.d" -MT"src/BMP280.o" -o "src/BMP280.o" "../src/BMP280.cpp"
+../src/BMP280.cpp: In member function 'void BMP280::setCtrlMeasMode(BMP280::eCtrlMeasMode_t)':
+../src/BMP280.cpp:131:20: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.mode = 0xff; sRegVal.mode = eMode;
+                    ^~~~
+../src/BMP280.cpp: In member function 'void BMP280::setCtrlMeasSamplingTemp(BMP280::eSampling_t)':
+../src/BMP280.cpp:138:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.osrs_t = 0xff; sRegVal.osrs_t = eSampling;
+                      ^~~~
+../src/BMP280.cpp: In member function 'void BMP280::setCtrlMeasSamplingPress(BMP280::eSampling_t)':
+../src/BMP280.cpp:145:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.osrs_p = 0xff; sRegVal.osrs_p = eSampling;
+                      ^~~~
+../src/BMP280.cpp: In member function 'void BMP280::setConfigFilter(BMP280::eConfigFilter_t)':
+../src/BMP280.cpp:152:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.filter = 0xff; sRegVal.filter = eFilter;
+                      ^~~~
+../src/BMP280.cpp: In member function 'void BMP280::setConfigTStandby(BMP280::eConfigTStandby_t)':
+../src/BMP280.cpp:159:20: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.t_sb = 0xff; sRegVal.t_sb = eT;
+                    ^~~~
+Finished building: ../src/BMP280.cpp
+ 
+Building file: ../src/BNO055.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BNO055.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BNO055.d" -MT"src/BNO055.o" -o "src/BNO055.o" "../src/BNO055.cpp"
+../src/BNO055.cpp: In member function 'void BNO055::setOprMode(BNO055::eOprMode_t)':
+../src/BNO055.cpp:214:20: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.mode = 0xff; sRegVal.mode = eMode;
+                    ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setPowerMode(BNO055::ePowerMode_t)':
+../src/BNO055.cpp:222:20: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.mode = 0xff; sRegVal.mode = eMode;
+                    ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::reset()':
+../src/BNO055.cpp:229:23: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.RST_SYS = 0xff; sRegVal.RST_SYS = 1;
+                       ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setAccRange(BNO055::eAccRange_t)':
+../src/BNO055.cpp:236:25: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.ACC_RANGE = 0xff; sRegVal.ACC_RANGE = eRange;
+                         ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setAccBandWidth(BNO055::eAccBandWidth_t)':
+../src/BNO055.cpp:245:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.ACC_BW = 0xff; sRegVal.ACC_BW = eBand;
+                      ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setAccPowerMode(BNO055::eAccPowerMode_t)':
+../src/BNO055.cpp:252:28: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.ACC_PWR_MODE = 0xff; sRegVal.ACC_PWR_MODE = eMode;
+                            ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setMagDataRate(BNO055::eMagDataRate_t)':
+../src/BNO055.cpp:259:36: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.MAG_DATA_OUTPUT_RATE = 0xff; sRegVal.MAG_DATA_OUTPUT_RATE = eRate;
+                                    ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setMagOprMode(BNO055::eMagOprMode_t)':
+../src/BNO055.cpp:266:28: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.MAG_OPR_MODE = 0xff; sRegVal.MAG_OPR_MODE = eMode;
+                            ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setMagPowerMode(BNO055::eMagPowerMode_t)':
+../src/BNO055.cpp:273:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.MAG_POWER_MODE = 0xff; sRegVal.MAG_POWER_MODE = eMode;
+                              ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setGyrRange(BNO055::eGyrRange_t)':
+../src/BNO055.cpp:280:25: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.GYR_RANGE = 0xff; sRegVal.GYR_RANGE = eRange;
+                         ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setGyrBandWidth(BNO055::eGyrBandWidth_t)':
+../src/BNO055.cpp:294:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.GYR_BANDWIDTH = 0xff; sRegVal.GYR_BANDWIDTH = eBandWidth;
+                             ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setGyrPowerMode(BNO055::eGyrPowerMode_t)':
+../src/BNO055.cpp:301:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFlied.GYR_POWER_MODE = 0xff; sRegVal.GYR_POWER_MODE = eMode;
+                              ^~~~
+../src/BNO055.cpp: In member function 'uint8_t BNO055::getIntState()':
+../src/BNO055.cpp:313:24: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sTrigFlied.RST_INT = 0xff; sTrigVal.RST_INT = 1;
+                        ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setAccIntAmDur(uint8_t)':
+../src/BNO055.cpp:369:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+   sRegFleid.AM_DUR = 0xff; sRegVal.AM_DUR = dur - 1;
+                      ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setAccHighGDuration(uint16_t)':
+../src/BNO055.cpp:399:60: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   writeReg(regOffset1(sRegsPage1.ACC_HG_THRES), (uint8_t*) temp, sizeof(temp));
+                                                            ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setGyrIntEnable(BNO055::eGyrIntSet_t)':
+../src/BNO055.cpp:462:62: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   readReg(regOffset1(sRegsPage1.GYR_INT_SETTING), (uint8_t*) temp, sizeof(temp));
+                                                              ^~~~
+../src/BNO055.cpp:464:63: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   writeReg(regOffset1(sRegsPage1.GYR_INT_SETTING), (uint8_t*) temp, sizeof(temp));
+                                                               ^~~~
+../src/BNO055.cpp: In member function 'void BNO055::setGyrIntDisable(BNO055::eGyrIntSet_t)':
+../src/BNO055.cpp:471:62: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   readReg(regOffset1(sRegsPage1.GYR_INT_SETTING), (uint8_t*) temp, sizeof(temp));
+                                                              ^~~~
+../src/BNO055.cpp:473:63: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   writeReg(regOffset1(sRegsPage1.GYR_INT_SETTING), (uint8_t*) temp, sizeof(temp));
+                                                               ^~~~
+Finished building: ../src/BNO055.cpp
+ 
+Building file: ../src/I2CMultiplexer.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2CMultiplexer.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/I2CMultiplexer.d" -MT"src/I2CMultiplexer.o" -o "src/I2CMultiplexer.o" "../src/I2CMultiplexer.cpp"
+../src/I2CMultiplexer.cpp: In member function 'uint8_t* I2CMultiplexer::scan(uint8_t)':
+../src/I2CMultiplexer.cpp:16:6: warning: variable 'nDevices' set but not used [-Wunused-but-set-variable]
+  int nDevices;
+      ^~~~~~~~
+Finished building: ../src/I2CMultiplexer.cpp
+ 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:8:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:55: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:18:26 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:8:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:55: recipe for target 'src/main.o' failed
+17:18:39 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:8:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:161:18: error: 'STATUS_A' was not declared in this scope
+        move_left(STATUS_A, speed);
+                  ^~~~~~~~
+../src/main.cc:161:18: note: suggested alternative: 'XSTATUS_H'
+        move_left(STATUS_A, speed);
+                  ^~~~~~~~
+                  XSTATUS_H
+../src/main.cc:167:18: error: 'STATUS_B' was not declared in this scope
+        move_left(STATUS_B, speed);
+                  ^~~~~~~~
+../src/main.cc:167:18: note: suggested alternative: 'XSTATUS_H'
+        move_left(STATUS_B, speed);
+                  ^~~~~~~~
+                  XSTATUS_H
+../src/main.cc:49:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+../src/main.cc:51:10: warning: unused variable 'ax' [-Wunused-variable]
+  int16_t ax, ay, az;
+          ^~
+../src/main.cc:51:14: warning: unused variable 'ay' [-Wunused-variable]
+  int16_t ax, ay, az;
+              ^~
+../src/main.cc:51:18: warning: unused variable 'az' [-Wunused-variable]
+  int16_t ax, ay, az;
+                  ^~
+../src/main.cc:52:10: warning: unused variable 'gx' [-Wunused-variable]
+  int16_t gx, gy, gz;
+          ^~
+../src/main.cc:52:14: warning: unused variable 'gy' [-Wunused-variable]
+  int16_t gx, gy, gz;
+              ^~
+../src/main.cc:52:18: warning: unused variable 'gz' [-Wunused-variable]
+  int16_t gx, gy, gz;
+                  ^~
+../src/main.cc:53:10: warning: unused variable 'mx' [-Wunused-variable]
+  int16_t mx, my, mz;
+          ^~
+../src/main.cc:53:14: warning: unused variable 'my' [-Wunused-variable]
+  int16_t mx, my, mz;
+              ^~
+../src/main.cc:53:18: warning: unused variable 'mz' [-Wunused-variable]
+  int16_t mx, my, mz;
+                  ^~
+../src/main.cc:54:59: warning: unused variable 'sLiaAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                           ^~~~~~~~~~
+../src/main.cc:54:71: warning: unused variable 'sGrvAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                                       ^~~~~~~~~~
+src/subdir.mk:55: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:19:03 **** Auto Build of configuration Debug for project arduino_run_IMU ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:8:0:
+../src/2WD_MOTO.h:17:1: warning: 'typedef' was ignored in this declaration
+ typedef enum operate {
+ ^~~~~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:49:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+../src/main.cc:51:10: warning: unused variable 'ax' [-Wunused-variable]
+  int16_t ax, ay, az;
+          ^~
+../src/main.cc:51:14: warning: unused variable 'ay' [-Wunused-variable]
+  int16_t ax, ay, az;
+              ^~
+../src/main.cc:51:18: warning: unused variable 'az' [-Wunused-variable]
+  int16_t ax, ay, az;
+                  ^~
+../src/main.cc:52:10: warning: unused variable 'gx' [-Wunused-variable]
+  int16_t gx, gy, gz;
+          ^~
+../src/main.cc:52:14: warning: unused variable 'gy' [-Wunused-variable]
+  int16_t gx, gy, gz;
+              ^~
+../src/main.cc:52:18: warning: unused variable 'gz' [-Wunused-variable]
+  int16_t gx, gy, gz;
+                  ^~
+../src/main.cc:53:10: warning: unused variable 'mx' [-Wunused-variable]
+  int16_t mx, my, mz;
+          ^~
+../src/main.cc:53:14: warning: unused variable 'my' [-Wunused-variable]
+  int16_t mx, my, mz;
+              ^~
+../src/main.cc:53:18: warning: unused variable 'mz' [-Wunused-variable]
+  int16_t mx, my, mz;
+                  ^~
+../src/main.cc:54:59: warning: unused variable 'sLiaAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                           ^~~~~~~~~~
+../src/main.cc:54:71: warning: unused variable 'sGrvAnalog' [-Wunused-variable]
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+                                                                       ^~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: arduino_run_IMU.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_IMU.elf"  ./src/2WD_MOTO.o ./src/BMP280.o ./src/BNO055.o ./src/I2CMultiplexer.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: arduino_run_IMU.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_IMU.elf arduino_run_IMU.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_IMU.elf  |tee "arduino_run_IMU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 192120	   1840	   3744	 197704	  30448	arduino_run_IMU.elf
+Finished building: arduino_run_IMU.elf.size
+ 
+17:39:17 **** Clean-only build of configuration Debug for project arduino_run_linetracker ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_run_linetracker.o  ./src/4WD_MOTO.d ./src/arduino_run_linetracker.d  arduino_run_linetracker.elf.size  arduino_run_linetracker.elf
+ 
+17:39:17 **** Auto Build of configuration Debug for project arduino_run_linetracker ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_run_linetracker.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_linetracker.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_linetracker.d" -MT"src/arduino_run_linetracker.o" -o "src/arduino_run_linetracker.o" "../src/arduino_run_linetracker.c"
+../src/arduino_run_linetracker.c:51:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/arduino_run_linetracker.o] Error 1
+src/subdir.mk:24: recipe for target 'src/arduino_run_linetracker.o' failed
+17:39:53 **** Auto Build of configuration Debug for project arduino_run_linetracker ****
+make all 
+Building file: ../src/arduino_run_linetracker.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_linetracker.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_linetracker.d" -MT"src/arduino_run_linetracker.o" -o "src/arduino_run_linetracker.o" "../src/arduino_run_linetracker.c"
+In file included from ../src/arduino_run_linetracker.c:51:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_run_linetracker.c: In function 'main':
+../src/arduino_run_linetracker.c:126:21: warning: unused variable 'duty' [-Wunused-variable]
+  int which, period, duty;
+                     ^~~~
+../src/arduino_run_linetracker.c:126:13: warning: unused variable 'period' [-Wunused-variable]
+  int which, period, duty;
+             ^~~~~~
+Finished building: ../src/arduino_run_linetracker.c
+ 
+Building target: arduino_run_linetracker.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_linetracker.elf"  ./src/2WD_MOTO.o ./src/arduino_run_linetracker.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_linetracker.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_linetracker.elf arduino_run_linetracker.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_linetracker.elf  |tee "arduino_run_linetracker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22232	    544	   3488	  26264	   6698	arduino_run_linetracker.elf
+Finished building: arduino_run_linetracker.elf.size
+ 
+17:45:20 **** Clean-only build of configuration Debug for project arduino_run_usranger ****
+make clean 
+rm -rf  ./src/4WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o  ./src/4WD_MOTO.d ./src/arduino_run_usranger.d ./src/arduino_usranger.d  arduino_run_usranger.elf.size  arduino_run_usranger.elf
+ 
+17:45:20 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+../src/arduino_run_usranger.c:51:10: fatal error: 4WD_MOTO.h: No such file or directory
+ #include "4WD_MOTO.h"
+src/subdir.mk:27: recipe for target 'src/arduino_run_usranger.o' failed
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/arduino_run_usranger.o] Error 1
+17:47:44 **** Auto Build of configuration Debug for project arduino_run_usranger ****
+make all 
+Building file: ../src/arduino_run_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_usranger.d" -MT"src/arduino_run_usranger.o" -o "src/arduino_run_usranger.o" "../src/arduino_run_usranger.c"
+In file included from ../src/arduino_run_usranger.c:51:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_run_usranger.c: In function 'main':
+../src/arduino_run_usranger.c:73:8: warning: unused variable 'v' [-Wunused-variable]
+  float v;
+        ^
+In file included from ../src/arduino_run_usranger.c:54:0:
+At top level:
+../src/arduino_usranger.h:64:13: warning: 'uart_a' defined but not used [-Wunused-variable]
+ static uart uart_a;
+             ^~~~~~
+Finished building: ../src/arduino_run_usranger.c
+ 
+Building file: ../src/arduino_usranger.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_usranger.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_usranger.d" -MT"src/arduino_usranger.o" -o "src/arduino_usranger.o" "../src/arduino_usranger.c"
+Finished building: ../src/arduino_usranger.c
+ 
+Building target: arduino_run_usranger.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_usranger.elf"  ./src/2WD_MOTO.o ./src/arduino_run_usranger.o ./src/arduino_usranger.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_run_usranger.elf
+ 
+make --no-print-directory post-build
+Microblaze Bin Gen
+mb-objcopy -O binary arduino_run_usranger.elf arduino_run_usranger.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_run_usranger.elf  |tee "arduino_run_usranger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15976	    552	   3560	  20088	   4e78	arduino_run_usranger.elf
+Finished building: arduino_run_usranger.elf.size
+ 
+18:39:24 **** Clean-only build of configuration Debug for project arduino_automoto ****
+make clean 
+rm -rf  ./src/2WD_MOTO.o ./src/arduino_automoto.o  ./src/2WD_MOTO.d ./src/arduino_automoto.d  arduino_automoto.elf.size  arduino_automoto.elf
+ 
+18:39:26 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:146:11: error: 'SET_SPEED' undeclared (first use in this function)
+      case SET_SPEED:
+           ^~~~~~~~~
+../src/arduino_automoto.c:146:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:70:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+make: *** [src/arduino_automoto.o] Error 1
+18:39:42 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:82:45: error: 'left' undeclared (first use in this function)
+       PWM_RIGHT_PIN = MAILBOX_DATA(1);      left = ;
+                                             ^~~~
+../src/arduino_automoto.c:82:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:82:52: error: expected expression before ';' token
+       PWM_RIGHT_PIN = MAILBOX_DATA(1);      left = ;
+                                                    ^
+../src/arduino_automoto.c:83:7: error: 'right' undeclared (first use in this function)
+       right = ;
+       ^~~~~
+../src/arduino_automoto.c:83:15: error: expected expression before ';' token
+       right = ;
+               ^
+../src/arduino_automoto.c:151:7: error: unknown type name 'ru'
+       ru      left = ;
+       ^~
+../src/arduino_automoto.c:151:22: error: expected expression before ';' token
+       ru      left = ;
+                      ^
+../src/arduino_automoto.c:152:15: error: expected expression before ';' token
+       right = ;n_all();
+               ^
+../src/arduino_automoto.c:152:16: warning: implicit declaration of function 'n_all'; did you mean 'run_all'? [-Wimplicit-function-declaration]
+       right = ;n_all();
+                ^~~~~
+                run_all
+../src/arduino_automoto.c:151:15: warning: unused variable 'left' [-Wunused-variable]
+       ru      left = ;
+               ^~~~
+../src/arduino_automoto.c:71:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+make: *** [src/arduino_automoto.o] Error 1
+18:39:57 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:150:7: error: unknown type name 'ru'
+       ru      left = ;
+       ^~
+../src/arduino_automoto.c:150:22: error: expected expression before ';' token
+       ru      left = ;
+                      ^
+../src/arduino_automoto.c:151:7: error: 'right' undeclared (first use in this function)
+       right = ;n_all();
+       ^~~~~
+../src/arduino_automoto.c:151:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/arduino_automoto.c:151:15: error: expected expression before ';' token
+       right = ;n_all();
+               ^
+../src/arduino_automoto.c:151:16: warning: implicit declaration of function 'n_all'; did you mean 'run_all'? [-Wimplicit-function-declaration]
+       right = ;n_all();
+                ^~~~~
+src/subdir.mk:24: recipe for target 'src/arduino_automoto.o' failed
+                run_all
+../src/arduino_automoto.c:150:15: warning: unused variable 'left' [-Wunused-variable]
+       ru      left = ;
+               ^~~~
+../src/arduino_automoto.c:71:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+make: *** [src/arduino_automoto.o] Error 1
+18:40:05 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/arduino_automoto.c: In function 'main':
+../src/arduino_automoto.c:71:15: warning: unused variable 'v' [-Wunused-variable]
+  unsigned int v;
+               ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13000	    516	   3396	  16912	   4210	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:11:16 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16396	    516	   3392	  20304	   4f50	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:12:04 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c:167:6: error: conflicting types for 'set_speed'
+ void set_speed(unsigned int motor, unsigned int speed){
+      ^~~~~~~~~
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:28:6: note: previous declaration of 'set_speed' was here
+ void set_speed(unsigned int motor, float speed);
+      ^~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/2WD_MOTO.o' failed
+make: *** [src/2WD_MOTO.o] Error 1
+03:12:07 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17500	    516	   3392	  21408	   53a0	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:12:53 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c: In function 'set_speed':
+../src/2WD_MOTO.c:169:22: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+         speed_left = abs(speed);
+                      ^~~
+../src/2WD_MOTO.c:170:13: error: expected expression before ')' token
+         if ()
+             ^
+src/subdir.mk:24: recipe for target 'src/2WD_MOTO.o' failed
+make: *** [src/2WD_MOTO.o] Error 1
+03:13:22 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c: In function 'set_speed':
+../src/2WD_MOTO.c:169:22: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+         speed_left = abs(speed);
+                      ^~~
+Finished building: ../src/2WD_MOTO.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19636	    516	   3392	  23544	   5bf8	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:13:56 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17848	    516	   3396	  21760	   5500	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:14:33 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17972	    516	   3392	  21880	   5578	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:25:46 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18004	    516	   3392	  21912	   5598	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 
+03:25:54 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+../src/2WD_MOTO.c:166:6: error: conflicting types for 'set_speed'
+ void set_speed(unsigned int motor, int speed){
+      ^~~~~~~~~
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:28:6: note: previous declaration of 'set_speed' was here
+ void set_speed(unsigned int motor, float speed);
+      ^~~~~~~~~
+make: *** [src/2WD_MOTO.o] Error 1
+src/subdir.mk:24: recipe for target 'src/2WD_MOTO.o' failed
+03:26:03 **** Auto Build of configuration Debug for project arduino_automoto ****
+make all 
+Building file: ../src/2WD_MOTO.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/2WD_MOTO.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/2WD_MOTO.d" -MT"src/2WD_MOTO.o" -o "src/2WD_MOTO.o" "../src/2WD_MOTO.c"
+In file included from ../src/2WD_MOTO.c:75:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/2WD_MOTO.c
+ 
+Building file: ../src/arduino_automoto.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_automoto.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_automoto.d" -MT"src/arduino_automoto.o" -o "src/arduino_automoto.o" "../src/arduino_automoto.c"
+In file included from ../src/arduino_automoto.c:53:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+Finished building: ../src/arduino_automoto.c
+ 
+Building target: arduino_automoto.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_automoto.elf"  ./src/2WD_MOTO.o ./src/arduino_automoto.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arduino_automoto.elf
+ 
+make --no-print-directory post-build
+MicroBlaze Bin Gen
+mb-objcopy -O binary arduino_automoto.elf arduino_2wdmoto.bin
+ 
+Invoking: MicroBlaze Print Size
+mb-size arduino_automoto.elf  |tee "arduino_automoto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13456	    516	   3396	  17368	   43d8	arduino_automoto.elf
+Finished building: arduino_automoto.elf.size
+ 

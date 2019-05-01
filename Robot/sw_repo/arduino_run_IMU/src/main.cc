@@ -5,7 +5,7 @@
 #include "BNO055.h"
 #include "BMP280.h"
 #include "I2CMultiplexer.h"
-#include "4WD_MOTO.h"
+#include "2WD_MOTO.h"
 #include "circular_buffer.h"
 #include <sleep.h>
 
@@ -157,19 +157,31 @@ int main()
 				  case 1://move back
 					  move_backward(speed);
 					  break;
-				  case 2://move left stop
-					  move_left(STATUS_A, speed);
+				  case 2:
+					  move_left(speed);
 					  break;
-				  case 3://move right stop
-					  move_right(STATUS_A, speed);
+				  case 3:
+					  move_right(speed);
 					  break;
-				  case 4://left reverse
-					  move_left(STATUS_B, speed);
+				  case 4://turn left
+					  turn_left(speed);
 					  break;
-				  case 5://right reverse
-					  move_right(STATUS_B, speed);
+				  case 5://turn right
+					  turn_right(speed);
 					  break;
-				}
+				  case 6://left reverse
+					  forward_left(speed);
+					  break;
+				  case 7://right reverse
+					  forward_right(speed);
+					  break;
+				  case 8:
+					  back_left(speed);
+					  break;
+				  case 9:
+					  back_right(speed);
+					  break;
+			    }
 			 }
 			MAILBOX_CMD_ADDR = 0x0;
 			break;

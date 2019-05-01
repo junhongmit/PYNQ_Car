@@ -1,8 +1,12 @@
-16:35:31 **** Auto Build of configuration Debug for project arduino_run_linetracker ****
+17:39:53 **** Auto Build of configuration Debug for project arduino_run_linetracker ****
 make all 
 Building file: ../src/arduino_run_linetracker.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -I../../bsp_iop_arduino_mb/iop_arduino_mb/include -c -fmessage-length=0 -MT"src/arduino_run_linetracker.o" -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/arduino_run_linetracker.d" -MT"src/arduino_run_linetracker.o" -o "src/arduino_run_linetracker.o" "../src/arduino_run_linetracker.c"
+In file included from ../src/arduino_run_linetracker.c:51:0:
+../src/2WD_MOTO.h:20:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
 ../src/arduino_run_linetracker.c: In function 'main':
 ../src/arduino_run_linetracker.c:126:21: warning: unused variable 'duty' [-Wunused-variable]
   int which, period, duty;
@@ -14,7 +18,7 @@ Finished building: ../src/arduino_run_linetracker.c
  
 Building target: arduino_run_linetracker.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_linetracker.elf"  ./src/4WD_MOTO.o ./src/arduino_run_linetracker.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -L../../bsp_iop_arduino_mb/iop_arduino_mb/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arduino_run_linetracker.elf"  ./src/2WD_MOTO.o ./src/arduino_run_linetracker.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: arduino_run_linetracker.elf
  
 make --no-print-directory post-build
@@ -24,9 +28,9 @@ mb-objcopy -O binary arduino_run_linetracker.elf arduino_run_linetracker.bin
 Invoking: MicroBlaze Print Size
 mb-size arduino_run_linetracker.elf  |tee "arduino_run_linetracker.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  21696	    544	   3488	  25728	   6480	arduino_run_linetracker.elf
+  22232	    544	   3488	  26264	   6698	arduino_run_linetracker.elf
 Finished building: arduino_run_linetracker.elf.size
  
 
-16:35:31 Build Finished (took 361ms)
+17:39:54 Build Finished (took 641ms)
 
