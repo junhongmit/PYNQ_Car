@@ -1,0 +1,2 @@
+car_driver:ls01D_Ros
+-DCATKIN_DEVEL_PREFIX=/home/xilinx/PYNQ_Car/devel -DCMAKE_INSTALL_PREFIX=/home/xilinx/PYNQ_Car/install -G Unix Makefiles

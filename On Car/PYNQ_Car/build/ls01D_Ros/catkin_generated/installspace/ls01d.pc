@@ -1,0 +1,8 @@
+prefix=/home/xilinx/PYNQ_Car/install
+
+Name: ls01d
+Description: Description of ls01d
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xilinx/PYNQ_Car/install/lib 
+Requires: 

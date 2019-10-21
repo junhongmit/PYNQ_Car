@@ -1,0 +1,8 @@
+prefix=/home/xilinx/PYNQ_Car/devel
+
+Name: car_driver
+Description: Description of car_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xilinx/PYNQ_Car/devel/lib 
+Requires: 
